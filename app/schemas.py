@@ -1,3 +1,5 @@
+from typing import List
+
 from pydantic import BaseModel
 
 """
@@ -17,6 +19,7 @@ from pydantic import BaseModel
 
 
 class UserBase(BaseModel):
+    # id: int
     name: str
     email: str
 
@@ -27,5 +30,23 @@ class UserBase(BaseModel):
 class UserResponse(UserBase):
     id: int
 
+    # 自动转成对象
     class Config:
         orm_mode = True
+
+
+class UserListResponse(UserBase):
+    id: int
+
+    # 自动转成对象
+    class Config:
+        orm_mode = True
+
+
+class UserCountResponse(BaseModel):
+    count: int
+
+
+class UserInfoResponse(BaseModel):
+    count: int
+    users: List[UserBase]
