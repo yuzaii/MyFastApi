@@ -1,7 +1,4 @@
-from fastapi import Depends
-from sqlalchemy.orm import Session
-
-from app.database import get_db, SessionLocal
+from app.database import SessionLocal
 from app.models.UserModel import User
 
 

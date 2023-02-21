@@ -1,6 +1,6 @@
-from typing import List
+from typing import List, Optional
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 """
 这是用 Pydantic 定义数据模型的代码片段。在这个例子中，我们定义了一个 UserBase 模型，它表示一个用户，具有以下属性：
@@ -19,9 +19,11 @@ from pydantic import BaseModel
 
 
 class UserBase(BaseModel):
-    # id: int
+    # Option是可选的 默认为none 唯一性约束
+    # id: Optional[int] = Field(None, unique=True)
+    id: Optional[int]
     name: str
-    email: str
+    password: str
 
 
 # class UserCreate(UserBase):
@@ -48,5 +50,6 @@ class UserCountResponse(BaseModel):
 
 
 class UserInfoResponse(BaseModel):
+    code: int
     count: int
     users: List[UserBase]

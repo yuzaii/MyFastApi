@@ -3,101 +3,68 @@ from typing import List
 import sqlalchemy
 import uvicorn
 from fastapi import FastAPI, Depends, HTTPException
+from fastapi.openapi.docs import get_swagger_ui_html, get_redoc_html
 from sqlalchemy.orm import Session
+from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import RedirectResponse
+from starlette.staticfiles import StaticFiles
 
+from app.api.UserApi import UserRouter
 from app.curd import create_user
 from app.database import get_db, Base, engine
-from app.models import User
+from app.models.UserModel import User
+
 from app.schemas import UserResponse, UserBase, UserListResponse, UserCountResponse, UserInfoResponse
 
-app = FastAPI()
+# docs_url=None, redoc_url=None 禁用自带的docs文档接口
+app = FastAPI(docs_url=None, redoc_url=None)
+# 因为下面要用到静态文件，所以，这里挂载一下
+app.mount('/static', StaticFiles(directory='static'))
 
 
-# class UserAlreadyExistsError(Exception):
-#     def __init__(self, message="User already exists"):
-#         self.message = message
-#         super().__init__(self.message)
+# 利用fastapi提供的函数，生成文档网页
+@app.get("/docs", include_in_schema=False)
+async def custom_swagger_ui_html():
+    return get_swagger_ui_html(
+        openapi_url=app.openapi_url,
+        title=app.title + " - Swagger UI",
+        oauth2_redirect_url=app.swagger_ui_oauth2_redirect_url,
+        swagger_js_url="/static/swagger/swagger-ui-bundle.js",
+        swagger_css_url="/static/swagger/swagger-ui.css")
 
 
-@app.get("/", tags=['重定向'])
+@app.get("/redoc", include_in_schema=False)
+async def redoc_html():
+    return get_redoc_html(
+        openapi_url=app.openapi_url,
+        title=app.title + " - ReDoc",
+        redoc_js_url="/static/redoc/redoc.standalone.js")
+
+
+# 允许下列地址跨区
+origins = [
+    "http://localhost",
+    "http://localhost:8080",
+    "http://localhost:5050",
+]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+app.include_router(UserRouter)
+
+
+# 将首页重定向
+@app.get("/", include_in_schema=False)
 def index():
     return RedirectResponse("/docs")
-
-
-@app.post("/create_user_depend/", tags=['用户操作'])
-def create_user_depend(user: UserBase, db: Session = Depends(get_db)):
-    """
-    这是一个 FastAPI 框架中常用的依赖注入方式，
-    使用 Depends 装饰器注入一个名为 db 的数据库会话对象到 create_user 函数中，
-    同时传入一个名为 user 的 UserBase 模型。
-    没必要用模型定义
-    :param user:
-    :param db:
-    :return:
-    """
-    try:
-        user = User(name=user.name, email=user.email)
-        db.add(user)
-        db.commit()
-        db.refresh(user)
-        return {'msg': 'succuess', 'data': user}
-    except:
-        # print(e.args)
-        db.rollback()
-        return {'code': 400, 'msg': 'error'}
-
-
-@app.post("/create_user_dbsession/", response_model=UserResponse, tags=['用户操作'])
-def create_user_dbsession(user: UserBase):
-    """
-    :param user:
-
-    :return:
-    """
-    print(123)
-    user = User(name=user.name, email=user.email)
-    # create_user(user.name,user.email)
-
-    return create_user(user.name, user.email)
-
-
-@app.post("/get_all_users", response_model=List[UserListResponse], tags=['用户操作'])
-def get_all_users(db: Session = Depends(get_db)):
-    users = db.query(User).all()
-    for user in users:
-        print(user)
-    return users
-    # return [UserListResponse.from_orm(user) for user in users]
-
-
-@app.post("/get_all_users_count", response_model=UserCountResponse, tags=['用户操作'])
-def get_all_users_count(db: Session = Depends(get_db)):
-    count = db.query(User).count()
-    return {'count': count}
-
-
-@app.post("/get_all_users_info", response_model=UserInfoResponse, tags=['用户操作'])
-def get_all_users_count(db: Session = Depends(get_db)):
-    # count = db.query(User).count()
-    users = db.query(User).all()
-    user_list = [UserBase(id=user.id, name=user.name, email=user.email) for user in users]
-    count = len(user_list)
-    return {"count": count, "users": user_list}
-
-
-@app.post("/update_eamil", response_model=UserResponse, tags=['用户操作'])
-def update_eamil(user_id: int, email: str, db: Session = Depends(get_db)):
-    db_user = db.query(User).filter(User.id == user_id).first()
-    if not db_user:
-        raise HTTPException(status_code=404, detail="User not found")
-    db_user.email = email
-    db.commit()
-    db.refresh(db_user)
-    return db_user
 
 
 if __name__ == '__main__':
     # 自动创建数据库
     Base.metadata.create_all(bind=engine)
+    # 运行程序
     uvicorn.run(app='main:app', reload=True)
