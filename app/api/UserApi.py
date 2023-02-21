@@ -66,7 +66,7 @@ def get_all_users_count(db: Session = Depends(get_db)):
         print(u)
     user_list = [UserBase(id=user.id, name=user.name, password=user.password) for user in users]
     count = len(user_list)
-    return {"code": 200, "count": count, "users": user_list}
+    return {"code": 200, "count": count, "data": user_list}
 
 
 @UserRouter.post("/get_all_users_count", response_model=UserCountResponse, summary='获取用户数量')

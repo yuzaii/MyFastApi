@@ -52,4 +52,4 @@ class UserCountResponse(BaseModel):
 class UserInfoResponse(BaseModel):
     code: int
     count: int
-    users: List[UserBase]
+    data: List[UserBase]
