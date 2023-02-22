@@ -16,7 +16,7 @@ from app.config import SQLALCHEMY_DATABASE_URL, SQLALCHEMY_POOL_SIZE, SQLALCHEMY
 engine = create_engine(SQLALCHEMY_DATABASE_URL,
                        pool_size=SQLALCHEMY_POOL_SIZE,
                        max_overflow=SQLALCHEMY_MAX_OVERFLOW,
-                       echo=True,
+                       echo=False,
                        echo_pool=False)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 

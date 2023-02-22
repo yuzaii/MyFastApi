@@ -41,7 +41,7 @@ async def redoc_html():
         redoc_js_url="/static/redoc/redoc.standalone.js")
 
 
-# 允许下列地址跨区
+# 允许下列地址跨域
 origins = [
     "http://localhost",
     "http://localhost:8080",
