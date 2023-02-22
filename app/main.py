@@ -10,11 +10,8 @@ from starlette.responses import RedirectResponse
 from starlette.staticfiles import StaticFiles
 
 from app.api.UserApi import UserRouter
-from app.curd import create_user
-from app.database import get_db, Base, engine
+from app.database import Base, engine
 from app.models.UserModel import User
-
-from app.schemas import UserResponse, UserBase, UserListResponse, UserCountResponse, UserInfoResponse
 
 # docs_url=None, redoc_url=None 禁用自带的docs文档接口
 app = FastAPI(docs_url=None, redoc_url=None)
