@@ -14,6 +14,6 @@ class UserBase(BaseModel):
     # Option是可选的 默认为none 唯一性约束
     # id: Optional[int] = Field(None, unique=True)
     id: Optional[int]
-    name: Optional[str]
+    username: Optional[str]
     password: Optional[str]
 

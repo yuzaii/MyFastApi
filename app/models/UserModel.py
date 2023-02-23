@@ -16,8 +16,8 @@ class User(Base):
     __tablename__ = "users"
 
     id = Column(Integer, primary_key=True, index=True)
-    name = Column(String(50), unique=True)
-    password = Column(String(50))
+    username = Column(String(50), unique=True)
+    password = Column(String(100))
 
     def __repr__(self):
-        return f'<User id:{self.id},name:{self.name},password:{self.password}>'
+        return f'<User id:{self.id},username:{self.username},password:{self.password}>'
