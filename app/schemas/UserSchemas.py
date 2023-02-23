@@ -17,3 +17,13 @@ class UserBase(BaseModel):
     username: Optional[str]
     password: Optional[str]
 
+
+class UserLoginBase(BaseModel):
+    username: str
+    password: str
+
+
+class UserRegisterBase(BaseModel):
+    username: str
+    password: str
+    secondPassword: str
