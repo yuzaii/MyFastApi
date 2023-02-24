@@ -40,6 +40,7 @@ async def redoc_html():
 
 # 允许下列地址跨域
 origins = [
+    # "*",
     "http://localhost",
     "http://localhost:8080",
     "http://localhost:5050",
@@ -64,4 +65,4 @@ if __name__ == '__main__':
     # 自动创建数据库
     Base.metadata.create_all(bind=engine)
     # 运行程序
-    uvicorn.run(app='main:app', reload=True)
+    uvicorn.run(app='main:app', reload=True,port=6060)

@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 """
 @author:yuzai
-@file:encrypt.py
+@file:EncryptTools.py
 @time:2023/02/23
 """
 import hashlib
