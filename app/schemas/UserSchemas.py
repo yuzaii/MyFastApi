@@ -21,6 +21,13 @@ class UserBase(BaseModel):
 class UserLoginBase(BaseModel):
     username: str
     password: str
+    # grant_type: Optional[str] = "password"
+
+
+# 换成json
+# class OAuth2PasswordRequestJSON(BaseModel):
+#     username: str
+#     password: str
 
 
 class UserRegisterBase(BaseModel):

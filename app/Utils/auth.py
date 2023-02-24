@@ -8,7 +8,7 @@ from app.config import settings
 from app.database import get_db
 from app.models.UserModel import User
 
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/user/login")
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/user/token")
 
 
 def auth_depend(token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)):
