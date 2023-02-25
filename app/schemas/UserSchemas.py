@@ -5,6 +5,7 @@
 @file:UserSchemas.py
 @time:2023/02/22
 """
+import datetime
 from typing import Optional
 
 from pydantic import BaseModel
@@ -13,7 +14,7 @@ from pydantic import BaseModel
 class UserBase(BaseModel):
     # Option是可选的 默认为none 唯一性约束
     # id: Optional[int] = Field(None, unique=True)
-    id: Optional[int]
+    user_id: Optional[int]
     username: Optional[str]
     password: Optional[str]
 
@@ -31,6 +32,10 @@ class UserLoginBase(BaseModel):
 
 
 class UserRegisterBase(BaseModel):
+    """
+    注册时候的json数据
+    """
     username: str
     password: str
     secondPassword: str
+    # createtime: datetime.datetime.now()

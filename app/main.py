@@ -65,4 +65,4 @@ if __name__ == '__main__':
     # 自动创建数据库
     Base.metadata.create_all(bind=engine)
     # 运行程序
-    uvicorn.run(app='main:app', reload=True,port=6060)
+    uvicorn.run(app='main:app', reload=True, port=6060)

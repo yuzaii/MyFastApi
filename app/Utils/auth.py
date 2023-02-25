@@ -13,11 +13,12 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/user/token")
 
 def auth_depend(token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)):
     """
-    对token进行解码
+    对token进行解码 返回user的所有信息
     :param token:
     :param db:
     :return:
     """
+    print('token', token)
     try:
         payload = jwt.decode(token, settings.jwt_secret_key, algorithms=[settings.jwt_algorithm])
     except (jwt.ExpiredSignatureError, JWTError):
@@ -28,13 +29,13 @@ def auth_depend(token: str = Depends(oauth2_scheme), db: Session = Depends(get_d
         )
     print('payload', payload)
     # 获取数据库中的
-    db_user = db.query(User).filter_by(id=payload.get('id')).first()
+    db_user = db.query(User).filter_by(user_id=payload.get('user_id')).first()
     print('db_user', db_user)
     if db_user:
         return db_user
     else:
         raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
+            status_code=201,
             detail="认证不通过",
             # headers={"WWW-Authenticate": "Bearer"}
         )
