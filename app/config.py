@@ -24,6 +24,7 @@ class Settings(BaseSettings):
     # jwt的加密算法
     jwt_algorithm: str = 'HS256'
     # token过期时间 单位秒
+    # jwt_exp_seconds: int = 60 * 60 * 2
     jwt_exp_seconds: int = 60 * 60 * 2
     # jwt_exp_seconds: int = 1
 

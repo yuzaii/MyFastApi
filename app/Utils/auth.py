@@ -23,7 +23,7 @@ def auth_depend(token: str = Depends(oauth2_scheme), db: Session = Depends(get_d
         payload = jwt.decode(token, settings.jwt_secret_key, algorithms=[settings.jwt_algorithm])
     except (jwt.ExpiredSignatureError, JWTError):
         raise HTTPException(
-            status_code=201,
+            status_code=401,
             detail="token已失效，请重新登陆！",
             # headers={"WWW-Authenticate": "Bearer"}
         )
@@ -35,8 +35,8 @@ def auth_depend(token: str = Depends(oauth2_scheme), db: Session = Depends(get_d
         return db_user
     else:
         raise HTTPException(
-            status_code=201,
-            detail="认证不通过",
+            status_code=401,
+            detail="认证不通过，请重新登陆！",
             # headers={"WWW-Authenticate": "Bearer"}
         )
 
