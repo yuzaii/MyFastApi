@@ -1,13 +1,11 @@
 from datetime import timedelta, datetime
 
-from fastapi import HTTPException, Depends
-from flask_sqlalchemy.session import Session
+
 from jose import jwt, JWTError
-from starlette import status
+
 
 from app.config import settings
-from app.database import get_db
-from app.models.UserModel import User
+
 
 
 # 生成token

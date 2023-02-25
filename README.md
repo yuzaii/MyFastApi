@@ -1,5 +1,5 @@
 # MyFastApi
-
+pip install python-jose[cryptography]
 学习FastApi
 接口说明:
 登录：
