@@ -1,8 +1,7 @@
 from fastapi import HTTPException, Depends
 from fastapi.security import OAuth2PasswordBearer
-from flask_sqlalchemy.session import Session
 from jose import jwt, JWTError
-from starlette import status
+from sqlalchemy.orm import Session
 
 from app.config import settings
 from app.database import get_db

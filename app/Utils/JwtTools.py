@@ -1,11 +1,10 @@
-from datetime import timedelta, datetime
+from __future__ import annotations
 
+from datetime import timedelta, datetime
 
 from jose import jwt, JWTError
 
-
 from app.config import settings
-
 
 
 # 生成token
@@ -19,7 +18,6 @@ def create_access_token(data: dict, expires_delta: timedelta | None = None) -> s
     to_encode.update({"exp": expire})
     encoded_jwt = jwt.encode(to_encode, settings.jwt_secret_key, algorithm=settings.jwt_algorithm)
     return encoded_jwt
-
 
 
 if __name__ == '__main__':
