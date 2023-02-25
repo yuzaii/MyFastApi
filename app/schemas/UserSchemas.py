@@ -39,3 +39,13 @@ class UserRegisterBase(BaseModel):
     password: str
     secondPassword: str
     # createtime: datetime.datetime.now()
+
+
+class EditUserBase(BaseModel):
+    """
+    修改用户信息的
+    """
+    username: str
+    sex: str
+    signature: Optional[str]
+    newavatar: Optional[str]

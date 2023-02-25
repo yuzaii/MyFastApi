@@ -15,8 +15,9 @@ from app.models.UserModel import User
 
 # docs_url=None, redoc_url=None 禁用自带的docs文档接口
 app = FastAPI(docs_url=None, redoc_url=None)
-# 因为下面要用到静态文件，所以，这里挂载一下
+# 因为下面要用到接口静态文件，所以，这里挂载一下
 app.mount('/static', StaticFiles(directory='static'))
+app.mount('/img', StaticFiles(directory='upload/img'))
 
 
 # 利用fastapi提供的函数，生成文档网页

@@ -1,16 +1,18 @@
 import datetime
+import os
+import time
 
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, UploadFile, File
 from fastapi.security import OAuth2PasswordRequestForm
+from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
-from starlette import status
 
 from app.Utils.JwtTools import create_access_token
 from app.Utils.auth import oauth2_scheme, auth_depend
 from app.Utils.EncryptTools import sha256_encrypt
 from app.database import get_db
 from app.models.UserModel import User
-from app.schemas.UserSchemas import UserLoginBase, UserRegisterBase
+from app.schemas.UserSchemas import UserLoginBase, UserRegisterBase, EditUserBase
 
 UserRouter = APIRouter(prefix='/user', tags=['用户注册'])
 
@@ -29,7 +31,7 @@ def register(user: UserRegisterBase, db: Session = Depends(get_db)):
             return {'code': 201, 'msg': '该用户名已被占用'}
         # 定义一些用户注册的初始信息
         db_user = User(username=user.username, password=sha256_encrypt(user.password),
-                       createtime=datetime.datetime.now(), role_id=1, locked=0)
+                       createtime=datetime.datetime.now(), role_id=1, locked=0, sex='保密')
         print(db_user)
         # TODO这里需要将密码加密
         db.add(db_user)
@@ -126,3 +128,51 @@ def get_all_users_count(db: Session = Depends(get_db), user=Depends(auth_depend)
     print('user', user)
     count = db.query(User).count()
     return {'count': count, 'code': 200, 'msg': 'success'}
+
+
+@UserRouter.post("/image/upload", summary='上传头像')
+async def userimgupload(file: UploadFile = File(...), user=Depends(auth_depend), db: Session = Depends(get_db)):
+    print('userimgupload')
+    # 利用用户id和用时间戳秒来为头像重新命名
+    user_id = user.user_id
+    # 获取原来的图片格式
+    extension = os.path.splitext(file.filename)[1]
+    new_filename = f"{user_id}-{int(time.time())}{extension}"
+
+    file.filename = new_filename
+    print('新的filename:', file.filename)
+    # 将文件上传到upload文件夹中
+    contents = await file.read()
+    with open(f"./upload/img/avatar/{file.filename}", "wb") as f:
+        f.write(contents)
+    # 这里只负责上传文件 操作数据库需要用户点击确认
+    # 上传成功之后将新的文件名保存到数据库中
+    # db_user = db.query(User).filter_by(user_id=user_id).first()
+    # db_user.avatar = new_filename
+    # db.commit()
+    # db.refresh(db_user)
+    return {'code': 200, 'msg': 'success', 'data': {'filename': new_filename}}
+
+
+@UserRouter.post("/edituserinfo", summary='修改用户信息')
+def edituserinfo(edituser: EditUserBase, user=Depends(auth_depend), db: Session = Depends(get_db)):
+    print('edituserinfo')
+    print('edituser', edituser)
+    print('user', user)
+    # 获取到这个db_user
+    db_user = db.query(User).filter_by(user_id=user.user_id).first()
+    db_user.username = edituser.username
+    db_user.sex = edituser.sex
+    if edituser.signature:
+        db_user.signature = edituser.signature
+    if edituser.newavatar:
+        db_user.avatar = edituser.newavatar
+    print(db_user.__dict__)
+    db_user.updatetime = datetime.datetime.now()
+    try:
+        db.commit()
+        db.refresh(db_user)
+        db_user.password = ''
+        return {'code': 200, 'msg': 'success', 'data': db_user}
+    except IntegrityError:
+        return {'code': 201, 'msg': '该用户名已存在'}
