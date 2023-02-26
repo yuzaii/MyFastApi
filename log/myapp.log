@@ -315,3 +315,139 @@ INFO:     2023-02-26 16:56:50,952---127.0.0.1:1945 - "POST /user/userinfo HTTP/1
 INFO:     2023-02-26 16:56:58,105---127.0.0.1:1971 - "POST /user/edituserinfo HTTP/1.1" 200 OK
 INFO:     2023-02-26 16:56:59,506---127.0.0.1:1971 - "POST /user/userinfo HTTP/1.1" 200 OK
 INFO:     2023-02-26 16:57:01,584---127.0.0.1:1971 - "POST /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 17:45:09,354---Stopping reloader process [9688]
+INFO:     2023-02-26 17:45:11,117---Will watch for changes in these directories: ['C:\\Users\\Yuzai\\PycharmProjects\\MyFastApi\\app']
+INFO:     2023-02-26 17:45:11,120---Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     2023-02-26 17:45:11,123---Started reloader process [4384] using WatchFiles
+INFO:     2023-02-26 17:45:12,261---Started server process [22300]
+INFO:     2023-02-26 17:45:12,262---Waiting for application startup.
+INFO:     2023-02-26 17:45:12,262---Application startup complete.
+INFO:     2023-02-26 17:45:12,625---127.0.0.1:3712 - "GET /avatar/5-1677399354.jpg HTTP/1.1" 304 Not Modified
+INFO:     2023-02-26 17:45:12,627---127.0.0.1:3714 - "OPTIONS /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 17:45:12,661---127.0.0.1:3714 - "POST /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 17:45:19,076---127.0.0.1:3717 - "OPTIONS /user/login HTTP/1.1" 200 OK
+INFO:     2023-02-26 17:45:19,085---127.0.0.1:3717 - "POST /user/login HTTP/1.1" 201 Created
+INFO:     2023-02-26 17:45:23,269---127.0.0.1:3717 - "OPTIONS /user/register HTTP/1.1" 200 OK
+INFO:     2023-02-26 17:45:23,271---有人访问注册了
+INFO:     2023-02-26 17:45:23,286---127.0.0.1:3717 - "POST /user/register HTTP/1.1" 200 OK
+INFO:     2023-02-26 17:45:25,447---127.0.0.1:3717 - "POST /user/login HTTP/1.1" 200 OK
+INFO:     2023-02-26 17:45:25,471---127.0.0.1:3717 - "POST /user/userinfo HTTP/1.1" 500 Internal Server Error
+ERROR:    2023-02-26 17:45:25,472---Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\uvicorn\protocols\http\httptools_impl.py", line 419, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\fastapi\applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\middleware\exceptions.py", line 79, in __call__
+    raise exc
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\middleware\exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\routing.py", line 66, in app
+    response = await func(request)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\fastapi\routing.py", line 235, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\fastapi\routing.py", line 163, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\anyio\to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\anyio\_backends\_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\anyio\_backends\_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "C:\Users\Yuzai\PycharmProjects\MyFastApi\app\api\UserApi.py", line 128, in userinfo
+    user_res = UserInfo(username=user.username, sex=user.sex, avatar=user.avatar, signature=user.signature,
+  File "pydantic\main.py", line 342, in pydantic.main.BaseModel.__init__
+pydantic.error_wrappers.ValidationError: 2 validation errors for UserInfo
+avatar
+  none is not an allowed value (type=type_error.none.not_allowed)
+signature
+  none is not an allowed value (type=type_error.none.not_allowed)
+INFO:     2023-02-26 17:45:30,443---127.0.0.1:3738 - "POST /user/userinfo HTTP/1.1" 500 Internal Server Error
+ERROR:    2023-02-26 17:45:30,444---Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\uvicorn\protocols\http\httptools_impl.py", line 419, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\fastapi\applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\middleware\exceptions.py", line 79, in __call__
+    raise exc
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\middleware\exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\routing.py", line 66, in app
+    response = await func(request)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\fastapi\routing.py", line 235, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\fastapi\routing.py", line 163, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\anyio\to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\anyio\_backends\_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\anyio\_backends\_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "C:\Users\Yuzai\PycharmProjects\MyFastApi\app\api\UserApi.py", line 128, in userinfo
+    user_res = UserInfo(username=user.username, sex=user.sex, avatar=user.avatar, signature=user.signature,
+  File "pydantic\main.py", line 342, in pydantic.main.BaseModel.__init__
+pydantic.error_wrappers.ValidationError: 2 validation errors for UserInfo
+avatar
+  none is not an allowed value (type=type_error.none.not_allowed)
+signature
+  none is not an allowed value (type=type_error.none.not_allowed)
+INFO:     2023-02-26 17:47:11,113---Stopping reloader process [4384]
+INFO:     2023-02-26 17:47:12,267---Will watch for changes in these directories: ['C:\\Users\\Yuzai\\PycharmProjects\\MyFastApi\\app']
+INFO:     2023-02-26 17:47:12,268---Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     2023-02-26 17:47:12,269---Started reloader process [17312] using WatchFiles
+INFO:     2023-02-26 17:47:13,265---Started server process [16484]
+INFO:     2023-02-26 17:47:13,265---Waiting for application startup.
+INFO:     2023-02-26 17:47:13,266---Application startup complete.
+INFO:     2023-02-26 17:47:17,199---127.0.0.1:3822 - "POST /user/login HTTP/1.1" 200 OK
+INFO:     2023-02-26 17:47:17,217---127.0.0.1:3822 - "POST /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 17:47:19,050---127.0.0.1:3822 - "POST /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 17:47:22,868---127.0.0.1:3822 - "OPTIONS /user/get_all_users_count HTTP/1.1" 200 OK
+INFO:     2023-02-26 17:47:22,880---127.0.0.1:3822 - "POST /user/get_all_users_count HTTP/1.1" 200 OK
+INFO:     2023-02-26 17:47:27,530---127.0.0.1:3822 - "POST /user/login HTTP/1.1" 200 OK
+INFO:     2023-02-26 17:47:27,552---127.0.0.1:3822 - "POST /user/userinfo HTTP/1.1" 200 OK

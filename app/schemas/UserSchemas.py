@@ -32,9 +32,9 @@ class UserLoginBase(BaseModel):
 
 class UserInfo(BaseModel):
     username: str
-    sex: str
-    avatar: str
-    signature: str
+    sex: Optional[str]
+    avatar: Optional[str]
+    signature: Optional[str]
     createtime: Any
 
     @validator('createtime')
