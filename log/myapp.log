@@ -451,3 +451,664 @@ INFO:     2023-02-26 17:47:22,868---127.0.0.1:3822 - "OPTIONS /user/get_all_user
 INFO:     2023-02-26 17:47:22,880---127.0.0.1:3822 - "POST /user/get_all_users_count HTTP/1.1" 200 OK
 INFO:     2023-02-26 17:47:27,530---127.0.0.1:3822 - "POST /user/login HTTP/1.1" 200 OK
 INFO:     2023-02-26 17:47:27,552---127.0.0.1:3822 - "POST /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 18:38:50,842---127.0.0.1:5657 - "OPTIONS /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 18:38:50,850---127.0.0.1:5657 - "POST /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:04:59,620---127.0.0.1:6599 - "OPTIONS /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:04:59,626---127.0.0.1:6599 - "POST /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:05:29,969---127.0.0.1:6600 - "POST /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:05:36,201---127.0.0.1:6652 - "OPTIONS /user/image/upload HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:05:36,239---127.0.0.1:6652 - "POST /user/image/upload HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:05:36,657---127.0.0.1:6652 - "OPTIONS /user/edituserinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:05:36,736---127.0.0.1:6652 - "POST /user/edituserinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:05:37,155---127.0.0.1:6656 - "GET /avatar/7-1677409536.jpg HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:05:38,078---127.0.0.1:6656 - "GET /avatar/7-1677409536.jpg HTTP/1.1" 304 Not Modified
+INFO:     2023-02-26 19:05:38,175---127.0.0.1:6652 - "POST /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:16:49,670---127.0.0.1:7039 - "OPTIONS /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:16:49,677---127.0.0.1:7039 - "POST /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:18:04,151---127.0.0.1:7064 - "GET /avatar/7-1677409536.jpg HTTP/1.1" 304 Not Modified
+INFO:     2023-02-26 19:19:04,831---127.0.0.1:7083 - "OPTIONS /user/login HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:19:04,847---127.0.0.1:7083 - "POST /user/login HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:19:04,865---127.0.0.1:7083 - "POST /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:19:06,944---127.0.0.1:7083 - "POST /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:19:14,876---127.0.0.1:7084 - "OPTIONS /user/image/upload HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:19:14,888---127.0.0.1:7084 - "POST /user/image/upload HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:19:15,631---127.0.0.1:7084 - "OPTIONS /user/edituserinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:19:15,696---127.0.0.1:7084 - "POST /user/edituserinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:19:16,013---127.0.0.1:7103 - "GET /avatar/7-1677410354.jpg HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:19:17,480---127.0.0.1:7103 - "GET /avatar/7-1677410354.jpg HTTP/1.1" 304 Not Modified
+INFO:     2023-02-26 19:19:17,513---127.0.0.1:7084 - "POST /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:30:29,855---127.0.0.1:7206 - "OPTIONS /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:30:29,857---127.0.0.1:7205 - "GET /avatar/7-1677410354.jpg HTTP/1.1" 304 Not Modified
+INFO:     2023-02-26 19:30:29,863---127.0.0.1:7206 - "POST /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:43:25,767---127.0.0.1:7337 - "OPTIONS /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:43:25,769---127.0.0.1:7336 - "GET /avatar/7-1677410354.jpg HTTP/1.1" 304 Not Modified
+INFO:     2023-02-26 19:43:25,775---127.0.0.1:7337 - "POST /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:43:32,135---127.0.0.1:7339 - "OPTIONS /user/image/upload HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:43:32,171---127.0.0.1:7339 - "POST /user/image/upload HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:43:33,245---127.0.0.1:7339 - "OPTIONS /user/edituserinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:43:33,321---127.0.0.1:7339 - "POST /user/edituserinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:43:33,329---127.0.0.1:7338 - "GET /avatar/7-1677411812.jpg HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:43:34,748---127.0.0.1:7338 - "GET /avatar/7-1677411812.jpg HTTP/1.1" 304 Not Modified
+INFO:     2023-02-26 19:43:34,780---127.0.0.1:7339 - "POST /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:46:25,437---127.0.0.1:7447 - "GET /avatar/7-1677411812.jpg HTTP/1.1" 304 Not Modified
+INFO:     2023-02-26 19:46:25,455---127.0.0.1:7448 - "POST /user/userinfo HTTP/1.1" 200 OK
+WARNING:  2023-02-26 19:52:39,113---WatchFiles detected changes in 'models\PostModels.py'. Reloading...
+INFO:     2023-02-26 19:52:40,358---Started server process [856]
+INFO:     2023-02-26 19:52:40,359---Waiting for application startup.
+INFO:     2023-02-26 19:52:40,359---Application startup complete.
+WARNING:  2023-02-26 19:52:45,135---WatchFiles detected changes in 'models\PostModel.py', 'models\PostModels.py'. Reloading...
+INFO:     2023-02-26 19:52:46,327---Started server process [18796]
+INFO:     2023-02-26 19:52:46,328---Waiting for application startup.
+INFO:     2023-02-26 19:52:46,329---Application startup complete.
+WARNING:  2023-02-26 19:55:27,321---WatchFiles detected changes in 'models\PostModel.py', 'models\UserModel.py'. Reloading...
+INFO:     2023-02-26 19:55:28,473---Started server process [7160]
+INFO:     2023-02-26 19:55:28,473---Waiting for application startup.
+INFO:     2023-02-26 19:55:28,474---Application startup complete.
+WARNING:  2023-02-26 19:56:22,387---WatchFiles detected changes in 'models\PostModel.py'. Reloading...
+INFO:     2023-02-26 19:56:23,480---Started server process [1328]
+INFO:     2023-02-26 19:56:23,480---Waiting for application startup.
+INFO:     2023-02-26 19:56:23,481---Application startup complete.
+WARNING:  2023-02-26 19:57:05,917---WatchFiles detected changes in 'models\PostModel.py'. Reloading...
+INFO:     2023-02-26 19:57:07,016---Started server process [4684]
+INFO:     2023-02-26 19:57:07,016---Waiting for application startup.
+INFO:     2023-02-26 19:57:07,017---Application startup complete.
+WARNING:  2023-02-26 19:57:53,446---WatchFiles detected changes in 'models\PostModel.py'. Reloading...
+INFO:     2023-02-26 19:57:54,432---Started server process [18540]
+INFO:     2023-02-26 19:57:54,433---Waiting for application startup.
+INFO:     2023-02-26 19:57:54,434---Application startup complete.
+WARNING:  2023-02-26 19:59:45,578---WatchFiles detected changes in 'models\PostModel.py'. Reloading...
+INFO:     2023-02-26 19:59:46,884---Started server process [4896]
+INFO:     2023-02-26 19:59:46,885---Waiting for application startup.
+INFO:     2023-02-26 19:59:46,886---Application startup complete.
+INFO:     2023-02-26 19:59:47,939---127.0.0.1:7613 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:59:48,216---127.0.0.1:7613 - "GET /swagger/swagger-ui.css HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:59:48,217---127.0.0.1:7616 - "GET /swagger/swagger-ui-bundle.js HTTP/1.1" 200 OK
+INFO:     2023-02-26 19:59:48,498---127.0.0.1:7616 - "GET /openapi.json HTTP/1.1" 200 OK
+WARNING:  2023-02-26 20:01:30,619---WatchFiles detected changes in 'models\PostModel.py'. Reloading...
+INFO:     2023-02-26 20:01:31,699---Started server process [15308]
+INFO:     2023-02-26 20:01:31,700---Waiting for application startup.
+INFO:     2023-02-26 20:01:31,700---Application startup complete.
+WARNING:  2023-02-26 20:01:41,405---WatchFiles detected changes in 'models\PostModel.py'. Reloading...
+INFO:     2023-02-26 20:01:42,454---Started server process [15700]
+INFO:     2023-02-26 20:01:42,454---Waiting for application startup.
+INFO:     2023-02-26 20:01:42,455---Application startup complete.
+INFO:     2023-02-26 20:01:52,438---Stopping reloader process [17312]
+INFO:     2023-02-26 20:10:43,289---Will watch for changes in these directories: ['C:\\Users\\Yuzai\\PycharmProjects\\MyFastApi\\app']
+INFO:     2023-02-26 20:10:43,289---Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     2023-02-26 20:10:43,290---Started reloader process [23136] using WatchFiles
+INFO:     2023-02-26 20:10:44,205---Started server process [18788]
+INFO:     2023-02-26 20:10:44,206---Waiting for application startup.
+INFO:     2023-02-26 20:10:44,206---Application startup complete.
+WARNING:  2023-02-26 20:12:08,283---WatchFiles detected changes in 'models\PostModel.py', 'models\UserModel.py'. Reloading...
+INFO:     2023-02-26 20:12:17,146---Stopping reloader process [23136]
+INFO:     2023-02-26 20:14:15,613---Will watch for changes in these directories: ['C:\\Users\\Yuzai\\PycharmProjects\\MyFastApi\\app']
+INFO:     2023-02-26 20:14:15,614---Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     2023-02-26 20:14:15,614---Started reloader process [7268] using WatchFiles
+INFO:     2023-02-26 20:14:16,507---Started server process [23972]
+INFO:     2023-02-26 20:14:16,507---Waiting for application startup.
+INFO:     2023-02-26 20:14:16,508---Application startup complete.
+INFO:     2023-02-26 20:15:11,564---Stopping reloader process [7268]
+INFO:     2023-02-26 20:15:12,988---Will watch for changes in these directories: ['C:\\Users\\Yuzai\\PycharmProjects\\MyFastApi\\app']
+INFO:     2023-02-26 20:15:12,989---Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     2023-02-26 20:15:12,989---Started reloader process [21216] using WatchFiles
+INFO:     2023-02-26 20:15:14,006---Started server process [15416]
+INFO:     2023-02-26 20:15:14,007---Waiting for application startup.
+INFO:     2023-02-26 20:15:14,007---Application startup complete.
+WARNING:  2023-02-26 20:16:05,853---WatchFiles detected changes in 'models\PostModel.py'. Reloading...
+INFO:     2023-02-26 20:16:07,082---Started server process [24252]
+INFO:     2023-02-26 20:16:07,083---Waiting for application startup.
+INFO:     2023-02-26 20:16:07,083---Application startup complete.
+INFO:     2023-02-26 20:19:19,807---Stopping reloader process [21216]
+INFO:     2023-02-26 20:19:21,153---Will watch for changes in these directories: ['C:\\Users\\Yuzai\\PycharmProjects\\MyFastApi\\app']
+INFO:     2023-02-26 20:19:21,153---Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     2023-02-26 20:19:21,154---Started reloader process [4944] using WatchFiles
+INFO:     2023-02-26 20:19:22,114---Started server process [11300]
+INFO:     2023-02-26 20:19:22,114---Waiting for application startup.
+INFO:     2023-02-26 20:19:22,115---Application startup complete.
+WARNING:  2023-02-26 20:19:45,865---WatchFiles detected changes in 'models\PostModel.py'. Reloading...
+INFO:     2023-02-26 20:19:46,919---Started server process [23944]
+INFO:     2023-02-26 20:19:46,919---Waiting for application startup.
+INFO:     2023-02-26 20:19:46,920---Application startup complete.
+INFO:     2023-02-26 20:20:39,762---Shutting down
+INFO:     2023-02-26 20:20:39,785---Stopping reloader process [4944]
+INFO:     2023-02-26 20:20:41,083---Will watch for changes in these directories: ['C:\\Users\\Yuzai\\PycharmProjects\\MyFastApi\\app']
+INFO:     2023-02-26 20:20:41,084---Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     2023-02-26 20:20:41,085---Started reloader process [5684] using WatchFiles
+INFO:     2023-02-26 20:20:42,071---Started server process [9864]
+INFO:     2023-02-26 20:20:42,072---Waiting for application startup.
+INFO:     2023-02-26 20:20:42,072---Application startup complete.
+WARNING:  2023-02-26 20:22:15,675---WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     2023-02-26 20:22:16,697---Started server process [13696]
+INFO:     2023-02-26 20:22:16,697---Waiting for application startup.
+INFO:     2023-02-26 20:22:16,698---Application startup complete.
+INFO:     2023-02-26 20:22:33,712---Stopping reloader process [5684]
+INFO:     2023-02-26 20:22:35,104---Will watch for changes in these directories: ['C:\\Users\\Yuzai\\PycharmProjects\\MyFastApi\\app']
+INFO:     2023-02-26 20:22:35,104---Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     2023-02-26 20:22:35,105---Started reloader process [15136] using WatchFiles
+INFO:     2023-02-26 20:22:36,043---Started server process [12904]
+INFO:     2023-02-26 20:22:36,043---Waiting for application startup.
+INFO:     2023-02-26 20:22:36,044---Application startup complete.
+WARNING:  2023-02-26 20:24:14,201---WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     2023-02-26 20:24:15,383---Started server process [4568]
+INFO:     2023-02-26 20:24:15,384---Waiting for application startup.
+INFO:     2023-02-26 20:24:15,384---Application startup complete.
+INFO:     2023-02-26 20:24:24,791---Stopping reloader process [15136]
+INFO:     2023-02-26 20:24:26,069---Will watch for changes in these directories: ['C:\\Users\\Yuzai\\PycharmProjects\\MyFastApi\\app']
+INFO:     2023-02-26 20:24:26,070---Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     2023-02-26 20:24:26,070---Started reloader process [1008] using WatchFiles
+INFO:     2023-02-26 20:24:27,006---Started server process [1896]
+INFO:     2023-02-26 20:24:27,007---Waiting for application startup.
+INFO:     2023-02-26 20:24:27,007---Application startup complete.
+INFO:     2023-02-26 20:24:31,253---127.0.0.1:3846 - "GET /avatar/7-1677411812.jpg HTTP/1.1" 304 Not Modified
+INFO:     2023-02-26 20:24:36,971---127.0.0.1:3861 - "OPTIONS /user/login HTTP/1.1" 200 OK
+INFO:     2023-02-26 20:24:37,003---127.0.0.1:3861 - "POST /user/login HTTP/1.1" 201 Created
+INFO:     2023-02-26 20:24:40,678---127.0.0.1:3861 - "OPTIONS /user/register HTTP/1.1" 200 OK
+INFO:     2023-02-26 20:24:40,680---有人访问注册了
+INFO:     2023-02-26 20:24:40,699---127.0.0.1:3861 - "POST /user/register HTTP/1.1" 200 OK
+INFO:     2023-02-26 20:24:42,949---127.0.0.1:3861 - "POST /user/login HTTP/1.1" 200 OK
+INFO:     2023-02-26 20:24:42,961---127.0.0.1:3861 - "OPTIONS /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 20:24:42,968---127.0.0.1:3861 - "POST /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 20:24:47,373---127.0.0.1:3861 - "POST /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 20:24:55,482---127.0.0.1:3863 - "OPTIONS /user/image/upload HTTP/1.1" 200 OK
+INFO:     2023-02-26 20:24:55,522---127.0.0.1:3863 - "POST /user/image/upload HTTP/1.1" 200 OK
+INFO:     2023-02-26 20:24:56,085---127.0.0.1:3863 - "OPTIONS /user/edituserinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 20:24:56,103---127.0.0.1:3863 - "POST /user/edituserinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 20:24:56,111---127.0.0.1:3850 - "GET /avatar/1-1677414295.jpg HTTP/1.1" 200 OK
+INFO:     2023-02-26 20:24:57,566---127.0.0.1:3850 - "GET /avatar/1-1677414295.jpg HTTP/1.1" 304 Not Modified
+INFO:     2023-02-26 20:24:57,600---127.0.0.1:3863 - "POST /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 20:25:15,630---127.0.0.1:3900 - "POST /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 20:25:41,626---127.0.0.1:3901 - "POST /user/userinfo HTTP/1.1" 200 OK
+WARNING:  2023-02-26 20:29:28,430---WatchFiles detected changes in 'database.py', 'main.py'. Reloading...
+INFO:     2023-02-26 20:29:51,904---Stopping reloader process [1008]
+INFO:     2023-02-26 20:31:35,252---Will watch for changes in these directories: ['C:\\Users\\Yuzai\\PycharmProjects\\MyFastApi\\app']
+INFO:     2023-02-26 20:31:35,253---Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     2023-02-26 20:31:35,253---Started reloader process [23224] using WatchFiles
+INFO:     2023-02-26 20:31:36,189---Started server process [9744]
+INFO:     2023-02-26 20:31:36,190---Waiting for application startup.
+INFO:     2023-02-26 20:31:36,190---Application startup complete.
+INFO:     2023-02-26 20:31:46,680---Stopping reloader process [23224]
+INFO:     2023-02-26 20:31:47,850---Will watch for changes in these directories: ['C:\\Users\\Yuzai\\PycharmProjects\\MyFastApi\\app']
+INFO:     2023-02-26 20:31:47,851---Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     2023-02-26 20:31:47,851---Started reloader process [22136] using WatchFiles
+INFO:     2023-02-26 20:31:48,853---Started server process [22860]
+INFO:     2023-02-26 20:31:48,855---Waiting for application startup.
+INFO:     2023-02-26 20:31:48,858---Application startup complete.
+INFO:     2023-02-26 20:32:43,524---Stopping reloader process [22136]
+INFO:     2023-02-26 20:32:44,763---Will watch for changes in these directories: ['C:\\Users\\Yuzai\\PycharmProjects\\MyFastApi\\app']
+INFO:     2023-02-26 20:32:44,763---Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     2023-02-26 20:32:44,764---Started reloader process [7776] using WatchFiles
+INFO:     2023-02-26 20:32:45,759---Started server process [16372]
+INFO:     2023-02-26 20:32:45,760---Waiting for application startup.
+INFO:     2023-02-26 20:32:45,760---Application startup complete.
+INFO:     2023-02-26 20:32:47,759---127.0.0.1:4005 - "GET /avatar/1-1677414295.jpg HTTP/1.1" 304 Not Modified
+INFO:     2023-02-26 20:32:47,798---127.0.0.1:4006 - "POST /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 20:32:49,661---127.0.0.1:4006 - "OPTIONS /user/get_all_users_count HTTP/1.1" 400 Bad Request
+INFO:     2023-02-26 20:32:55,845---127.0.0.1:4009 - "POST /user/login HTTP/1.1" 200 OK
+WARNING:  2023-02-26 20:33:20,882---WatchFiles detected changes in 'main.py'. Reloading...
+INFO:     2023-02-26 20:33:22,101---Started server process [6604]
+INFO:     2023-02-26 20:33:22,102---Waiting for application startup.
+INFO:     2023-02-26 20:33:22,103---Application startup complete.
+INFO:     2023-02-26 20:33:30,205---Stopping reloader process [7776]
+INFO:     2023-02-26 20:33:31,462---Will watch for changes in these directories: ['C:\\Users\\Yuzai\\PycharmProjects\\MyFastApi\\app']
+INFO:     2023-02-26 20:33:31,462---Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     2023-02-26 20:33:31,463---Started reloader process [24556] using WatchFiles
+INFO:     2023-02-26 20:33:32,435---Started server process [12544]
+INFO:     2023-02-26 20:33:32,436---Waiting for application startup.
+INFO:     2023-02-26 20:33:32,436---Application startup complete.
+INFO:     2023-02-26 20:33:36,703---127.0.0.1:4056 - "POST /user/login HTTP/1.1" 200 OK
+INFO:     2023-02-26 20:33:47,554---Stopping reloader process [24556]
+INFO:     2023-02-26 20:33:48,794---Will watch for changes in these directories: ['C:\\Users\\Yuzai\\PycharmProjects\\MyFastApi\\app']
+INFO:     2023-02-26 20:33:48,795---Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     2023-02-26 20:33:48,795---Started reloader process [7664] using WatchFiles
+INFO:     2023-02-26 20:33:49,867---Started server process [16616]
+INFO:     2023-02-26 20:33:49,867---Waiting for application startup.
+INFO:     2023-02-26 20:33:49,868---Application startup complete.
+INFO:     2023-02-26 20:33:53,513---127.0.0.1:4080 - "POST /user/login HTTP/1.1" 200 OK
+INFO:     2023-02-26 20:33:53,537---127.0.0.1:4080 - "POST /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 20:33:53,938---127.0.0.1:4085 - "GET /avatar/1-1677414295.jpg HTTP/1.1" 304 Not Modified
+WARNING:  2023-02-26 20:47:32,907---WatchFiles detected changes in 'models\UserModel.py'. Reloading...
+INFO:     2023-02-26 20:47:33,874---Started server process [1932]
+INFO:     2023-02-26 20:47:33,875---Waiting for application startup.
+INFO:     2023-02-26 20:47:33,875---Application startup complete.
+WARNING:  2023-02-26 20:48:34,642---WatchFiles detected changes in 'models\UserModel.py'. Reloading...
+INFO:     2023-02-26 20:48:35,673---Started server process [24492]
+INFO:     2023-02-26 20:48:35,674---Waiting for application startup.
+INFO:     2023-02-26 20:48:35,674---Application startup complete.
+INFO:     2023-02-26 21:28:15,921---Stopping reloader process [7664]
+INFO:     2023-02-26 21:28:17,212---Will watch for changes in these directories: ['C:\\Users\\Yuzai\\PycharmProjects\\MyFastApi\\app']
+INFO:     2023-02-26 21:28:17,212---Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     2023-02-26 21:28:17,213---Started reloader process [11872] using WatchFiles
+INFO:     2023-02-26 21:28:18,312---Started server process [17092]
+INFO:     2023-02-26 21:28:18,313---Waiting for application startup.
+INFO:     2023-02-26 21:28:18,313---Application startup complete.
+INFO:     2023-02-26 21:28:21,919---127.0.0.1:6023 - "OPTIONS /user/login HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:28:21,968---127.0.0.1:6023 - "POST /user/login HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:28:21,983---127.0.0.1:6023 - "OPTIONS /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:28:21,989---127.0.0.1:6023 - "POST /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:28:22,393---127.0.0.1:6028 - "GET /avatar/1-1677414295.jpg HTTP/1.1" 304 Not Modified
+INFO:     2023-02-26 21:28:33,469---127.0.0.1:6026 - "POST /user/userinfo HTTP/1.1" 401 Unauthorized
+WARNING:  2023-02-26 21:28:37,924---WatchFiles detected changes in 'config.py'. Reloading...
+INFO:     2023-02-26 21:28:38,968---Started server process [7052]
+INFO:     2023-02-26 21:28:38,969---Waiting for application startup.
+INFO:     2023-02-26 21:28:38,969---Application startup complete.
+INFO:     2023-02-26 21:28:43,232---127.0.0.1:6049 - "POST /user/login HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:28:43,253---127.0.0.1:6049 - "POST /user/userinfo HTTP/1.1" 200 OK
+WARNING:  2023-02-26 21:28:58,801---WatchFiles detected changes in 'config.py'. Reloading...
+INFO:     2023-02-26 21:28:59,968---Started server process [2876]
+INFO:     2023-02-26 21:28:59,971---Waiting for application startup.
+INFO:     2023-02-26 21:28:59,978---Application startup complete.
+INFO:     2023-02-26 21:29:03,398---127.0.0.1:6056 - "POST /user/login HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:29:03,414---127.0.0.1:6056 - "POST /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:29:51,562---127.0.0.1:6058 - "POST /user/userinfo HTTP/1.1" 401 Unauthorized
+INFO:     2023-02-26 21:31:35,851---127.0.0.1:6106 - "POST /user/login HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:31:35,874---127.0.0.1:6106 - "POST /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:31:37,669---127.0.0.1:6106 - "POST /user/userinfo HTTP/1.1" 401 Unauthorized
+INFO:     2023-02-26 21:31:40,772---127.0.0.1:6106 - "POST /user/login HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:31:40,789---127.0.0.1:6106 - "POST /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:31:42,257---127.0.0.1:6106 - "POST /user/userinfo HTTP/1.1" 401 Unauthorized
+WARNING:  2023-02-26 21:31:52,405---WatchFiles detected changes in 'config.py'. Reloading...
+INFO:     2023-02-26 21:31:53,768---Started server process [4076]
+INFO:     2023-02-26 21:31:53,769---Waiting for application startup.
+INFO:     2023-02-26 21:31:53,770---Application startup complete.
+INFO:     2023-02-26 21:32:06,145---127.0.0.1:6127 - "POST /user/login HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:32:06,165---127.0.0.1:6127 - "POST /user/userinfo HTTP/1.1" 200 OK
+WARNING:  2023-02-26 21:35:39,274---WatchFiles detected changes in 'models\Category.py'. Reloading...
+INFO:     2023-02-26 21:35:40,268---Started server process [5396]
+INFO:     2023-02-26 21:35:40,269---Waiting for application startup.
+INFO:     2023-02-26 21:35:40,269---Application startup complete.
+WARNING:  2023-02-26 21:35:49,488---WatchFiles detected changes in 'models\CategoryModel.py', 'models\Category.py'. Reloading...
+INFO:     2023-02-26 21:35:50,662---Started server process [21568]
+INFO:     2023-02-26 21:35:50,663---Waiting for application startup.
+INFO:     2023-02-26 21:35:50,663---Application startup complete.
+WARNING:  2023-02-26 21:36:08,309---WatchFiles detected changes in 'models\CategoryModel.py'. Reloading...
+INFO:     2023-02-26 21:36:09,421---Started server process [24420]
+INFO:     2023-02-26 21:36:09,422---Waiting for application startup.
+INFO:     2023-02-26 21:36:09,422---Application startup complete.
+WARNING:  2023-02-26 21:38:13,672---WatchFiles detected changes in 'models\CategoryModel.py'. Reloading...
+INFO:     2023-02-26 21:38:14,959---Started server process [24552]
+INFO:     2023-02-26 21:38:14,959---Waiting for application startup.
+INFO:     2023-02-26 21:38:14,960---Application startup complete.
+WARNING:  2023-02-26 21:38:42,572---WatchFiles detected changes in 'models\CategoryModel.py', 'models\PostCategoryModel.py'. Reloading...
+INFO:     2023-02-26 21:38:43,821---Started server process [15432]
+INFO:     2023-02-26 21:38:43,821---Waiting for application startup.
+INFO:     2023-02-26 21:38:43,822---Application startup complete.
+WARNING:  2023-02-26 21:38:45,137---WatchFiles detected changes in 'models\PostCategoryModel.py'. Reloading...
+INFO:     2023-02-26 21:38:46,120---Started server process [16596]
+INFO:     2023-02-26 21:38:46,120---Waiting for application startup.
+INFO:     2023-02-26 21:38:46,121---Application startup complete.
+INFO:     2023-02-26 21:38:59,466---Stopping reloader process [11872]
+INFO:     2023-02-26 21:39:00,704---Will watch for changes in these directories: ['C:\\Users\\Yuzai\\PycharmProjects\\MyFastApi\\app']
+INFO:     2023-02-26 21:39:00,705---Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     2023-02-26 21:39:00,705---Started reloader process [23716] using WatchFiles
+INFO:     2023-02-26 21:39:01,776---Started server process [6272]
+INFO:     2023-02-26 21:39:01,777---Waiting for application startup.
+INFO:     2023-02-26 21:39:01,777---Application startup complete.
+WARNING:  2023-02-26 21:39:51,161---WatchFiles detected changes in 'api\Post.py'. Reloading...
+INFO:     2023-02-26 21:39:52,175---Started server process [17164]
+INFO:     2023-02-26 21:39:52,176---Waiting for application startup.
+INFO:     2023-02-26 21:39:52,176---Application startup complete.
+WARNING:  2023-02-26 21:39:58,368---WatchFiles detected changes in 'api\Post.py', 'api\PostApi.py'. Reloading...
+INFO:     2023-02-26 21:39:59,488---Started server process [24340]
+INFO:     2023-02-26 21:39:59,488---Waiting for application startup.
+INFO:     2023-02-26 21:39:59,489---Application startup complete.
+INFO:     2023-02-26 21:40:19,777---有人访问api页面
+INFO:     2023-02-26 21:40:19,778---127.0.0.1:6273 - "GET / HTTP/1.1" 307 Temporary Redirect
+INFO:     2023-02-26 21:40:19,780---有人访问api页面
+INFO:     2023-02-26 21:40:19,781---127.0.0.1:6274 - "GET / HTTP/1.1" 307 Temporary Redirect
+INFO:     2023-02-26 21:40:19,783---127.0.0.1:6274 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:40:19,786---127.0.0.1:6274 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:40:19,976---127.0.0.1:6274 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:40:20,043---127.0.0.1:6274 - "GET /openapi.json HTTP/1.1" 200 OK
+WARNING:  2023-02-26 21:40:28,621---WatchFiles detected changes in 'api\UserApi.py'. Reloading...
+INFO:     2023-02-26 21:40:29,734---Started server process [23064]
+INFO:     2023-02-26 21:40:29,735---Waiting for application startup.
+INFO:     2023-02-26 21:40:29,736---Application startup complete.
+WARNING:  2023-02-26 21:44:14,996---WatchFiles detected changes in 'main.py', 'api\PostApi.py'. Reloading...
+INFO:     2023-02-26 21:44:16,440---Started server process [11660]
+INFO:     2023-02-26 21:44:16,441---Waiting for application startup.
+INFO:     2023-02-26 21:44:16,441---Application startup complete.
+INFO:     2023-02-26 21:44:16,903---127.0.0.1:6313 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:44:17,044---127.0.0.1:6313 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:44:20,563---127.0.0.1:6313 - "GET /user/postcategory HTTP/1.1" 200 OK
+WARNING:  2023-02-26 21:45:28,513---WatchFiles detected changes in 'api\PostApi.py'. Reloading...
+INFO:     2023-02-26 21:45:29,944---Started server process [1036]
+INFO:     2023-02-26 21:45:29,945---Waiting for application startup.
+INFO:     2023-02-26 21:45:29,947---Application startup complete.
+INFO:     2023-02-26 21:45:30,019---127.0.0.1:6339 - "GET /user/postcategory HTTP/1.1" 200 OK
+WARNING:  2023-02-26 21:46:56,333---WatchFiles detected changes in 'api\PostApi.py'. Reloading...
+INFO:     2023-02-26 21:46:57,613---Started server process [22860]
+INFO:     2023-02-26 21:46:57,614---Waiting for application startup.
+INFO:     2023-02-26 21:46:57,614---Application startup complete.
+INFO:     2023-02-26 21:47:29,247---127.0.0.1:6399 - "GET /avatar/1-1677414295.jpg HTTP/1.1" 304 Not Modified
+INFO:     2023-02-26 21:49:17,512---127.0.0.1:6418 - "OPTIONS /post/getpostcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:49:17,537---127.0.0.1:6418 - "GET /post/getpostcategory HTTP/1.1" 404 Not Found
+INFO:     2023-02-26 21:49:20,605---127.0.0.1:6418 - "GET /post/getpostcategory HTTP/1.1" 404 Not Found
+INFO:     2023-02-26 21:49:30,808---127.0.0.1:6419 - "GET /post/getpostcategory HTTP/1.1" 404 Not Found
+INFO:     2023-02-26 21:49:33,917---127.0.0.1:6445 - "GET /avatar/1-1677414295.jpg HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:49:44,875---127.0.0.1:6454 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:49:45,143---127.0.0.1:6454 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:50:00,967---127.0.0.1:6455 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:50:15,558---127.0.0.1:6476 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:50:15,571---127.0.0.1:6476 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:50:15,859---127.0.0.1:6478 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:50:19,060---127.0.0.1:6476 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:50:21,485---127.0.0.1:6476 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:50:37,340---127.0.0.1:6477 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:50:52,603---127.0.0.1:6508 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:51:00,108---127.0.0.1:6509 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:51:05,871---127.0.0.1:6522 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:51:12,846---127.0.0.1:6523 - "GET /post/postcategory HTTP/1.1" 200 OK
+WARNING:  2023-02-26 21:51:19,194---WatchFiles detected changes in 'api\PostApi.py'. Reloading...
+INFO:     2023-02-26 21:51:20,479---Started server process [18468]
+INFO:     2023-02-26 21:51:20,479---Waiting for application startup.
+INFO:     2023-02-26 21:51:20,480---Application startup complete.
+WARNING:  2023-02-26 21:51:39,423---WatchFiles detected changes in 'api\UserApi.py'. Reloading...
+INFO:     2023-02-26 21:51:40,682---Started server process [18996]
+INFO:     2023-02-26 21:51:40,683---Waiting for application startup.
+INFO:     2023-02-26 21:51:40,683---Application startup complete.
+INFO:     2023-02-26 21:51:48,957---127.0.0.1:6578 - "OPTIONS /user/login HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:51:49,025---127.0.0.1:6578 - "POST /user/login HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:51:49,061---127.0.0.1:6578 - "OPTIONS /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:51:49,064---127.0.0.1:6578 - "POST /user/userinfo HTTP/1.1" 405 Method Not Allowed
+INFO:     2023-02-26 21:52:04,989---127.0.0.1:6580 - "POST /user/login HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:52:05,031---127.0.0.1:6580 - "GET /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:52:07,058---127.0.0.1:6580 - "GET /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:52:12,943---127.0.0.1:6601 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:53:34,174---127.0.0.1:6680 - "POST /user/login HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:53:34,218---127.0.0.1:6680 - "GET /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:53:35,692---127.0.0.1:6680 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:56:01,300---127.0.0.1:6793 - "GET /avatar/1-1677414295.jpg HTTP/1.1" 304 Not Modified
+INFO:     2023-02-26 21:56:01,309---127.0.0.1:6794 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:56:58,822---127.0.0.1:6796 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:57:19,190---127.0.0.1:6851 - "OPTIONS /user/login HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:57:19,206---127.0.0.1:6851 - "POST /user/login HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:57:19,226---127.0.0.1:6851 - "OPTIONS /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:57:19,232---127.0.0.1:6851 - "GET /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:57:19,240---127.0.0.1:6854 - "GET /avatar/1-1677414295.jpg HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:57:20,322---127.0.0.1:6851 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:57:20,328---127.0.0.1:6851 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:58:31,148---127.0.0.1:6918 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:59:10,751---127.0.0.1:6921 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 21:59:10,807---127.0.0.1:6948 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:01:05,146---127.0.0.1:7030 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:01:05,761---127.0.0.1:7036 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:01:05,773---127.0.0.1:7036 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:01:10,239---127.0.0.1:7036 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:03:01,329---127.0.0.1:7118 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:03:02,025---127.0.0.1:7124 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:03:17,025---127.0.0.1:7136 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:03:17,096---127.0.0.1:7125 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:04:03,615---127.0.0.1:7178 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:04:04,484---127.0.0.1:7181 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:04:06,028---127.0.0.1:7181 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:04:19,086---127.0.0.1:7192 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:04:19,350---127.0.0.1:7182 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:04:21,011---127.0.0.1:7182 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:04:29,943---127.0.0.1:7211 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:05:03,259---127.0.0.1:7212 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:05:03,363---127.0.0.1:7232 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:10:01,220---127.0.0.1:7497 - "GET /avatar/1-1677414295.jpg HTTP/1.1" 304 Not Modified
+INFO:     2023-02-26 22:10:01,248---127.0.0.1:7498 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:11:10,248---127.0.0.1:7540 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:11:10,256---127.0.0.1:7540 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:11:10,717---127.0.0.1:7546 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:11:10,722---127.0.0.1:7546 - "GET /post/postcategory HTTP/1.1" 200 OK
+WARNING:  2023-02-26 22:12:06,200---WatchFiles detected changes in 'api\PostApi.py'. Reloading...
+INFO:     2023-02-26 22:12:07,648---Started server process [23048]
+INFO:     2023-02-26 22:12:07,649---Waiting for application startup.
+INFO:     2023-02-26 22:12:07,650---Application startup complete.
+WARNING:  2023-02-26 22:12:29,761---WatchFiles detected changes in 'schemas\PostSchemas.py'. Reloading...
+INFO:     2023-02-26 22:12:30,904---Started server process [23468]
+INFO:     2023-02-26 22:12:30,904---Waiting for application startup.
+INFO:     2023-02-26 22:12:30,905---Application startup complete.
+WARNING:  2023-02-26 22:15:09,844---WatchFiles detected changes in 'schemas\PostSchemas.py'. Reloading...
+INFO:     2023-02-26 22:15:11,176---Started server process [5292]
+INFO:     2023-02-26 22:15:11,177---Waiting for application startup.
+INFO:     2023-02-26 22:15:11,178---Application startup complete.
+INFO:     2023-02-26 22:15:23,593---127.0.0.1:7715 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:15:25,216---127.0.0.1:7721 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:15:56,943---127.0.0.1:7751 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:15:57,992---127.0.0.1:7723 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:16:57,049---127.0.0.1:7786 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:16:58,332---127.0.0.1:7791 - "GET /post/postcategory HTTP/1.1" 200 OK
+WARNING:  2023-02-26 22:17:15,738---WatchFiles detected changes in 'schemas\PostSchemas.py'. Reloading...
+INFO:     2023-02-26 22:17:16,905---Started server process [12496]
+INFO:     2023-02-26 22:17:16,906---Waiting for application startup.
+INFO:     2023-02-26 22:17:16,906---Application startup complete.
+INFO:     2023-02-26 22:19:33,173---127.0.0.1:7897 - "GET /avatar/1-1677414295.jpg HTTP/1.1" 304 Not Modified
+INFO:     2023-02-26 22:19:33,225---127.0.0.1:7898 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:19:33,705---127.0.0.1:7902 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:19:43,669---127.0.0.1:7903 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:19:43,701---127.0.0.1:7916 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:20:56,466---127.0.0.1:7965 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:20:57,162---127.0.0.1:7971 - "GET /avatar/1-1677414295.jpg HTTP/1.1" 304 Not Modified
+INFO:     2023-02-26 22:20:57,197---127.0.0.1:7972 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:21:06,065---127.0.0.1:7974 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:21:40,193---127.0.0.1:8004 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:21:40,202---127.0.0.1:8004 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:21:40,466---127.0.0.1:8007 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:21:41,353---127.0.0.1:8007 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:23:13,432---127.0.0.1:8072 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:23:14,868---127.0.0.1:8077 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:24:22,160---127.0.0.1:8133 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:24:22,558---127.0.0.1:8136 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:24:37,580---127.0.0.1:8137 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:24:37,617---127.0.0.1:8146 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:25:02,637---127.0.0.1:8163 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:25:02,904---127.0.0.1:8165 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:25:03,930---127.0.0.1:8165 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:25:19,372---127.0.0.1:8167 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:25:19,473---127.0.0.1:8178 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:25:34,257---127.0.0.1:8197 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:25:51,357---127.0.0.1:8198 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:25:51,370---127.0.0.1:8217 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:25:53,451---127.0.0.1:8198 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:25:53,464---127.0.0.1:8217 - "GET /post/postcategory HTTP/1.1" 200 OK
+WARNING:  2023-02-26 22:30:44,594---WatchFiles detected changes in 'api\PostApi.py', 'schemas\PostSchemas.py'. Reloading...
+INFO:     2023-02-26 22:30:45,859---Started server process [18896]
+INFO:     2023-02-26 22:30:45,860---Waiting for application startup.
+INFO:     2023-02-26 22:30:45,860---Application startup complete.
+WARNING:  2023-02-26 22:31:32,161---WatchFiles detected changes in 'api\PostApi.py'. Reloading...
+INFO:     2023-02-26 22:31:33,666---Started server process [18812]
+INFO:     2023-02-26 22:31:33,667---Waiting for application startup.
+INFO:     2023-02-26 22:31:33,668---Application startup complete.
+WARNING:  2023-02-26 22:31:40,307---WatchFiles detected changes in 'api\PostApi.py'. Reloading...
+INFO:     2023-02-26 22:31:41,814---Started server process [22356]
+INFO:     2023-02-26 22:31:41,815---Waiting for application startup.
+INFO:     2023-02-26 22:31:41,816---Application startup complete.
+WARNING:  2023-02-26 22:32:27,827---WatchFiles detected changes in 'api\PostApi.py'. Reloading...
+INFO:     2023-02-26 22:32:29,243---Started server process [16676]
+INFO:     2023-02-26 22:32:29,244---Waiting for application startup.
+INFO:     2023-02-26 22:32:29,244---Application startup complete.
+WARNING:  2023-02-26 22:33:19,902---WatchFiles detected changes in 'api\PostApi.py'. Reloading...
+INFO:     2023-02-26 22:33:21,071---Started server process [17148]
+INFO:     2023-02-26 22:33:21,072---Waiting for application startup.
+INFO:     2023-02-26 22:33:21,072---Application startup complete.
+WARNING:  2023-02-26 22:33:44,446---WatchFiles detected changes in 'api\PostApi.py'. Reloading...
+INFO:     2023-02-26 22:33:45,764---Started server process [2828]
+INFO:     2023-02-26 22:33:45,765---Waiting for application startup.
+INFO:     2023-02-26 22:33:45,765---Application startup complete.
+WARNING:  2023-02-26 22:34:24,192---WatchFiles detected changes in 'api\PostApi.py'. Reloading...
+INFO:     2023-02-26 22:34:25,526---Started server process [22236]
+INFO:     2023-02-26 22:34:25,526---Waiting for application startup.
+INFO:     2023-02-26 22:34:25,527---Application startup complete.
+INFO:     2023-02-26 22:34:41,424---127.0.0.1:8584 - "GET /avatar/1-1677414295.jpg HTTP/1.1" 304 Not Modified
+INFO:     2023-02-26 22:34:48,209---127.0.0.1:8588 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:34:48,432---127.0.0.1:8588 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:34:54,212---127.0.0.1:8589 - "POST /user/token HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:35:08,472---127.0.0.1:8596 - "POST /post/publishpost HTTP/1.1" 200 OK
+WARNING:  2023-02-26 22:37:07,398---WatchFiles detected changes in 'Utils\auth.py'. Reloading...
+INFO:     2023-02-26 22:37:08,929---Started server process [16484]
+INFO:     2023-02-26 22:37:08,930---Waiting for application startup.
+INFO:     2023-02-26 22:37:08,930---Application startup complete.
+INFO:     2023-02-26 22:37:09,013---127.0.0.1:8623 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:37:09,188---127.0.0.1:8623 - "GET /openapi.json HTTP/1.1" 200 OK
+WARNING:  2023-02-26 22:38:11,284---WatchFiles detected changes in 'api\PostApi.py'. Reloading...
+INFO:     2023-02-26 22:38:12,456---Started server process [7464]
+INFO:     2023-02-26 22:38:12,457---Waiting for application startup.
+INFO:     2023-02-26 22:38:12,457---Application startup complete.
+INFO:     2023-02-26 22:38:33,334---127.0.0.1:8649 - "POST /user/token HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:38:39,174---127.0.0.1:8651 - "POST /post/publishpost HTTP/1.1" 500 Internal Server Error
+ERROR:    2023-02-26 22:38:39,175---Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\uvicorn\protocols\http\httptools_impl.py", line 419, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\uvicorn\middleware\proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\fastapi\applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\middleware\errors.py", line 184, in __call__
+    raise exc
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\middleware\errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\middleware\cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\middleware\cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\middleware\exceptions.py", line 79, in __call__
+    raise exc
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\middleware\exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\fastapi\middleware\asyncexitstack.py", line 21, in __call__
+    raise e
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\fastapi\middleware\asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\routing.py", line 66, in app
+    response = await func(request)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\fastapi\routing.py", line 235, in app
+    raw_response = await run_endpoint_function(
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\fastapi\routing.py", line 163, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\starlette\concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\anyio\to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\anyio\_backends\_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "C:\Users\Yuzai\AppData\Roaming\Python\Python310\site-packages\anyio\_backends\_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "C:\Users\Yuzai\PycharmProjects\MyFastApi\app\api\PostApi.py", line 33, in publishpost
+    db.add()
+TypeError: Session.add() missing 1 required positional argument: 'instance'
+WARNING:  2023-02-26 22:39:25,895---WatchFiles detected changes in 'api\PostApi.py'. Reloading...
+INFO:     2023-02-26 22:39:27,032---Started server process [15948]
+INFO:     2023-02-26 22:39:27,033---Waiting for application startup.
+INFO:     2023-02-26 22:39:27,033---Application startup complete.
+INFO:     2023-02-26 22:39:30,269---127.0.0.1:8657 - "POST /post/publishpost HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:41:07,825---127.0.0.1:8713 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:41:07,831---127.0.0.1:8713 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:41:13,406---127.0.0.1:8714 - "OPTIONS /post/publishpost HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:41:13,416---127.0.0.1:8714 - "POST /post/publishpost HTTP/1.1" 422 Unprocessable Entity
+INFO:     2023-02-26 22:41:55,287---127.0.0.1:8740 - "POST /post/publishpost HTTP/1.1" 422 Unprocessable Entity
+INFO:     2023-02-26 22:42:39,709---127.0.0.1:8742 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:42:43,383---127.0.0.1:8742 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:42:44,185---127.0.0.1:8782 - "GET /avatar/1-1677414295.jpg HTTP/1.1" 304 Not Modified
+INFO:     2023-02-26 22:42:49,539---127.0.0.1:8789 - "POST /post/publishpost HTTP/1.1" 422 Unprocessable Entity
+INFO:     2023-02-26 22:43:13,822---127.0.0.1:8790 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:43:17,249---127.0.0.1:8790 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:43:23,593---127.0.0.1:8817 - "OPTIONS /post/publishpost HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:43:23,607---127.0.0.1:8817 - "POST /post/publishpost HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:45:06,403---127.0.0.1:8894 - "OPTIONS /user/register HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:45:06,405---有人访问注册了
+INFO:     2023-02-26 22:45:06,431---127.0.0.1:8894 - "POST /user/register HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:45:11,479---127.0.0.1:8895 - "OPTIONS /user/login HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:45:11,488---127.0.0.1:8895 - "POST /user/login HTTP/1.1" 201 Created
+INFO:     2023-02-26 22:45:17,065---127.0.0.1:8904 - "POST /user/login HTTP/1.1" 201 Created
+INFO:     2023-02-26 22:45:20,003---有人访问注册了
+INFO:     2023-02-26 22:45:20,007---127.0.0.1:8904 - "POST /user/register HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:45:32,184---有人访问注册了
+INFO:     2023-02-26 22:45:32,188---127.0.0.1:8905 - "POST /user/register HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:45:34,701---有人访问注册了
+INFO:     2023-02-26 22:45:34,715---127.0.0.1:8905 - "POST /user/register HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:45:39,085---127.0.0.1:8905 - "POST /user/login HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:45:39,104---127.0.0.1:8905 - "OPTIONS /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:45:39,111---127.0.0.1:8905 - "GET /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:45:41,027---127.0.0.1:8905 - "GET /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:45:43,305---127.0.0.1:8905 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:48:41,634---127.0.0.1:9010 - "POST /post/publishpost HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:49:02,496---127.0.0.1:9011 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:49:04,428---127.0.0.1:9011 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:49:21,574---127.0.0.1:9023 - "POST /post/publishpost HTTP/1.1" 200 OK
+WARNING:  2023-02-26 22:51:15,119---WatchFiles detected changes in 'schemas\PostSchemas.py'. Reloading...
+INFO:     2023-02-26 22:51:16,525---Started server process [3060]
+INFO:     2023-02-26 22:51:16,525---Waiting for application startup.
+INFO:     2023-02-26 22:51:16,526---Application startup complete.
+INFO:     2023-02-26 22:51:24,351---127.0.0.1:9041 - "POST /post/publishpost HTTP/1.1" 200 OK
+WARNING:  2023-02-26 22:52:15,940---WatchFiles detected changes in 'api\PostApi.py'. Reloading...
+WARNING:  2023-02-26 22:53:14,437---WatchFiles detected changes in 'api\PostApi.py'. Reloading...
+WARNING:  2023-02-26 22:53:31,122---WatchFiles detected changes in 'api\PostApi.py'. Reloading...
+WARNING:  2023-02-26 22:59:46,083---WatchFiles detected changes in 'api\PostApi.py'. Reloading...
+INFO:     2023-02-26 22:59:47,340---Started server process [1676]
+INFO:     2023-02-26 22:59:47,340---Waiting for application startup.
+INFO:     2023-02-26 22:59:47,341---Application startup complete.
+INFO:     2023-02-26 22:59:47,342---127.0.0.1:9195 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 22:59:47,343---127.0.0.1:9194 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
+WARNING:  2023-02-26 22:59:47,609---WatchFiles detected changes in 'api\PostApi.py'. Reloading...
+INFO:     2023-02-26 22:59:49,053---Started server process [21256]
+INFO:     2023-02-26 22:59:49,053---Waiting for application startup.
+INFO:     2023-02-26 22:59:49,054---Application startup complete.
+INFO:     2023-02-26 23:00:12,403---127.0.0.1:9235 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:00:13,359---127.0.0.1:9235 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:00:38,578---127.0.0.1:9237 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:00:52,728---127.0.0.1:9273 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:01:13,169---127.0.0.1:9274 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:01:14,308---127.0.0.1:9274 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:01:34,596---127.0.0.1:9300 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:01:51,070---127.0.0.1:9303 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:02:18,569---127.0.0.1:9341 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:02:20,422---127.0.0.1:9341 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:02:27,724---127.0.0.1:9343 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:02:29,978---127.0.0.1:9343 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:02:45,009---127.0.0.1:9368 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:02:46,537---127.0.0.1:9368 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:02:49,388---127.0.0.1:9368 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:03:03,801---127.0.0.1:9369 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:03:13,237---127.0.0.1:9390 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:03:55,862---127.0.0.1:9392 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:03:56,879---127.0.0.1:9392 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:04:00,970---127.0.0.1:9392 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:04:51,347---127.0.0.1:9467 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:04:54,298---127.0.0.1:9467 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:07:10,299---127.0.0.1:9566 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:07:12,343---127.0.0.1:9566 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:07:27,541---127.0.0.1:9567 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:07:27,577---127.0.0.1:9567 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:07:29,503---127.0.0.1:9567 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:07:29,516---127.0.0.1:9582 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:08:04,066---127.0.0.1:9633 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:08:04,071---127.0.0.1:9633 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:08:05,484---127.0.0.1:9633 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:08:05,490---127.0.0.1:9635 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:08:43,287---127.0.0.1:9636 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:10:34,757---127.0.0.1:9748 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:10:34,764---127.0.0.1:9748 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:10:41,029---127.0.0.1:9749 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:11:00,601---127.0.0.1:9775 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:11:20,017---127.0.0.1:9776 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:11:22,510---127.0.0.1:9776 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:12:13,887---127.0.0.1:9793 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:13:34,976---127.0.0.1:9810 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:13:43,804---127.0.0.1:9811 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:14:20,966---127.0.0.1:9846 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:15:46,092---127.0.0.1:9989 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:15:48,645---127.0.0.1:9989 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:15:52,087---127.0.0.1:9989 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:15:54,416---127.0.0.1:9989 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:18:38,241---127.0.0.1:10045 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:21:04,299---127.0.0.1:10082 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:21:04,308---127.0.0.1:10082 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:21:08,299---127.0.0.1:10082 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:22:12,427---127.0.0.1:10097 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:23:05,308---127.0.0.1:10098 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:23:19,870---127.0.0.1:10122 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:23:29,791---127.0.0.1:10125 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:23:48,601---127.0.0.1:10141 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:23:49,265---127.0.0.1:10141 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:24:09,465---127.0.0.1:10143 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-26 23:24:20,099---127.0.0.1:10153 - "GET /post/postcategory HTTP/1.1" 200 OK

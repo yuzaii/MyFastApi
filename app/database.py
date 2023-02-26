@@ -4,6 +4,7 @@ from sqlalchemy.ext.declarative import declarative_base
 
 from app.config import SQLALCHEMY_DATABASE_URL, SQLALCHEMY_POOL_SIZE, SQLALCHEMY_MAX_OVERFLOW
 
+
 # SQLALCHEMY_DATABASE_URL = 'mysql+pymysql://root:Zly20000526.@192.168.10.17:3306/NTUTOOLS?pool_size=5&max_overflow=10'
 
 """
@@ -21,6 +22,8 @@ engine = create_engine(SQLALCHEMY_DATABASE_URL,
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 Base = declarative_base()
+
+
 
 
 def get_db() -> Session:

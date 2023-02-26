@@ -16,7 +16,7 @@ from app.database import get_db
 from app.models.UserModel import User
 from app.schemas.UserSchemas import UserLoginBase, UserRegisterBase, EditUserBase, UserInfo, Userchangepass
 
-UserRouter = APIRouter(prefix='/user', tags=['用户注册'])
+UserRouter = APIRouter(prefix='/user', tags=['用户相关api'])
 
 
 # api全部小写
@@ -116,7 +116,7 @@ def login(form_data: UserLoginBase, db: Session = Depends(get_db)):
         # return {'code': 200, 'msg': '用户名或密码不正确'}
 
 
-@UserRouter.post("/userinfo", summary='获取用户信息')
+@UserRouter.get("/userinfo", summary='获取用户信息')
 def userinfo(user=Depends(auth_depend)):
     """
     传递token返回user信息
@@ -133,7 +133,7 @@ def userinfo(user=Depends(auth_depend)):
     return {'code': 200, 'data': user_res}
 
 
-@UserRouter.post("/get_all_users_count", summary='获取用户数量')
+@UserRouter.get("/get_all_users_count", summary='获取用户数量')
 def get_all_users_count(db: Session = Depends(get_db), user=Depends(auth_depend)):
     print('user', user)
     count = db.query(User).count()

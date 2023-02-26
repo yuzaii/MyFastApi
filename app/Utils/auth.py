@@ -17,7 +17,7 @@ def auth_depend(token: str = Depends(oauth2_scheme), db: Session = Depends(get_d
     :param db:
     :return:
     """
-    print('token', token)
+    # print('token', token)
     try:
         payload = jwt.decode(token, settings.jwt_secret_key, algorithms=[settings.jwt_algorithm])
     except (jwt.ExpiredSignatureError, JWTError):
@@ -26,10 +26,10 @@ def auth_depend(token: str = Depends(oauth2_scheme), db: Session = Depends(get_d
             detail="token已失效，请重新登陆！",
             # headers={"WWW-Authenticate": "Bearer"}
         )
-    print('payload', payload)
+    # print('payload', payload)
     # 获取数据库中的
     db_user = db.query(User).filter_by(user_id=payload.get('user_id')).first()
-    print('db_user', db_user)
+    print('根据token获取的到的用户：', db_user)
     if db_user:
         return db_user
     else:
@@ -38,6 +38,7 @@ def auth_depend(token: str = Depends(oauth2_scheme), db: Session = Depends(get_d
             detail="认证不通过，请重新登陆！",
             # headers={"WWW-Authenticate": "Bearer"}
         )
+
 
 # async def auth_depend1(token: str = Depends(oauth2_scheme),db: Session = Depends(get_db)):
 #     print('token:', token)

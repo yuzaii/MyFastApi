@@ -1,18 +1,17 @@
-import logging
-from typing import List
-
-import sqlalchemy
 import uvicorn
 from fastapi import FastAPI, Depends, HTTPException
 from fastapi.openapi.docs import get_swagger_ui_html, get_redoc_html
-from sqlalchemy.orm import Session
+
 from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import RedirectResponse
 from starlette.staticfiles import StaticFiles
 
+from app.api.PostApi import PostRouter
 from app.api.UserApi import UserRouter
 from app.config import LOGGING_CONFIG, logger
-from app.database import Base, engine
+from app.database import engine, Base
+from app.models.PostCategoryModel import PostCategory
+from app.models.PostModel import Post
 from app.models.UserModel import User
 
 # docs_url=None, redoc_url=None 禁用自带的docs文档接口
@@ -44,8 +43,8 @@ async def redoc_html():
 # 允许下列地址跨域
 origins = [
     # "*",
-    "http://localhost",
-    "http://localhost:8080",
+    # "http://localhost",
+    # "http://localhost:8080",
     "http://localhost:5050",
 ]
 app.add_middleware(
@@ -56,6 +55,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 app.include_router(UserRouter)
+app.include_router(PostRouter)
 
 
 # 将首页重定向
@@ -71,7 +71,10 @@ def index():
 
 if __name__ == '__main__':
     # 自动创建数据库
-    Base.metadata.create_all(bind=engine)
+    models = [User, Post, PostCategory]
+    tables = [model.__table__ for model in models]
+    Base.metadata.create_all(bind=engine, tables=tables)
+
     # 运行程序
     uvicorn.run(
         app='main:app',
