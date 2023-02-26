@@ -1,0 +1,104 @@
+INFO:     Will watch for changes in these directories: ['C:\\Users\\Yuzai\\PycharmProjects\\MyFastApi\\app']
+INFO:     Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     Started reloader process [16780] using WatchFiles
+INFO:     Started server process [4328]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Stopping reloader process [16780]
+INFO:     Will watch for changes in these directories: ['C:\\Users\\Yuzai\\PycharmProjects\\MyFastApi\\app']
+INFO:     Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     Started reloader process [17156] using WatchFiles
+INFO:     Started server process [20920]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     123123
+INFO:     2023-02-26 15:28:20,547---127.0.0.1:12107 - "GET / HTTP/1.1" 307 Temporary Redirect
+INFO:     2023-02-26 15:28:20,551---127.0.0.1:12107 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-02-26 15:28:20,707---127.0.0.1:12107 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     2023-02-26 15:28:27,734---127.0.0.1:12108 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-02-26 15:28:27,846---127.0.0.1:12108 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     Stopping reloader process [17156]
+INFO:     Will watch for changes in these directories: ['C:\\Users\\Yuzai\\PycharmProjects\\MyFastApi\\app']
+INFO:     Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     Started reloader process [10376] using WatchFiles
+INFO:     Started server process [12556]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     2023-02-26 15:29:24,212---127.0.0.1:12121 - "GET / HTTP/1.1" 307 Temporary Redirect
+INFO:     2023-02-26 15:29:24,216---127.0.0.1:12121 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-02-26 15:29:24,436---127.0.0.1:12121 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     Stopping reloader process [10376]
+INFO:     Will watch for changes in these directories: ['C:\\Users\\Yuzai\\PycharmProjects\\MyFastApi\\app']
+INFO:     Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     Started reloader process [15832] using WatchFiles
+INFO:     Started server process [8336]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     12312312312
+INFO:     2023-02-26 15:29:50,153---127.0.0.1:12144 - "GET / HTTP/1.1" 307 Temporary Redirect
+INFO:     2023-02-26 15:29:50,156---127.0.0.1:12144 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-02-26 15:29:50,315---127.0.0.1:12144 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Stopping reloader process [15832]
+INFO:     Will watch for changes in these directories: ['C:\\Users\\Yuzai\\PycharmProjects\\MyFastApi\\app']
+INFO:     Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     Started reloader process [6300] using WatchFiles
+INFO:     Started server process [22000]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     有人访问api页面
+INFO:     2023-02-26 15:31:00,603---127.0.0.1:12166 - "GET / HTTP/1.1" 307 Temporary Redirect
+INFO:     2023-02-26 15:31:00,608---127.0.0.1:12166 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-02-26 15:31:00,768---127.0.0.1:12166 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     Stopping reloader process [6300]
+INFO:     2023-02-26 15:32:23,732-Will watch for changes in these directories: ['C:\\Users\\Yuzai\\PycharmProjects\\MyFastApi\\app']
+INFO:     2023-02-26 15:32:23,733-Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     2023-02-26 15:32:23,733-Started reloader process [12504] using WatchFiles
+INFO:     2023-02-26 15:32:24,621-Started server process [13472]
+INFO:     2023-02-26 15:32:24,622-Waiting for application startup.
+INFO:     2023-02-26 15:32:24,622-Application startup complete.
+INFO:     2023-02-26 15:32:30,377-Stopping reloader process [12504]
+INFO:     2023-02-26 15:32:31,509---Will watch for changes in these directories: ['C:\\Users\\Yuzai\\PycharmProjects\\MyFastApi\\app']
+INFO:     2023-02-26 15:32:31,510---Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     2023-02-26 15:32:31,510---Started reloader process [15248] using WatchFiles
+INFO:     2023-02-26 15:32:32,415---Started server process [11964]
+INFO:     2023-02-26 15:32:32,416---Waiting for application startup.
+INFO:     2023-02-26 15:32:32,416---Application startup complete.
+INFO:     2023-02-26 15:32:41,127---127.0.0.1:12191 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-02-26 15:32:41,275---127.0.0.1:12191 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     2023-02-26 15:32:44,471---有人访问api页面
+INFO:     2023-02-26 15:32:44,472---127.0.0.1:12191 - "GET / HTTP/1.1" 307 Temporary Redirect
+INFO:     2023-02-26 15:32:44,478---127.0.0.1:12191 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-02-26 15:32:44,752---127.0.0.1:12191 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     2023-02-26 15:32:46,830---有人访问api页面
+INFO:     2023-02-26 15:32:46,832---127.0.0.1:12191 - "GET / HTTP/1.1" 307 Temporary Redirect
+INFO:     2023-02-26 15:32:46,840---127.0.0.1:12191 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-02-26 15:32:46,984---127.0.0.1:12191 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     2023-02-26 15:32:48,882---127.0.0.1:12191 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-02-26 15:32:48,992---127.0.0.1:12191 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     2023-02-26 15:32:49,944---127.0.0.1:12191 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-02-26 15:32:50,048---127.0.0.1:12191 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     2023-02-26 15:32:56,188---127.0.0.1:12207 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-02-26 15:32:56,321---127.0.0.1:12207 - "GET /swagger/swagger-ui.css HTTP/1.1" 200 OK
+INFO:     2023-02-26 15:32:56,322---127.0.0.1:12211 - "GET /swagger/swagger-ui-bundle.js HTTP/1.1" 200 OK
+INFO:     2023-02-26 15:32:56,464---127.0.0.1:12211 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     2023-02-26 15:33:08,356---127.0.0.1:12264 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-02-26 15:33:08,385---127.0.0.1:12264 - "GET /swagger/swagger-ui.css HTTP/1.1" 200 OK
+INFO:     2023-02-26 15:33:08,386---127.0.0.1:12269 - "GET /swagger/swagger-ui-bundle.js HTTP/1.1" 200 OK
+INFO:     2023-02-26 15:33:08,506---127.0.0.1:12269 - "GET /openapi.json HTTP/1.1" 200 OK
+WARNING:  2023-02-26 15:33:38,104---WatchFiles detected changes in 'api\UserApi.py'. Reloading...
+INFO:     2023-02-26 15:33:39,415---Started server process [17904]
+INFO:     2023-02-26 15:33:39,416---Waiting for application startup.
+INFO:     2023-02-26 15:33:39,417---Application startup complete.
+INFO:     2023-02-26 15:33:39,471---127.0.0.1:12364 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-02-26 15:33:39,631---127.0.0.1:12364 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     2023-02-26 15:33:43,537---有人访问注册了
+INFO:     2023-02-26 15:33:43,564---127.0.0.1:12364 - "POST /user/register HTTP/1.1" 200 OK
+INFO:     2023-02-26 15:33:45,093---有人访问注册了
+INFO:     2023-02-26 15:33:45,097---127.0.0.1:12364 - "POST /user/register HTTP/1.1" 200 OK
+INFO:     2023-02-26 15:33:49,215---有人访问注册了
+INFO:     2023-02-26 15:33:49,219---127.0.0.1:12364 - "POST /user/register HTTP/1.1" 200 OK
+INFO:     2023-02-26 15:33:51,779---有人访问注册了
+INFO:     2023-02-26 15:33:51,783---127.0.0.1:12364 - "POST /user/register HTTP/1.1" 200 OK
+INFO:     2023-02-26 15:33:57,096---Shutting down
+INFO:     2023-02-26 15:33:57,120---Stopping reloader process [15248]
