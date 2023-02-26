@@ -14,7 +14,7 @@ from app.config import logger
 
 from app.database import get_db
 from app.models.UserModel import User
-from app.schemas.UserSchemas import UserLoginBase, UserRegisterBase, EditUserBase, UserInfo
+from app.schemas.UserSchemas import UserLoginBase, UserRegisterBase, EditUserBase, UserInfo, Userchangepass
 
 UserRouter = APIRouter(prefix='/user', tags=['用户注册'])
 
@@ -123,13 +123,14 @@ def userinfo(user=Depends(auth_depend)):
     :param user:
     :return:user
     """
-    user.password = ''
+    # user.password = ''
     # user.createtime = str(user.createtime)
-    userr = UserInfo(username=user.username, sex=user.sex, createtime=user.createtime)
-    print('userr', userr)
-    print(type(userr.createtime))
-    print({'code': 200, 'data': user})
-    return {'code': 200, 'data': user}
+    user_res = UserInfo(username=user.username, sex=user.sex, avatar=user.avatar, signature=user.signature,
+                        createtime=user.createtime)
+    print('userr', user_res)
+    print(type(user_res.createtime))
+    print({'code': 200, 'data': user_res})
+    return {'code': 200, 'data': user_res}
 
 
 @UserRouter.post("/get_all_users_count", summary='获取用户数量')
@@ -185,3 +186,28 @@ def edituserinfo(edituser: EditUserBase, user=Depends(auth_depend), db: Session 
         return {'code': 200, 'msg': 'success', 'data': db_user}
     except IntegrityError:
         return {'code': 201, 'msg': '该用户名已存在'}
+
+
+@UserRouter.post("/changepassword", summary='修改用户密码')
+def changepassword(passwordinfo: Userchangepass, user=Depends(auth_depend), db: Session = Depends(get_db)):
+    firstPassword = passwordinfo.firstPassword
+    oldPassword = passwordinfo.oldPassword
+    secondPassword = passwordinfo.secondPassword
+    print(passwordinfo)
+    # 判断两次密码是否相同
+    if firstPassword != secondPassword:
+        return {'code': 201, 'msg': '两次输入密码不一致'}
+
+    # 获取数据库信息
+    db_user = db.query(User).filter_by(user_id=user.user_id).first()
+    # 判断以前的密码是否一样
+
+    if db_user.password == sha256_encrypt(oldPassword):
+        # 相同就更新
+        print('验证通过')
+        db_user.password = sha256_encrypt(firstPassword)
+        db.commit()
+        db.refresh(db_user)
+        return {'code': 200, 'msg': 'success'}
+    else:
+        return {'code': 201, 'msg': '旧密码不正确'}

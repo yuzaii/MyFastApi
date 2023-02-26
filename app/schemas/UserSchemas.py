@@ -33,6 +33,8 @@ class UserLoginBase(BaseModel):
 class UserInfo(BaseModel):
     username: str
     sex: str
+    avatar: str
+    signature: str
     createtime: Any
 
     @validator('createtime')
@@ -58,3 +60,16 @@ class EditUserBase(BaseModel):
     sex: str
     signature: Optional[str]
     newavatar: Optional[str]
+
+
+class Userchangepass(BaseModel):
+    """
+    用户修改密码
+    """
+    oldPassword: str
+    firstPassword: str
+    secondPassword: str
+
+    # @validator('secondPassword')
+    # def eq_password(cls,v):
+    #     if
