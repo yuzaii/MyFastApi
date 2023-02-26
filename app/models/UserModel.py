@@ -28,5 +28,12 @@ class User(Base):
     lastlogintime = Column(DateTime, comment='上一次登录时间')
 
     def __repr__(self):
-        return f'<User user_id:{self.user_id},username:{self.username},password:{self.password}' \
-               f' createtime:{self.createtime}>'
+        """
+        返回字典
+        :return:
+        """
+        return str(self.__dict__)
+
+    # def __repr__(self):
+    #     return f'<User user_id:{self.user_id},username:{self.username},password:{self.password}' \
+    #            f' createtime:{self.createtime}>'

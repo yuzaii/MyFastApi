@@ -1,3 +1,4 @@
+import logging
 from typing import List
 
 import sqlalchemy
@@ -10,6 +11,7 @@ from starlette.responses import RedirectResponse
 from starlette.staticfiles import StaticFiles
 
 from app.api.UserApi import UserRouter
+from app.config import LOGGING_CONFIG, logger
 from app.database import Base, engine
 from app.models.UserModel import User
 
@@ -59,6 +61,11 @@ app.include_router(UserRouter)
 # 将首页重定向
 @app.get("/", include_in_schema=False)
 def index():
+    # 日志
+    # print(logger)
+    # for logger_name in logging.Logger.manager.loggerDict:
+    #     print(logger_name)
+    logger.info('有人访问api页面')
     return RedirectResponse("/docs")
 
 
@@ -66,4 +73,10 @@ if __name__ == '__main__':
     # 自动创建数据库
     Base.metadata.create_all(bind=engine)
     # 运行程序
-    uvicorn.run(app='main:app', reload=True, port=6060)
+    uvicorn.run(
+        app='main:app',
+        reload=True,
+        port=6060,
+        # log_config="logging.yaml",
+        log_config=LOGGING_CONFIG
+    )

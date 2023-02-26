@@ -8,11 +8,13 @@ from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
 from app.Utils.JwtTools import create_access_token
-from app.Utils.auth import oauth2_scheme, auth_depend
+from app.Utils.auth import auth_depend
 from app.Utils.EncryptTools import sha256_encrypt
+from app.config import logger
+
 from app.database import get_db
 from app.models.UserModel import User
-from app.schemas.UserSchemas import UserLoginBase, UserRegisterBase, EditUserBase
+from app.schemas.UserSchemas import UserLoginBase, UserRegisterBase, EditUserBase, UserInfo
 
 UserRouter = APIRouter(prefix='/user', tags=['用户注册'])
 
@@ -21,6 +23,8 @@ UserRouter = APIRouter(prefix='/user', tags=['用户注册'])
 
 @UserRouter.post("/register", summary='用户注册')
 def register(user: UserRegisterBase, db: Session = Depends(get_db)):
+    logger.info('有人访问注册了')
+    # logger.info("register")
     print("register")
     print(user)
     if user.password != user.secondPassword:
@@ -120,6 +124,11 @@ def userinfo(user=Depends(auth_depend)):
     :return:user
     """
     user.password = ''
+    # user.createtime = str(user.createtime)
+    userr = UserInfo(username=user.username, sex=user.sex, createtime=user.createtime)
+    print('userr', userr)
+    print(type(userr.createtime))
+    print({'code': 200, 'data': user})
     return {'code': 200, 'data': user}
 
 

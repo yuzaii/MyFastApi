@@ -6,9 +6,9 @@
 @time:2023/02/22
 """
 import datetime
-from typing import Optional
+from typing import Optional, Any
 
-from pydantic import BaseModel
+from pydantic import BaseModel, validator
 
 
 class UserBase(BaseModel):
@@ -29,6 +29,15 @@ class UserLoginBase(BaseModel):
 # class OAuth2PasswordRequestJSON(BaseModel):
 #     username: str
 #     password: str
+
+class UserInfo(BaseModel):
+    username: str
+    sex: str
+    createtime: Any
+
+    @validator('createtime')
+    def time_str(cls, v):
+        return str(v)
 
 
 class UserRegisterBase(BaseModel):

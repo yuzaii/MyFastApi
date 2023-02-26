@@ -1,0 +1,51 @@
+version: 1
+disable_existing_loggers: False
+
+formatters:
+  default:
+    (): "uvicorn.logging.DefaultFormatter"
+    #    format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    fmt: "%(levelprefix)s %(asctime)s---%(message)s"
+    use_colors: True
+  file:
+    (): "uvicorn.logging.DefaultFormatter"
+    #    format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+    fmt: "%(levelprefix)s %(asctime)s---%(message)s"
+    use_colors: False
+  access:
+    (): "uvicorn.logging.AccessFormatter"
+    fmt: '%(levelprefix)s %(client_addr)s - "%(request_line)s" %(status_code)s'
+#    fmt: "%(levelprefix)s  %(message)s"
+    use_colors: True
+
+handlers:
+  default:
+    formatter: default
+    class: logging.StreamHandler
+    stream: ext://sys.stderr
+#  access:
+#    formatter: access
+#    class: logging.StreamHandler
+#    stream: ext://sys.stdout
+#  console:
+#    class: logging.StreamHandler
+#    level: INFO
+#    formatter: default
+#    stream: ext://sys.stdout
+  file:
+    class: logging.handlers.RotatingFileHandler
+    level: INFO
+    formatter: file
+    filename: ../log/myapp.log
+    maxBytes: 10485760
+    backupCount: 5
+
+loggers:
+  uvicorn:
+    level: INFO
+    handlers: [ default, file ]
+    propagate: no
+
+root:
+  level: INFO
+  handlers: [ default, file ]
