@@ -1,4 +1,5 @@
 from sqlalchemy import Column, Integer, String, Boolean, Date, Time, DateTime, Text, ForeignKey, SmallInteger
+from sqlalchemy.orm import relationship
 
 from app.database import Base
 
@@ -19,6 +20,8 @@ class Post(Base):
     best_post = Column(SmallInteger, comment='用户id')
     collect_num = Column(Integer, comment='点击数')
     post_status = Column(SmallInteger, comment='帖子状态')
+    # overlaps = "user"
+    user = relationship('User', viewonly=True)
 
     def __repr__(self):
         """

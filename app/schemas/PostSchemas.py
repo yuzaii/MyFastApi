@@ -17,6 +17,6 @@ class PublisPostBase(BaseModel):
 
 class GetPostBase(BaseModel):
     category_id: Optional[int]
-    title: Optional[str]
+    # title: Optional[str]
     pageNum: int
     pageSize: int
