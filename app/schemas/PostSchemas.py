@@ -3,7 +3,7 @@ from typing import Optional
 from pydantic import BaseModel, validator
 
 
-class PublisPost(BaseModel):
+class PublisPostBase(BaseModel):
     title: str
     detail: str
     images: Optional[str]
@@ -13,3 +13,10 @@ class PublisPost(BaseModel):
     def imgnull(cls, v):
         if v == '':
             return None
+
+
+class GetPostBase(BaseModel):
+    category_id: Optional[int]
+    title: Optional[str]
+    pageNum: int
+    pageSize: int

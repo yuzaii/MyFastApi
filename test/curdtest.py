@@ -1,3 +1,4 @@
+from app.Utils.Pagination import Pagination
 from app.database import SessionLocal
 from app.models.PostModel import Post
 from app.models.UserModel import User
@@ -25,7 +26,7 @@ def create_post():
     db.close()
 
 
-def getpost(user_id):
+def getpostbyid(user_id):
     db = SessionLocal()
     # 查询这个用户的所有帖子
     user = db.query(User).filter_by(user_id=user_id).first()
@@ -42,6 +43,41 @@ def getpost(user_id):
     db.close()
 
 
+def getpost():
+    db = SessionLocal()
+    try:
+        category_id = 1
+        # title = 'java'
+        title = ''
+        pageNum = 10
+        pageSize = 1
+        # 如果有
+        if title:
+            postlist = db.query(Post).filter_by(category_id=1).filter(Post.title.like(f'%{title}%')).all()
+            # postlist = db.query(Post).filter_by(category_id=2,).all()
+            print(postlist)
+            for post in postlist:
+                print(post)
+        else:
+            post_query = db.query(Post).filter_by(category_id=1)
+            print(post_query)
+            print(type(post_query))
+            # postlist = db.query(Post).filter_by(category_id=1)
+            # postlist=Pagination(pageNum, pageSize, error_out=False)
+            postlist, pages = Pagination(post_query, pageNum, pageSize).paginate()
+            # print(postlist)
+
+            print(len(postlist))
+            print(f"总页数", pages)
+            print('每个数据')
+            for post in postlist:
+                print(post)
+        return
+    finally:
+        db.close()
+
+
 if __name__ == '__main__':
     # create_user('12113', '123')
-    getpost(1)
+    # getpost(1)
+    getpost()

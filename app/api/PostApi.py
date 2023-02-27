@@ -1,13 +1,13 @@
 import datetime
 
 from fastapi import APIRouter, Depends
-from flask_sqlalchemy.session import Session
+from sqlalchemy.orm import Session
 
 from app.Utils.auth import auth_depend
 from app.database import get_db
 from app.models.PostCategoryModel import PostCategory
 from app.models.PostModel import Post
-from app.schemas.PostSchemas import PublisPost
+from app.schemas.PostSchemas import PublisPostBase, GetPostBase
 
 PostRouter = APIRouter(prefix='/post', tags=['论坛相关api'])
 
@@ -20,7 +20,7 @@ def getpostcategory(db: Session = Depends(get_db)):
 
 
 @PostRouter.post("/publishpost", summary="发布帖子")
-def publishpost(post: PublisPost, db: Session = Depends(get_db), user=Depends(auth_depend)):
+def publishpost(post: PublisPostBase, db: Session = Depends(get_db), user=Depends(auth_depend)):
     # user_id = user.user_id
     print(post)
     # 构造帖子对象
@@ -36,6 +36,16 @@ def publishpost(post: PublisPost, db: Session = Depends(get_db), user=Depends(au
     return {'code': 200, 'msg': 'success', 'data': {'post_id': db_post.post_id}}
 
 
-@PostRouter.get("/getpost", summary="获取帖子")
-def getpost(db: Session = Depends(get_db)):
-    print(1)
+@PostRouter.post("/getpost", summary="获取帖子")
+def getpost(getpostinfo: GetPostBase, db: Session = Depends(get_db)):
+    """
+    获取帖子列表，这里需要一个几个参数
+    categoryId: 贴子种类的id
+    title: 帖子的标题 （一般模糊搜索）
+    pageNum: 第几页
+    pageSize: 每页返回的内容
+    """
+
+    print(getpostinfo)
+    # total postList
+    return {'code': 200, 'msg': 'success', 'getpostinfo': getpostinfo}

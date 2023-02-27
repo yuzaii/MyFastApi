@@ -35,7 +35,7 @@ def register(user: UserRegisterBase, db: Session = Depends(get_db)):
             return {'code': 201, 'msg': '该用户名已被占用'}
         # 定义一些用户注册的初始信息
         db_user = User(username=user.username, password=sha256_encrypt(user.password),
-                       createtime=datetime.datetime.now(), role_id=1, locked=0, sex='保密')
+                       create_time=datetime.datetime.now(), role_id=1, locked=0, sex='保密')
         print(db_user)
         # TODO这里需要将密码加密
         db.add(db_user)
@@ -106,7 +106,7 @@ def login(form_data: UserLoginBase, db: Session = Depends(get_db)):
     # 如过存在就生成token 不存在就返回错误信息
     if db_user:
         # 更新登录时间
-        db_user.lastlogintime = datetime.datetime.now()
+        db_user.lastlogin_time = datetime.datetime.now()
         db.commit()
         db.refresh(db_user)
         token = create_access_token({'user_id': db_user.user_id, 'username': db_user.username})
@@ -126,9 +126,9 @@ def userinfo(user=Depends(auth_depend)):
     # user.password = ''
     # user.createtime = str(user.createtime)
     user_res = UserInfo(username=user.username, sex=user.sex, avatar=user.avatar, signature=user.signature,
-                        createtime=user.createtime)
+                        create_time=user.create_time)
     print('userr', user_res)
-    print(type(user_res.createtime))
+    print(type(user_res.create_time))
     print({'code': 200, 'data': user_res})
     return {'code': 200, 'data': user_res}
 
@@ -178,7 +178,7 @@ def edituserinfo(edituser: EditUserBase, user=Depends(auth_depend), db: Session 
     if edituser.newavatar:
         db_user.avatar = edituser.newavatar
     print(db_user.__dict__)
-    db_user.updatetime = datetime.datetime.now()
+    db_user.update_time = datetime.datetime.now()
     try:
         db.commit()
         db.refresh(db_user)

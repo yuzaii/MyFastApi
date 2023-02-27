@@ -35,9 +35,9 @@ class UserInfo(BaseModel):
     sex: Optional[str]
     avatar: Optional[str]
     signature: Optional[str]
-    createtime: Any
+    create_time: Any
 
-    @validator('createtime')
+    @validator('create_time')
     def time_str(cls, v):
         return str(v)
 
@@ -49,7 +49,7 @@ class UserRegisterBase(BaseModel):
     username: str
     password: str
     secondPassword: str
-    # createtime: datetime.datetime.now()
+    # create_time: datetime.datetime.now()
 
 
 class EditUserBase(BaseModel):

@@ -24,9 +24,9 @@ class User(Base):
     locked = Column(SmallInteger, comment='是否被锁定')
     avatar = Column(String(100), comment='头像')
     signature = Column(String(100), comment='个性签名')
-    createtime = Column(DateTime, comment='创建时间')
-    updatetime = Column(DateTime, comment='更新时间')
-    lastlogintime = Column(DateTime, comment='上一次登录时间')
+    create_time = Column(DateTime, comment='创建时间')
+    update_time = Column(DateTime, comment='更新时间')
+    lastlogin_time = Column(DateTime, comment='上一次登录时间')
     # 关联帖子表 好用filter_by方便的查询
     posts = relationship('Post')
 
