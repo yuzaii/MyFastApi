@@ -38,7 +38,7 @@ def publishpost(post: PublisPostBase, db: Session = Depends(get_db), user=Depend
     return {'code': 200, 'msg': 'success', 'data': {'post_id': db_post.post_id}}
 
 
-@PostRouter.post("/getpost", summary="获取帖子")
+@PostRouter.post("/getpost", summary="获取帖子信息")
 def getpost(getpostinfo: GetPostBase, db: Session = Depends(get_db)):
     """
     获取帖子列表，这里需要一个几个参数
@@ -79,3 +79,12 @@ def getpost(getpostinfo: GetPostBase, db: Session = Depends(get_db)):
         print(f'一共{total}条帖子数据')
         # print(postlist)
         return {'code': 200, 'msg': 'success', 'data': {"total": total, 'postinfolist': postinfolist}}
+
+
+@PostRouter.get("/getpostbyid", summary="根据postid获取帖子信息")
+def getpostbyid(id: int, db: Session = Depends(get_db)):
+    post_query = db.query(Post, User.username,PostCategory.category_name).select_from(Post).filter_by(post_id=id).join(User).join(
+        PostCategory).first()
+    postinfo = post_query._asdict()
+    print(postinfo)
+    return {'code': 200, 'msg': 'success', 'data': {'postinfo': postinfo}}

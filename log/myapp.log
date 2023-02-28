@@ -2481,3 +2481,419 @@ INFO:     2023-02-28 10:04:59,481---Finished server process [15851]
 INFO:     2023-02-28 10:05:00,432---Started server process [15979]
 INFO:     2023-02-28 10:05:00,432---Waiting for application startup.
 INFO:     2023-02-28 10:05:00,432---Application startup complete.
+INFO:     2023-02-28 10:07:45,169---127.0.0.1:61493 - "GET /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-28 10:07:47,642---127.0.0.1:61493 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 10:07:47,644---127.0.0.1:61501 - "OPTIONS /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 10:07:47,674---127.0.0.1:61493 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 10:07:47,695---127.0.0.1:61501 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 10:07:49,027---127.0.0.1:61501 - "GET /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-28 10:07:51,094---127.0.0.1:61501 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 10:07:51,100---127.0.0.1:61493 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 10:07:54,726---127.0.0.1:61493 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 10:08:02,174---127.0.0.1:61508 - "OPTIONS /post/publishpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 10:08:02,224---127.0.0.1:61508 - "POST /post/publishpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 10:08:02,978---127.0.0.1:61508 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 10:08:06,251---127.0.0.1:61508 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 10:08:06,263---127.0.0.1:61519 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 10:35:13,569---127.0.0.1:61586 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 10:35:14,701---127.0.0.1:61586 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 10:35:15,467---127.0.0.1:61586 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 10:35:18,848---127.0.0.1:61586 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 10:35:19,349---127.0.0.1:61586 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 10:35:20,512---127.0.0.1:61586 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:28:18,126---127.0.0.1:61864 - "GET /avatar/1-1677467820.jpeg HTTP/1.1" 304 Not Modified
+INFO:     2023-02-28 12:28:19,118---127.0.0.1:61867 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:28:19,123---127.0.0.1:61868 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:28:41,791---Shutting down
+INFO:     2023-02-28 12:28:41,895---Waiting for application shutdown.
+INFO:     2023-02-28 12:28:41,897---Application shutdown complete.
+INFO:     2023-02-28 12:28:41,897---Finished server process [15979]
+INFO:     2023-02-28 12:28:41,990---Stopping reloader process [15741]
+INFO:     2023-02-28 12:28:42,695---Will watch for changes in these directories: ['/Users/zly/Desktop/mygit/MyFastApi/app']
+INFO:     2023-02-28 12:28:42,695---Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     2023-02-28 12:28:42,696---Started reloader process [16502] using StatReload
+INFO:     2023-02-28 12:28:43,097---Started server process [16504]
+INFO:     2023-02-28 12:28:43,097---Waiting for application startup.
+INFO:     2023-02-28 12:28:43,097---Application startup complete.
+INFO:     2023-02-28 12:28:45,410---127.0.0.1:61890 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:28:45,416---127.0.0.1:61889 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:29:11,529---127.0.0.1:61910 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:29:11,535---127.0.0.1:61912 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:30:17,517---127.0.0.1:61946 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:30:17,525---127.0.0.1:61945 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:30:19,879---127.0.0.1:61945 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:30:19,884---127.0.0.1:61946 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:33:37,443---127.0.0.1:62119 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:33:37,452---127.0.0.1:62121 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:34:27,821---127.0.0.1:62213 - "OPTIONS /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:34:27,877---127.0.0.1:62211 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:34:27,887---127.0.0.1:62213 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:34:36,333---127.0.0.1:62238 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:34:36,339---127.0.0.1:62240 - "POST /post/getpost HTTP/1.1" 200 OK
+WARNING:  2023-02-28 12:35:26,292---StatReload detected changes in 'api/PostApi.py'. Reloading...
+INFO:     2023-02-28 12:35:26,343---Shutting down
+INFO:     2023-02-28 12:35:26,453---Waiting for application shutdown.
+INFO:     2023-02-28 12:35:26,454---Application shutdown complete.
+INFO:     2023-02-28 12:35:26,454---Finished server process [16504]
+INFO:     2023-02-28 12:37:54,011---Stopping reloader process [16502]
+INFO:     2023-02-28 12:37:54,685---Will watch for changes in these directories: ['/Users/zly/Desktop/mygit/MyFastApi/app']
+INFO:     2023-02-28 12:37:54,685---Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     2023-02-28 12:37:54,686---Started reloader process [16896] using StatReload
+INFO:     2023-02-28 12:37:55,143---Started server process [16898]
+INFO:     2023-02-28 12:37:55,143---Waiting for application startup.
+INFO:     2023-02-28 12:37:55,143---Application startup complete.
+INFO:     2023-02-28 12:37:56,505---有人访问api页面
+INFO:     2023-02-28 12:37:56,506---127.0.0.1:62358 - "GET / HTTP/1.1" 307 Temporary Redirect
+INFO:     2023-02-28 12:37:56,509---127.0.0.1:62358 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:37:56,689---127.0.0.1:62358 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:38:02,580---127.0.0.1:62359 - "GET /post/getpostbyid?id=1 HTTP/1.1" 200 OK
+WARNING:  2023-02-28 12:39:47,266---StatReload detected changes in 'api/PostApi.py'. Reloading...
+INFO:     2023-02-28 12:39:47,358---Shutting down
+INFO:     2023-02-28 12:39:47,461---Waiting for application shutdown.
+INFO:     2023-02-28 12:39:47,465---Application shutdown complete.
+INFO:     2023-02-28 12:39:47,466---Finished server process [16898]
+INFO:     2023-02-28 12:39:48,172---Started server process [16962]
+INFO:     2023-02-28 12:39:48,172---Waiting for application startup.
+INFO:     2023-02-28 12:39:48,172---Application startup complete.
+INFO:     2023-02-28 12:39:49,044---127.0.0.1:62430 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:39:49,144---127.0.0.1:62430 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:39:53,920---127.0.0.1:62430 - "GET /post/getpostbyid?id=1 HTTP/1.1" 500 Internal Server Error
+ERROR:    2023-02-28 12:39:53,920---Exception in ASGI application
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/sqlalchemy/sql/base.py", line 2120, in _entity_namespace_key
+    return getattr(ns, key)  # type: ignore
+AttributeError: type object 'User' has no attribute 'post_id'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/fastapi/routing.py", line 235, in app
+    raw_response = await run_endpoint_function(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/fastapi/routing.py", line 163, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/Users/zly/Desktop/mygit/MyFastApi/app/api/PostApi.py", line 86, in getpostbyid
+    post_query=db.query(Post, User.username).select_from(Post).join(User).filter_by(post_id=id).first()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 1998, in filter_by
+    clauses = [
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 1999, in <listcomp>
+    _entity_namespace_key(from_entity, key) == value
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/sqlalchemy/sql/base.py", line 2122, in _entity_namespace_key
+    raise exc.InvalidRequestError(
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "user" has no property "post_id"
+WARNING:  2023-02-28 12:40:13,480---StatReload detected changes in 'api/PostApi.py'. Reloading...
+INFO:     2023-02-28 12:40:13,568---127.0.0.1:62440 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:40:13,577---Shutting down
+INFO:     2023-02-28 12:40:13,678---Waiting for application shutdown.
+INFO:     2023-02-28 12:40:13,678---Application shutdown complete.
+INFO:     2023-02-28 12:40:13,678---Finished server process [16962]
+INFO:     2023-02-28 12:40:14,186---Started server process [16980]
+INFO:     2023-02-28 12:40:14,186---Waiting for application startup.
+INFO:     2023-02-28 12:40:14,186---Application startup complete.
+INFO:     2023-02-28 12:40:14,191---127.0.0.1:62443 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:40:17,498---127.0.0.1:62445 - "GET /post/getpostbyid?id=2 HTTP/1.1" 200 OK
+WARNING:  2023-02-28 12:40:26,159---StatReload detected changes in 'api/PostApi.py'. Reloading...
+INFO:     2023-02-28 12:40:26,232---Shutting down
+INFO:     2023-02-28 12:40:26,334---Waiting for application shutdown.
+INFO:     2023-02-28 12:40:26,335---Application shutdown complete.
+INFO:     2023-02-28 12:40:26,336---Finished server process [16980]
+INFO:     2023-02-28 12:40:27,134---Started server process [16989]
+INFO:     2023-02-28 12:40:27,134---Waiting for application startup.
+INFO:     2023-02-28 12:40:27,134---Application startup complete.
+INFO:     2023-02-28 12:40:28,876---127.0.0.1:62460 - "GET /post/getpostbyid?id=22222 HTTP/1.1" 200 OK
+WARNING:  2023-02-28 12:41:12,706---StatReload detected changes in 'api/PostApi.py'. Reloading...
+INFO:     2023-02-28 12:41:12,795---Shutting down
+INFO:     2023-02-28 12:41:12,898---Waiting for application shutdown.
+INFO:     2023-02-28 12:41:12,899---Application shutdown complete.
+INFO:     2023-02-28 12:41:12,899---Finished server process [16989]
+INFO:     2023-02-28 12:41:13,503---Started server process [17015]
+INFO:     2023-02-28 12:41:13,503---Waiting for application startup.
+INFO:     2023-02-28 12:41:13,503---Application startup complete.
+INFO:     2023-02-28 12:41:13,503---127.0.0.1:62486 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:41:13,588---127.0.0.1:62486 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:41:17,215---127.0.0.1:62491 - "GET /post/getpostbyid?id=1 HTTP/1.1" 200 OK
+WARNING:  2023-02-28 12:42:16,733---StatReload detected changes in 'api/PostApi.py'. Reloading...
+INFO:     2023-02-28 12:42:16,762---Shutting down
+INFO:     2023-02-28 12:42:16,864---Waiting for application shutdown.
+INFO:     2023-02-28 12:42:16,865---Application shutdown complete.
+INFO:     2023-02-28 12:42:16,865---Finished server process [17015]
+INFO:     2023-02-28 12:42:18,798---Started server process [17063]
+INFO:     2023-02-28 12:42:18,799---Waiting for application startup.
+INFO:     2023-02-28 12:42:18,799---Application startup complete.
+INFO:     2023-02-28 12:45:26,278---127.0.0.1:62701 - "GET /post/getpostbyid/50 HTTP/1.1" 404 Not Found
+INFO:     2023-02-28 12:45:27,250---127.0.0.1:62701 - "GET /post/getpostbyid/50 HTTP/1.1" 404 Not Found
+INFO:     2023-02-28 12:45:31,700---127.0.0.1:62701 - "GET /post/getpostbyid/50 HTTP/1.1" 404 Not Found
+INFO:     2023-02-28 12:45:41,213---127.0.0.1:62786 - "GET /post/getpostbyid/50 HTTP/1.1" 404 Not Found
+INFO:     2023-02-28 12:46:05,443---127.0.0.1:62888 - "GET /swagger/swagger-ui-bundle.js.map HTTP/1.1" 404 Not Found
+INFO:     2023-02-28 12:46:05,450---127.0.0.1:62888 - "GET /swagger/swagger-ui.css.map HTTP/1.1" 404 Not Found
+INFO:     2023-02-28 12:46:07,611---127.0.0.1:62888 - "GET /post/getpostbyid?id=1 HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:46:27,971---127.0.0.1:62993 - "GET /post/getpostbyid?50 HTTP/1.1" 422 Unprocessable Entity
+INFO:     2023-02-28 12:46:30,059---127.0.0.1:62993 - "GET /post/getpostbyid?50 HTTP/1.1" 422 Unprocessable Entity
+INFO:     2023-02-28 12:46:32,698---127.0.0.1:62993 - "GET /post/getpostbyid?50 HTTP/1.1" 422 Unprocessable Entity
+INFO:     2023-02-28 12:47:46,879---127.0.0.1:63441 - "GET /post/getpostbyid?id=50 HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:47:49,003---127.0.0.1:63441 - "GET /post/getpostbyid?id=50 HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:49:55,170---127.0.0.1:64096 - "OPTIONS /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:49:55,251---127.0.0.1:64092 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:49:55,269---127.0.0.1:64096 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:50:02,290---127.0.0.1:64131 - "OPTIONS /user/login HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:50:02,375---127.0.0.1:64131 - "POST /user/login HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:50:02,390---127.0.0.1:64131 - "OPTIONS /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:50:02,401---127.0.0.1:64131 - "GET /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:50:04,717---127.0.0.1:64131 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:50:04,723---127.0.0.1:64131 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:51:38,484---127.0.0.1:64642 - "OPTIONS /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:51:38,545---127.0.0.1:64643 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:51:38,555---127.0.0.1:64642 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:51:39,923---127.0.0.1:64642 - "OPTIONS /post/getpostbyid?id=50 HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:51:39,938---127.0.0.1:64642 - "GET /post/getpostbyid?id=50 HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:52:31,792---127.0.0.1:64890 - "GET /post/getpostbyid?id=50 HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:53:25,816---127.0.0.1:65153 - "GET /post/getpostbyid?id=50 HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:53:27,057---127.0.0.1:65153 - "GET /post/getpostbyid?id=50 HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:54:35,157---127.0.0.1:65485 - "GET /post/getpostbyid?id=50 HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:54:37,253---127.0.0.1:65485 - "GET /post/getpostbyid?id=50 HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:56:29,273---127.0.0.1:49616 - "GET /post/getpostbyid?id=50 HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:56:30,619---127.0.0.1:49616 - "GET /post/getpostbyid?id=50 HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:56:58,805---127.0.0.1:49765 - "GET /post/getpostbyid?id=50 HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:57:44,663---127.0.0.1:49987 - "GET /post/getpostbyid?id=50 HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:57:46,000---127.0.0.1:49987 - "GET /post/getpostbyid?id=50 HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:58:37,320---127.0.0.1:50239 - "GET /post/getpostbyid?id=50 HTTP/1.1" 200 OK
+INFO:     2023-02-28 12:59:45,823---127.0.0.1:50558 - "GET /post/getpostbyid?id=50 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:00:25,718---127.0.0.1:50746 - "GET /post/getpostbyid?id=50 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:01:34,032---127.0.0.1:51066 - "GET /post/getpostbyid?id=50 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:02:04,133---127.0.0.1:51197 - "OPTIONS /post/getpostbyid?id=50 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:02:04,163---127.0.0.1:51197 - "GET /post/getpostbyid?id=50 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:02:07,553---127.0.0.1:51197 - "GET /post/getpostbyid?id=50 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:02:08,721---127.0.0.1:51197 - "GET /post/getpostbyid?id=50 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:02:09,843---127.0.0.1:51197 - "GET /post/getpostbyid?id=50 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:02:23,214---127.0.0.1:51290 - "GET /post/getpostbyid?id=50 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:02:29,250---127.0.0.1:51323 - "GET /post/getpostbyid?id=50 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:03:43,138---127.0.0.1:51661 - "GET /post/getpostbyid?id=50 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:03:44,114---127.0.0.1:51661 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:03:44,116---127.0.0.1:51668 - "OPTIONS /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:03:44,135---127.0.0.1:51661 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:03:44,159---127.0.0.1:51668 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:03:44,974---127.0.0.1:51668 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:04:44,163---127.0.0.1:51973 - "OPTIONS /post/publishpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:04:44,243---127.0.0.1:51973 - "POST /post/publishpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:04:44,676---127.0.0.1:51973 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:04:46,384---127.0.0.1:51973 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:04:46,396---127.0.0.1:51993 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:04:48,557---127.0.0.1:51993 - "OPTIONS /post/getpostbyid?id=51 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:04:48,566---127.0.0.1:51993 - "GET /post/getpostbyid?id=51 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:04:52,872---127.0.0.1:51993 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:04:52,879---127.0.0.1:52021 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:04:54,578---127.0.0.1:52021 - "GET /post/getpostbyid?id=51 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:05:08,866---127.0.0.1:52091 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:05:08,873---127.0.0.1:52093 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:05:11,141---127.0.0.1:52093 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:06:31,727---127.0.0.1:52476 - "POST /post/publishpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:06:32,077---127.0.0.1:52476 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:06:38,214---127.0.0.1:52515 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:06:38,220---127.0.0.1:52517 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:06:41,021---127.0.0.1:52517 - "OPTIONS /post/getpostbyid?id=52 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:06:41,029---127.0.0.1:52517 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:10:44,328---127.0.0.1:53679 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:10:55,908---127.0.0.1:53738 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:12:16,437---127.0.0.1:54098 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
+WARNING:  2023-02-28 13:15:11,330---StatReload detected changes in 'api/PostApi.py'. Reloading...
+INFO:     2023-02-28 13:15:11,417---Shutting down
+INFO:     2023-02-28 13:15:11,527---Waiting for application shutdown.
+INFO:     2023-02-28 13:15:11,529---Application shutdown complete.
+INFO:     2023-02-28 13:15:11,529---Finished server process [17063]
+INFO:     2023-02-28 13:15:12,701---Started server process [18224]
+INFO:     2023-02-28 13:15:12,701---Waiting for application startup.
+INFO:     2023-02-28 13:15:12,702---Application startup complete.
+WARNING:  2023-02-28 13:17:10,547---StatReload detected changes in 'api/PostApi.py'. Reloading...
+INFO:     2023-02-28 13:17:10,627---Shutting down
+INFO:     2023-02-28 13:17:10,729---Waiting for application shutdown.
+INFO:     2023-02-28 13:17:10,730---Application shutdown complete.
+INFO:     2023-02-28 13:17:10,730---Finished server process [18224]
+INFO:     2023-02-28 13:17:11,735---Started server process [18327]
+INFO:     2023-02-28 13:17:11,735---Waiting for application startup.
+INFO:     2023-02-28 13:17:11,735---Application startup complete.
+WARNING:  2023-02-28 13:19:07,881---StatReload detected changes in 'models/PostModel.py'. Reloading...
+INFO:     2023-02-28 13:19:07,920---Shutting down
+INFO:     2023-02-28 13:19:08,022---Waiting for application shutdown.
+INFO:     2023-02-28 13:19:08,024---Application shutdown complete.
+INFO:     2023-02-28 13:19:08,024---Finished server process [18327]
+INFO:     2023-02-28 13:19:08,587---Started server process [18408]
+INFO:     2023-02-28 13:19:08,587---Waiting for application startup.
+INFO:     2023-02-28 13:19:08,587---Application startup complete.
+INFO:     2023-02-28 13:19:09,954---127.0.0.1:55992 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:19:10,064---127.0.0.1:55992 - "GET /swagger/swagger-ui.css.map HTTP/1.1" 404 Not Found
+INFO:     2023-02-28 13:19:10,133---127.0.0.1:55992 - "GET /swagger/swagger-ui-bundle.js.map HTTP/1.1" 404 Not Found
+INFO:     2023-02-28 13:19:10,189---127.0.0.1:55992 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:19:13,054---127.0.0.1:55992 - "GET /post/getpostbyid?id=2 HTTP/1.1" 500 Internal Server Error
+ERROR:    2023-02-28 13:19:13,055---Exception in ASGI application
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/sqlalchemy/orm/relationships.py", line 2421, in _determine_joins
+    self.primaryjoin = join_condition(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/sqlalchemy/sql/util.py", line 123, in join_condition
+    return Join._join_condition(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/sqlalchemy/sql/selectable.py", line 1368, in _join_condition
+    raise exc.NoForeignKeysError(
+sqlalchemy.exc.NoForeignKeysError: Can't find any foreign key relationships between 'post' and 'post_category'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/middleware/cors.py", line 84, in __call__
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/fastapi/routing.py", line 235, in app
+    raw_response = await run_endpoint_function(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/fastapi/routing.py", line 163, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/concurrency.py", line 41, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/anyio/to_thread.py", line 31, in run_sync
+    return await get_asynclib().run_sync_in_worker_thread(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 937, in run_sync_in_worker_thread
+    return await future
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/anyio/_backends/_asyncio.py", line 867, in run
+    result = context.run(func, *args)
+  File "/Users/zly/Desktop/mygit/MyFastApi/app/api/PostApi.py", line 86, in getpostbyid
+    post_query = db.query(Post, User.username).select_from(Post).filter_by(post_id=id).join(User).join(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/sqlalchemy/orm/session.py", line 2795, in query
+    return self._query_cls(entities, self, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 273, in __init__
+    self._set_entities(entities)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 282, in _set_entities
+    self._raw_columns = [
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/sqlalchemy/orm/query.py", line 283, in <listcomp>
+    coercions.expect(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/sqlalchemy/sql/coercions.py", line 406, in expect
+    insp._post_inspect
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/sqlalchemy/util/langhelpers.py", line 1254, in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/sqlalchemy/orm/mapper.py", line 2693, in _post_inspect
+    self._check_configure()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/sqlalchemy/orm/mapper.py", line 2374, in _check_configure
+    _configure_registries({self.registry}, cascade=True)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/sqlalchemy/orm/mapper.py", line 4116, in _configure_registries
+    _do_configure_registries(registries, cascade)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/sqlalchemy/orm/mapper.py", line 4158, in _do_configure_registries
+    mapper._post_configure_properties()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/sqlalchemy/orm/mapper.py", line 2391, in _post_configure_properties
+    prop.init()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/sqlalchemy/orm/interfaces.py", line 544, in init
+    self.do_init()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/sqlalchemy/orm/relationships.py", line 1634, in do_init
+    self._setup_join_conditions()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/sqlalchemy/orm/relationships.py", line 1881, in _setup_join_conditions
+    self._join_condition = jc = JoinCondition(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/sqlalchemy/orm/relationships.py", line 2308, in __init__
+    self._determine_joins()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/sqlalchemy/orm/relationships.py", line 2442, in _determine_joins
+    raise sa_exc.NoForeignKeysError(
+sqlalchemy.exc.NoForeignKeysError: Could not determine join condition between parent/child tables on relationship Post.postcategory - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+WARNING:  2023-02-28 13:21:26,179---StatReload detected changes in 'models/PostModel.py'. Reloading...
+INFO:     2023-02-28 13:21:26,255---Shutting down
+INFO:     2023-02-28 13:21:26,372---Waiting for application shutdown.
+INFO:     2023-02-28 13:21:26,374---Application shutdown complete.
+INFO:     2023-02-28 13:21:26,374---Finished server process [18408]
+INFO:     2023-02-28 13:21:27,890---Started server process [18491]
+INFO:     2023-02-28 13:21:27,890---Waiting for application startup.
+INFO:     2023-02-28 13:21:27,891---Application startup complete.
+INFO:     2023-02-28 13:21:27,894---127.0.0.1:56580 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:21:28,126---127.0.0.1:56581 - "GET /swagger/swagger-ui.css.map HTTP/1.1" 404 Not Found
+INFO:     2023-02-28 13:21:28,127---127.0.0.1:56580 - "GET /swagger/swagger-ui-bundle.js.map HTTP/1.1" 404 Not Found
+INFO:     2023-02-28 13:21:28,209---127.0.0.1:56580 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:21:33,761---127.0.0.1:56624 - "GET /post/getpostbyid?id=2 HTTP/1.1" 200 OK
+WARNING:  2023-02-28 13:21:57,342---StatReload detected changes in 'api/PostApi.py'. Reloading...
+INFO:     2023-02-28 13:21:57,447---Shutting down
+INFO:     2023-02-28 13:21:57,549---Waiting for application shutdown.
+INFO:     2023-02-28 13:21:57,550---Application shutdown complete.
+INFO:     2023-02-28 13:21:57,550---Finished server process [18491]
+INFO:     2023-02-28 13:21:58,799---Started server process [18529]
+INFO:     2023-02-28 13:21:58,799---Waiting for application startup.
+INFO:     2023-02-28 13:21:58,800---Application startup complete.
+INFO:     2023-02-28 13:22:01,462---127.0.0.1:56743 - "GET /post/getpostbyid?id=2 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:22:25,044---127.0.0.1:56850 - "OPTIONS /post/getpostbyid?id=52 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:22:25,083---127.0.0.1:56850 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:22:25,860---127.0.0.1:56850 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:22:32,476---127.0.0.1:56894 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:22:32,477---127.0.0.1:56896 - "OPTIONS /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:22:32,490---127.0.0.1:56894 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:22:32,521---127.0.0.1:56896 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:22:37,129---127.0.0.1:56896 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:22:37,824---127.0.0.1:56896 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:27:53,511---127.0.0.1:58479 - "OPTIONS /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:27:53,625---127.0.0.1:58479 - "GET /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:27:57,152---127.0.0.1:58479 - "OPTIONS /user/edituserinfo HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:27:57,214---127.0.0.1:58479 - "POST /user/edituserinfo HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:27:58,452---127.0.0.1:58479 - "GET /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:27:58,713---127.0.0.1:58479 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:27:58,739---127.0.0.1:58506 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:28:00,675---127.0.0.1:58506 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:28:27,321---127.0.0.1:58640 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:28:27,326---127.0.0.1:58639 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:28:29,837---127.0.0.1:58639 - "OPTIONS /post/getpostbyid?id=44 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:28:29,848---127.0.0.1:58639 - "GET /post/getpostbyid?id=44 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:28:35,287---127.0.0.1:58695 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:28:35,294---127.0.0.1:58696 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:28:37,538---127.0.0.1:58696 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:28:38,355---127.0.0.1:58696 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:28:38,699---127.0.0.1:58696 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:28:39,804---127.0.0.1:58696 - "OPTIONS /post/getpostbyid?id=41 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:28:39,812---127.0.0.1:58696 - "GET /post/getpostbyid?id=41 HTTP/1.1" 200 OK

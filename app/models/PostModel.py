@@ -15,13 +15,15 @@ class Post(Base):
     view_num = Column(Integer, comment='点击数')
     create_time = Column(DateTime, comment='创建时间')
     user_id = Column(Integer, ForeignKey('user.user_id'))
-    category_id = Column(SmallInteger, comment='种类id')
+    category_id = Column(SmallInteger, ForeignKey('post_category.category_id'), comment='种类id')
     update_time = Column(DateTime, comment='更新时间')
     best_post = Column(SmallInteger, comment='用户id')
     collect_num = Column(Integer, comment='点击数')
     post_status = Column(SmallInteger, comment='帖子状态')
     # overlaps = "user"
     user = relationship('User', viewonly=True)
+
+    # postcategory = relationship('PostCategory', viewonly=True)
 
     def __repr__(self):
         """
