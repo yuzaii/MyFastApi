@@ -1,6 +1,8 @@
 import datetime
+import os
+import time
 
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, UploadFile, File
 from sqlalchemy.orm import Session
 
 from app.Utils.Pagination import Pagination
@@ -19,6 +21,28 @@ def getpostcategory(db: Session = Depends(get_db)):
     postcategorys = db.query(PostCategory).all()
     # print(postcategorys)
     return {'code': 200, 'msg': 'success', 'data': postcategorys}
+
+
+@PostRouter.post("/postimg/upload", summary="上传帖子图片")
+async def postimgupload(file: UploadFile = File(...), user=Depends(auth_depend)):
+    print('postimgupload')
+    user_id = user.user_id
+    extension = os.path.splitext(file.filename)[1]
+    new_filename = f"{user_id}-{int(time.time())}{extension}"
+    file.filename = new_filename
+    print('新的filename:', file.filename)
+    # 将文件上传到upload文件夹中
+    contents = await file.read()
+    with open(f"./upload/img/postimg/{file.filename}", "wb") as f:
+        f.write(contents)
+    return {
+        "errno": 0,
+        "data": {
+            "url": f"http://localhost:6060/img/postimg/{new_filename}",
+            # "alt": "yyy",
+            # "href": "zzz"
+        }
+    }
 
 
 @PostRouter.post("/publishpost", summary="发布帖子")
@@ -83,7 +107,8 @@ def getpost(getpostinfo: GetPostBase, db: Session = Depends(get_db)):
 
 @PostRouter.get("/getpostbyid", summary="根据postid获取帖子信息")
 def getpostbyid(id: int, db: Session = Depends(get_db)):
-    post_query = db.query(Post, User.username,PostCategory.category_name).select_from(Post).filter_by(post_id=id).join(User).join(
+    post_query = db.query(Post, User.username, PostCategory.category_name).select_from(Post).filter_by(post_id=id).join(
+        User).join(
         PostCategory).first()
     postinfo = post_query._asdict()
     print(postinfo)
