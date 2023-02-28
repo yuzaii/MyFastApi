@@ -28,7 +28,7 @@ def publishpost(post: PublisPostBase, db: Session = Depends(get_db), user=Depend
     # 构造帖子对象
     db_post = Post(user_id=user.user_id, title=post.title, detail=post.detail,
                    images=post.images, comment_num=0, view_num=0, best_post=0,
-                   category_id=post.category_id, createtime=datetime.datetime.now(),
+                   category_id=post.category_id, create_time=datetime.datetime.now(),
                    collect_num=0, post_status=0)
     print(db_post)
     # 将贴子添加到数据库中
@@ -60,7 +60,7 @@ def getpost(getpostinfo: GetPostBase, db: Session = Depends(get_db)):
     if getpostinfo.category_id:
         print('有category_id参数')
         post_query = db.query(Post, User.username).select_from(Post).join(User).filter(
-            Post.category_id == getpostinfo.category_id)
+            Post.category_id == getpostinfo.category_id).order_by(Post.create_time.desc())
         postdata, total = Pagination(post_query, getpostinfo.pageNum, getpostinfo.pageSize).paginate()
         postinfolist = [p._asdict() for p in postdata]
 
@@ -73,7 +73,7 @@ def getpost(getpostinfo: GetPostBase, db: Session = Depends(get_db)):
         return {'code': 200, 'msg': 'success', 'data': {"total": total, 'postinfolist': postinfolist}}
     else:
         print('没有category_id参数')
-        post_query = db.query(Post, User.username).select_from(Post).join(User)
+        post_query = db.query(Post, User.username).select_from(Post).join(User).order_by(Post.create_time.desc())
         postdata, total = Pagination(post_query, getpostinfo.pageNum, getpostinfo.pageSize).paginate()
         postinfolist = [p._asdict() for p in postdata]
         print(f'一共{total}条帖子数据')

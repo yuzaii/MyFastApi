@@ -125,10 +125,11 @@ def userinfo(user=Depends(auth_depend)):
     """
     # user.password = ''
     # user.createtime = str(user.createtime)
+    # print(type(user.create_time))
     user_res = UserInfo(username=user.username, sex=user.sex, avatar=user.avatar, signature=user.signature,
                         create_time=user.create_time)
-    print('userr', user_res)
-    print(type(user_res.create_time))
+    # print('userr', user_res)
+    # print(type(user_res.create_time))
     print({'code': 200, 'data': user_res})
     return {'code': 200, 'data': user_res}
 

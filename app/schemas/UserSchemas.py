@@ -35,11 +35,11 @@ class UserInfo(BaseModel):
     sex: Optional[str]
     avatar: Optional[str]
     signature: Optional[str]
-    create_time: Any
-
-    @validator('create_time')
-    def time_str(cls, v):
-        return str(v)
+    create_time: datetime.datetime
+    # 留给前端做
+    # @validator('create_time')
+    # def time_str(cls, v):
+    #     return str(v)
 
 
 class UserRegisterBase(BaseModel):
