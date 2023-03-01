@@ -13,7 +13,7 @@ from app.models.PostModel import Post
 from app.models.UserModel import User
 from app.schemas.PostSchemas import PublisPostBase, GetPostBase
 
-PostRouter = APIRouter(prefix='/post', tags=['论坛相关api'])
+PostRouter = APIRouter(prefix='/post', tags=['论坛文章相关api'])
 
 
 @PostRouter.get("/postcategory", summary="获取帖子种类学信息")
@@ -105,7 +105,7 @@ def getpost(getpostinfo: GetPostBase, db: Session = Depends(get_db)):
         return {'code': 200, 'msg': 'success', 'data': {"total": total, 'postinfolist': postinfolist}}
 
 
-@PostRouter.get("/getpostbyid", summary="根据postid获取帖子信息")
+@PostRouter.get("/getbypostid", summary="根据postid获取帖子信息")
 def getpostbyid(id: int, db: Session = Depends(get_db)):
     post_query = db.query(Post, User.username, PostCategory.category_name).select_from(Post).filter_by(post_id=id).join(
         User).join(

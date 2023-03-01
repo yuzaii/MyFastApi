@@ -120,7 +120,7 @@ INFO:     2023-02-26 15:41:09,120---127.0.0.1:51580 - "POST /user/userinfo HTTP/
 INFO:     2023-02-26 15:41:10,725---127.0.0.1:51580 - "POST /user/userinfo HTTP/1.1" 401 Unauthorized
 INFO:     2023-02-26 15:41:15,309---127.0.0.1:51580 - "POST /user/userinfo HTTP/1.1" 401 Unauthorized
 INFO:     2023-02-26 15:41:17,712---127.0.0.1:51580 - "POST /user/userinfo HTTP/1.1" 401 Unauthorized
-INFO:     2023-02-26 15:41:37,951---有人访问注册�?
+INFO:     2023-02-26 15:41:37,951---有人访问注册了
 INFO:     2023-02-26 15:41:38,014---127.0.0.1:51629 - "POST /user/register HTTP/1.1" 200 OK
 INFO:     2023-02-26 15:41:44,162---127.0.0.1:51633 - "POST /user/login HTTP/1.1" 200 OK
 INFO:     2023-02-26 15:41:44,184---127.0.0.1:51633 - "POST /user/userinfo HTTP/1.1" 200 OK
@@ -378,7 +378,7 @@ INFO:     2023-02-26 17:41:48,184---Started server process [1878]
 INFO:     2023-02-26 17:41:48,184---Waiting for application startup.
 INFO:     2023-02-26 17:41:48,184---Application startup complete.
 INFO:     2023-02-26 17:42:03,309---127.0.0.1:52701 - "OPTIONS /user/register HTTP/1.1" 200 OK
-INFO:     2023-02-26 17:42:03,323---有人访问注册�?
+INFO:     2023-02-26 17:42:03,323---有人访问注册了
 INFO:     2023-02-26 17:42:03,355---127.0.0.1:52701 - "POST /user/register HTTP/1.1" 200 OK
 INFO:     2023-02-26 17:42:08,780---127.0.0.1:52726 - "OPTIONS /user/login HTTP/1.1" 200 OK
 INFO:     2023-02-26 17:42:08,810---127.0.0.1:52726 - "POST /user/login HTTP/1.1" 200 OK
@@ -950,7 +950,7 @@ INFO:     2023-02-27 11:15:22,319---127.0.0.1:50599 - "GET / HTTP/1.1" 307 Tempo
 INFO:     2023-02-27 11:15:22,324---127.0.0.1:50599 - "GET /docs HTTP/1.1" 200 OK
 INFO:     2023-02-27 11:15:22,466---127.0.0.1:50599 - "GET /openapi.json HTTP/1.1" 200 OK
 INFO:     2023-02-27 11:15:31,926---127.0.0.1:50660 - "OPTIONS /user/register HTTP/1.1" 200 OK
-INFO:     2023-02-27 11:15:31,936---有人访问注册�?
+INFO:     2023-02-27 11:15:31,936---有人访问注册了
 INFO:     2023-02-27 11:15:31,990---127.0.0.1:50660 - "POST /user/register HTTP/1.1" 200 OK
 INFO:     2023-02-27 11:15:39,126---127.0.0.1:50693 - "OPTIONS /user/login HTTP/1.1" 200 OK
 INFO:     2023-02-27 11:15:39,152---127.0.0.1:50693 - "POST /user/login HTTP/1.1" 200 OK
@@ -994,15 +994,15 @@ INFO:     2023-02-27 11:21:09,858---Finished server process [6952]
 INFO:     2023-02-27 11:21:10,535---Started server process [7096]
 INFO:     2023-02-27 11:21:10,535---Waiting for application startup.
 INFO:     2023-02-27 11:21:10,535---Application startup complete.
-INFO:     2023-02-27 11:21:43,630---有人访问注册�?
+INFO:     2023-02-27 11:21:43,630---有人访问注册了
 INFO:     2023-02-27 11:21:43,683---127.0.0.1:52325 - "POST /user/register HTTP/1.1" 200 OK
-INFO:     2023-02-27 11:21:50,149---有人访问注册�?
+INFO:     2023-02-27 11:21:50,149---有人访问注册了
 INFO:     2023-02-27 11:21:50,162---127.0.0.1:52352 - "POST /user/register HTTP/1.1" 200 OK
-INFO:     2023-02-27 11:21:52,866---有人访问注册�?
+INFO:     2023-02-27 11:21:52,866---有人访问注册了
 INFO:     2023-02-27 11:21:52,875---127.0.0.1:52352 - "POST /user/register HTTP/1.1" 200 OK
-INFO:     2023-02-27 11:21:55,482---有人访问注册�?
+INFO:     2023-02-27 11:21:55,482---有人访问注册了
 INFO:     2023-02-27 11:21:55,492---127.0.0.1:52352 - "POST /user/register HTTP/1.1" 200 OK
-INFO:     2023-02-27 11:21:57,766---有人访问注册�?
+INFO:     2023-02-27 11:21:57,766---有人访问注册了
 INFO:     2023-02-27 11:21:57,779---127.0.0.1:52352 - "POST /user/register HTTP/1.1" 200 OK
 WARNING:  2023-02-27 11:22:40,525---StatReload detected changes in 'models/PostModel.py'. Reloading...
 INFO:     2023-02-27 11:22:40,602---Shutting down
@@ -2054,7 +2054,6 @@ INFO:     2023-02-28 00:09:48,603---127.0.0.1:10450 - "POST /post/getpost HTTP/1
 INFO:     2023-02-28 00:11:47,330---127.0.0.1:10621 - "OPTIONS /post/getpost HTTP/1.1" 200 OK
 INFO:     2023-02-28 00:11:47,335---127.0.0.1:10620 - "GET /post/postcategory HTTP/1.1" 200 OK
 INFO:     2023-02-28 00:11:47,342---127.0.0.1:10621 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 00:12:58,003---Stopping reloader process [26440]
 INFO:     2023-02-28 08:35:27,581---Will watch for changes in these directories: ['/Users/zly/Desktop/mygit/MyFastApi/app']
 INFO:     2023-02-28 08:35:27,581---Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
 INFO:     2023-02-28 08:35:27,581---Started reloader process [11329] using StatReload
@@ -2898,669 +2897,593 @@ INFO:     2023-02-28 13:28:38,355---127.0.0.1:58696 - "POST /post/getpost HTTP/1
 INFO:     2023-02-28 13:28:38,699---127.0.0.1:58696 - "POST /post/getpost HTTP/1.1" 200 OK
 INFO:     2023-02-28 13:28:39,804---127.0.0.1:58696 - "OPTIONS /post/getpostbyid?id=41 HTTP/1.1" 200 OK
 INFO:     2023-02-28 13:28:39,812---127.0.0.1:58696 - "GET /post/getpostbyid?id=41 HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:46:48,931---Will watch for changes in these directories: ['C:\\Users\\Yuzai\\PycharmProjects\\MyFastApi\\app']
-INFO:     2023-02-28 20:46:48,932---Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
-INFO:     2023-02-28 20:46:48,932---Started reloader process [3588] using WatchFiles
-INFO:     2023-02-28 20:46:49,982---Started server process [20772]
-INFO:     2023-02-28 20:46:49,983---Waiting for application startup.
-INFO:     2023-02-28 20:46:49,983---Application startup complete.
-INFO:     2023-02-28 20:46:51,442---���˷���apiҳ��
-INFO:     2023-02-28 20:46:51,447---127.0.0.1:2428 - "GET / HTTP/1.1" 307 Temporary Redirect
-INFO:     2023-02-28 20:46:51,458---127.0.0.1:2428 - "GET /docs HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:46:51,649---127.0.0.1:2428 - "GET /swagger/swagger-ui.css HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 20:46:51,654---127.0.0.1:2430 - "GET /swagger/swagger-ui-bundle.js HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 20:46:51,864---127.0.0.1:2430 - "GET /openapi.json HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:47:15,235---127.0.0.1:2482 - "OPTIONS /user/login HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:47:15,284---127.0.0.1:2482 - "POST /user/login HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:47:15,309---127.0.0.1:2482 - "OPTIONS /user/userinfo HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:47:15,318---127.0.0.1:2482 - "GET /user/userinfo HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:47:17,443---127.0.0.1:2482 - "GET /user/userinfo HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:47:23,780---127.0.0.1:2484 - "OPTIONS /user/image/upload HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:47:23,790---127.0.0.1:2484 - "POST /user/image/upload HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:47:24,988---127.0.0.1:2484 - "OPTIONS /user/edituserinfo HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:47:25,009---127.0.0.1:2484 - "POST /user/edituserinfo HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:47:25,348---127.0.0.1:2511 - "GET /avatar/1-1677588443.jpg HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:47:26,582---127.0.0.1:2511 - "GET /avatar/1-1677588443.jpg HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 20:47:26,588---127.0.0.1:2484 - "GET /user/userinfo HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:47:36,033---127.0.0.1:2539 - "POST /user/image/upload HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:47:37,079---127.0.0.1:2539 - "POST /user/edituserinfo HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:47:37,104---127.0.0.1:2512 - "GET /avatar/1-1677588456.jpg HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:47:38,401---127.0.0.1:2512 - "GET /avatar/1-1677588456.jpg HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 20:47:38,410---127.0.0.1:2539 - "GET /user/userinfo HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:47:43,174---127.0.0.1:2539 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:47:43,175---127.0.0.1:2540 - "OPTIONS /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:47:43,205---127.0.0.1:2540 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:47:43,206---127.0.0.1:2539 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:47:46,037---127.0.0.1:2539 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:47:47,167---127.0.0.1:2539 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:47:48,444---127.0.0.1:2539 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:48:53,906---127.0.0.1:2629 - "OPTIONS /post/publishpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:48:53,927---127.0.0.1:2629 - "POST /post/publishpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:48:54,673---127.0.0.1:2629 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:48:54,978---127.0.0.1:2644 - "GET /avatar/1-1677588456.jpg HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 20:48:56,008---127.0.0.1:2634 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:48:56,015---127.0.0.1:2629 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:48:58,706---127.0.0.1:2629 - "OPTIONS /post/getpostbyid?id=47 HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:48:58,718---127.0.0.1:2629 - "GET /post/getpostbyid?id=47 HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:49:42,700---127.0.0.1:2693 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:49:42,703---127.0.0.1:2691 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:49:43,272---127.0.0.1:2691 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:49:45,482---127.0.0.1:2691 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:49:45,493---127.0.0.1:2693 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:49:48,074---127.0.0.1:2693 - "GET /post/getpostbyid?id=47 HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:49:52,285---127.0.0.1:2694 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:49:52,296---127.0.0.1:2693 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:49:52,981---127.0.0.1:2693 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:50:05,318---127.0.0.1:2704 - "POST /post/publishpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:50:06,125---127.0.0.1:2704 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:50:06,401---127.0.0.1:2709 - "GET /avatar/1-1677588456.jpg HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 20:50:06,410---127.0.0.1:2705 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:50:06,415---127.0.0.1:2704 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:50:09,251---127.0.0.1:2704 - "OPTIONS /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:50:09,261---127.0.0.1:2704 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:51:51,703---127.0.0.1:2767 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:51:51,710---127.0.0.1:2766 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:52:05,240---127.0.0.1:2769 - "OPTIONS /post/getpostbyid?id=003 HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:52:05,250---127.0.0.1:2769 - "GET /post/getpostbyid?id=003 HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:52:11,031---127.0.0.1:2788 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:52:11,038---127.0.0.1:2787 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:52:11,600---127.0.0.1:2787 - "GET /post/getpostbyid?id=003 HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:52:13,214---127.0.0.1:2788 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:52:13,224---127.0.0.1:2787 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:52:16,266---127.0.0.1:2787 - "OPTIONS /post/getpostbyid?id=002 HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:52:16,276---127.0.0.1:2787 - "GET /post/getpostbyid?id=002 HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:53:07,203---127.0.0.1:2790 - "GET /post/getpostbyid?id=002 HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:53:10,167---127.0.0.1:2790 - "GET /post/getpostbyid?id=002 HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:53:11,275---127.0.0.1:2790 - "GET /post/getpostbyid?id=002 HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:53:11,571---127.0.0.1:2837 - "GET /avatar/1-1677588456.jpg HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 20:53:26,124---127.0.0.1:2846 - "GET /post/getpostbyid?id=002 HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:53:36,607---127.0.0.1:2848 - "GET /post/getpostbyid?id=002 HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:55:57,220---127.0.0.1:2953 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:55:57,227---127.0.0.1:2949 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:56:25,599---127.0.0.1:2955 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:56:41,074---127.0.0.1:2978 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:56:41,083---127.0.0.1:2979 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:56:44,198---127.0.0.1:2979 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:56:48,028---127.0.0.1:2979 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:56:48,041---127.0.0.1:2980 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:56:50,145---127.0.0.1:2980 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:57:21,649---127.0.0.1:3024 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:57:48,923---127.0.0.1:3030 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:58:03,489---127.0.0.1:3086 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:59:48,026---127.0.0.1:3161 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:59:51,912---127.0.0.1:3161 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 20:59:55,001---127.0.0.1:3161 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:00:03,850---127.0.0.1:3163 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:02:40,161---127.0.0.1:3277 - "OPTIONS /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:02:40,169---127.0.0.1:3277 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:02:52,268---127.0.0.1:3285 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:03:54,836---127.0.0.1:3366 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:04:00,868---127.0.0.1:3367 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:04:07,870---127.0.0.1:3383 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:04:21,178---127.0.0.1:3384 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:04:27,523---127.0.0.1:3394 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:04:44,646---127.0.0.1:3395 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:04:53,242---127.0.0.1:3437 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:05:07,092---127.0.0.1:3438 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:05:48,070---127.0.0.1:3499 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:06:08,862---127.0.0.1:3502 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:06:40,089---127.0.0.1:3543 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:06:46,869---127.0.0.1:3544 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:07:35,041---127.0.0.1:3595 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:08:12,928---127.0.0.1:3596 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:08:20,297---127.0.0.1:3643 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:08:20,298---127.0.0.1:3645 - "OPTIONS /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:08:20,308---127.0.0.1:3643 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:08:20,314---127.0.0.1:3645 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:19:14,350---127.0.0.1:13444 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:19:14,355---127.0.0.1:13444 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:21:36,448---127.0.0.1:13570 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:21:42,277---127.0.0.1:13571 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:21:42,542---127.0.0.1:13582 - "GET /avatar/1-1677588456.jpg HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 21:24:29,976---127.0.0.1:13728 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:24:34,215---127.0.0.1:13728 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:25:03,531---127.0.0.1:13729 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:25:08,827---127.0.0.1:13768 - "GET /avatar/1-1677588456.jpg HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 21:25:08,873---127.0.0.1:13769 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:27:59,859---127.0.0.1:13917 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:28:24,862---127.0.0.1:13918 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:28:28,052---127.0.0.1:13918 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:28:52,271---127.0.0.1:14041 - "OPTIONS /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:28:52,276---127.0.0.1:14040 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:28:52,286---127.0.0.1:14041 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:29:36,329---127.0.0.1:14044 - "OPTIONS /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:29:36,345---127.0.0.1:14044 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:29:38,223---127.0.0.1:14044 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:29:38,237---127.0.0.1:14044 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:29:38,245---127.0.0.1:14044 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:41:18,490---127.0.0.1:14765 - "GET /avatar/1-1677588456.jpg HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 21:41:22,251---127.0.0.1:14765 - "GET /avatar/1-1677588456.jpg HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 21:41:22,607---127.0.0.1:14779 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:41:22,608---127.0.0.1:14780 - "OPTIONS /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:41:22,616---127.0.0.1:14780 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:41:22,624---127.0.0.1:14779 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:41:23,213---127.0.0.1:14779 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:43:57,092---127.0.0.1:14909 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:43:57,383---127.0.0.1:14909 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:43:57,401---127.0.0.1:14912 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:52:53,562---127.0.0.1:1357 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:52:53,564---127.0.0.1:1358 - "OPTIONS /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:52:53,586---127.0.0.1:1357 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:52:53,594---127.0.0.1:1358 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:53:09,434---127.0.0.1:1375 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:53:09,441---127.0.0.1:1375 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:53:19,893---127.0.0.1:1411 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:53:19,900---127.0.0.1:1411 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:57:01,990---127.0.0.1:1512 - "OPTIONS /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:57:01,999---127.0.0.1:1512 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:57:03,452---127.0.0.1:1514 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:57:03,457---127.0.0.1:1512 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:57:04,379---127.0.0.1:1512 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:57:06,124---127.0.0.1:1514 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:57:06,135---127.0.0.1:1512 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:57:06,988---127.0.0.1:1512 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:57:17,271---127.0.0.1:1560 - "GET /avatar/1-1677588456.jpg HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 21:57:17,273---127.0.0.1:1561 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:57:17,845---127.0.0.1:1561 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:57:17,851---127.0.0.1:1563 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:57:18,832---127.0.0.1:1563 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:57:22,899---127.0.0.1:1563 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:57:22,904---127.0.0.1:1563 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:57:30,930---127.0.0.1:1591 - "OPTIONS /post/getpostbyid?id=47 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:57:30,941---127.0.0.1:1591 - "GET /post/getpostbyid?id=47 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:58:13,839---127.0.0.1:1617 - "GET /post/getpostbyid?id=47 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:58:15,462---127.0.0.1:1617 - "GET /post/getpostbyid?id=47 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:58:30,465---127.0.0.1:1618 - "GET /post/getpostbyid?id=47 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:58:33,294---127.0.0.1:1618 - "GET /post/getpostbyid?id=47 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:58:35,622---127.0.0.1:1618 - "GET /post/getpostbyid?id=47 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:58:48,832---127.0.0.1:1657 - "GET /post/getpostbyid?id=47 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:58:53,121---127.0.0.1:1657 - "GET /post/getpostbyid?id=47 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:58:54,431---127.0.0.1:1658 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:58:54,439---127.0.0.1:1657 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:58:55,670---127.0.0.1:1657 - "GET /post/getpostbyid?id=47 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:59:01,122---127.0.0.1:1685 - "GET /post/getpostbyid?id=47 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:59:05,143---127.0.0.1:1685 - "GET /post/getpostbyid?id=47 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:59:20,654---127.0.0.1:1686 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:59:20,660---127.0.0.1:1686 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:59:46,646---127.0.0.1:1696 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:59:49,174---127.0.0.1:1696 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:59:50,341---127.0.0.1:1696 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:59:52,710---127.0.0.1:1696 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:59:53,490---127.0.0.1:1696 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:59:55,614---127.0.0.1:1696 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 21:59:55,620---127.0.0.1:1696 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:00:02,765---127.0.0.1:1757 - "OPTIONS /user/userinfo HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:00:02,778---127.0.0.1:1757 - "GET /user/userinfo HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:00:04,251---127.0.0.1:1757 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:00:04,257---127.0.0.1:1757 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:03:02,505---127.0.0.1:1819 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:03:04,111---127.0.0.1:1819 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:03:04,112---127.0.0.1:1821 - "OPTIONS /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:03:04,120---127.0.0.1:1819 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:03:04,128---127.0.0.1:1821 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:03:05,002---127.0.0.1:1821 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:03:28,041---127.0.0.1:1851 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:03:31,028---127.0.0.1:1851 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:03:34,546---127.0.0.1:1851 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:03:38,877---127.0.0.1:1851 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:04:24,114---127.0.0.1:1853 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:04:26,045---127.0.0.1:1853 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:04:26,340---127.0.0.1:1909 - "GET /avatar/1-1677588456.jpg HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:04:28,385---127.0.0.1:1853 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:04:28,403---127.0.0.1:1853 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:04:29,731---127.0.0.1:1853 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:04:34,518---127.0.0.1:1853 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:05:27,808---127.0.0.1:1925 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:05:27,815---127.0.0.1:1925 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:05:30,404---127.0.0.1:1925 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:05:33,478---127.0.0.1:2010 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:05:33,487---127.0.0.1:1925 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:05:36,609---127.0.0.1:1925 - "GET /post/getpostbyid?id=48 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:05:46,335---127.0.0.1:2051 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:05:46,342---127.0.0.1:2050 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:08:03,862---127.0.0.1:2131 - "GET /avatar/1-1677588456.jpg HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:08:36,173---127.0.0.1:2152 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:11:36,395---127.0.0.1:2333 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:14:11,884---127.0.0.1:2494 - "GET /avatar/1-1677588456.jpg HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:14:11,913---127.0.0.1:2495 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:14:11,921---127.0.0.1:2495 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:14:55,676---127.0.0.1:2497 - "GET /post/postcategory HTTP/1.1" 200 OK
-WARNING:  2023-02-28 22:16:52,106---WatchFiles detected changes in 'api\PostApi.py'. Reloading...
-INFO:     2023-02-28 22:16:53,483---Started server process [21172]
-INFO:     2023-02-28 22:16:53,484---Waiting for application startup.
-INFO:     2023-02-28 22:16:53,485---Application startup complete.
-WARNING:  2023-02-28 22:19:06,402---WatchFiles detected changes in 'api\PostApi.py'. Reloading...
-INFO:     2023-02-28 22:19:07,729---Started server process [1928]
-INFO:     2023-02-28 22:19:07,730---Waiting for application startup.
-INFO:     2023-02-28 22:19:07,730---Application startup complete.
-INFO:     2023-02-28 22:19:22,408---127.0.0.1:2810 - "GET /post/psotimg/upload HTTP/1.1" 404 Not Found
-INFO:     2023-02-28 22:19:22,637---127.0.0.1:2810 - "GET /favicon.ico HTTP/1.1" 404 Not Found
-INFO:     2023-02-28 22:19:30,737---127.0.0.1:2821 - "GET /docs HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:19:30,963---127.0.0.1:2821 - "GET /openapi.json HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:19:38,982---127.0.0.1:2822 - "POST /post/postimg/upload HTTP/1.1" 401 Unauthorized
-INFO:     2023-02-28 22:19:54,973---127.0.0.1:2868 - "POST /user/token HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:20:02,193---127.0.0.1:2896 - "POST /post/postimg/upload HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:20:10,848---127.0.0.1:2909 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:20:16,676---127.0.0.1:2910 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:20:21,481---127.0.0.1:2910 - "OPTIONS /post/psotimg/upload HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:20:21,484---127.0.0.1:2910 - "POST /post/psotimg/upload HTTP/1.1" 404 Not Found
-INFO:     2023-02-28 22:20:35,302---127.0.0.1:2953 - "GET /avatar/1-1677588456.jpg HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:21:03,428---127.0.0.1:2910 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:21:09,130---127.0.0.1:2998 - "OPTIONS /post/postimg/upload HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:21:09,134---127.0.0.1:2998 - "POST /post/postimg/upload HTTP/1.1" 401 Unauthorized
-INFO:     2023-02-28 22:21:23,033---127.0.0.1:2999 - "POST /post/postimg/upload HTTP/1.1" 401 Unauthorized
-WARNING:  2023-02-28 22:21:32,118---WatchFiles detected changes in 'api\PostApi.py'. Reloading...
-INFO:     2023-02-28 22:21:33,150---Started server process [17488]
-INFO:     2023-02-28 22:21:33,150---Waiting for application startup.
-INFO:     2023-02-28 22:21:33,151---Application startup complete.
-INFO:     2023-02-28 22:21:42,950---127.0.0.1:3036 - "GET /post/postimg/upload HTTP/1.1" 405 Method Not Allowed
-INFO:     2023-02-28 22:22:52,964---127.0.0.1:3096 - "GET /swagger/swagger-ui-bundle.js.map HTTP/1.1" 404 Not Found
-INFO:     2023-02-28 22:22:53,002---127.0.0.1:3096 - "GET /swagger/swagger-ui.css.map HTTP/1.1" 404 Not Found
-INFO:     2023-02-28 22:22:55,211---127.0.0.1:3096 - "POST /post/postimg/upload HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:23:26,519---127.0.0.1:3129 - "GET /avatar/1-1677588456.jpg HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:23:26,525---127.0.0.1:3130 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:23:30,364---127.0.0.1:3130 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:23:50,203---127.0.0.1:3132 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:24:01,650---127.0.0.1:3175 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:24:08,395---127.0.0.1:3177 - "OPTIONS /post/postimg/upload HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:24:08,407---127.0.0.1:3177 - "POST /post/postimg/upload HTTP/1.1" 422 Unprocessable Entity
-INFO:     2023-02-28 22:25:35,340---127.0.0.1:3279 - "POST /post/postimg/upload HTTP/1.1" 422 Unprocessable Entity
-WARNING:  2023-02-28 22:26:24,179---WatchFiles detected changes in 'api\PostApi.py'. Reloading...
-INFO:     2023-02-28 22:26:25,330---Started server process [4332]
-INFO:     2023-02-28 22:26:25,331---Waiting for application startup.
-INFO:     2023-02-28 22:26:25,332---Application startup complete.
-INFO:     2023-02-28 22:26:29,418---127.0.0.1:3341 - "POST /post/postimg/upload HTTP/1.1" 422 Unprocessable Entity
-INFO:     2023-02-28 22:27:05,331---127.0.0.1:3343 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:27:05,340---127.0.0.1:3343 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:27:08,985---127.0.0.1:3343 - "POST /post/postimg/upload HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:27:27,935---127.0.0.1:3412 - "OPTIONS /user/userinfo HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:27:27,945---127.0.0.1:3412 - "GET /user/userinfo HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:27:32,233---127.0.0.1:3412 - "OPTIONS /user/image/upload HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:27:32,247---127.0.0.1:3412 - "POST /user/image/upload HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:27:43,424---127.0.0.1:3413 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:27:43,427---127.0.0.1:3413 - "OPTIONS /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:27:43,451---127.0.0.1:3413 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:27:44,112---127.0.0.1:3413 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:27:50,565---127.0.0.1:3460 - "POST /post/postimg/upload HTTP/1.1" 200 OK
-WARNING:  2023-02-28 22:29:06,722---WatchFiles detected changes in 'api\PostApi.py'. Reloading...
-WARNING:  2023-02-28 22:29:49,147---WatchFiles detected changes in 'api\PostApi.py'. Reloading...
-WARNING:  2023-02-28 22:29:56,664---WatchFiles detected changes in 'api\PostApi.py'. Reloading...
-WARNING:  2023-02-28 22:30:47,032---WatchFiles detected changes in 'api\PostApi.py'. Reloading...
-WARNING:  2023-02-28 22:30:59,892---WatchFiles detected changes in 'api\PostApi.py'. Reloading...
-INFO:     2023-02-28 22:31:00,942---Started server process [20680]
-INFO:     2023-02-28 22:31:00,943---Waiting for application startup.
-INFO:     2023-02-28 22:31:00,943---Application startup complete.
-INFO:     2023-02-28 22:31:01,066---127.0.0.1:3635 - "GET /avatar/1-1677588456.jpg HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:31:01,845---127.0.0.1:3632 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:31:06,464---127.0.0.1:3632 - "POST /post/postimg/upload HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:31:06,801---127.0.0.1:3675 - "GET /postimg/1-1677594666.png HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:31:44,019---127.0.0.1:3699 - "OPTIONS /post/publishpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:31:44,043---127.0.0.1:3699 - "POST /post/publishpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:31:44,715---127.0.0.1:3699 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:31:47,070---127.0.0.1:3699 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:31:47,094---127.0.0.1:3702 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:31:47,139---127.0.0.1:3676 - "GET /postimg/1-1677594666.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:31:48,999---127.0.0.1:3702 - "OPTIONS /post/getpostbyid?id=49 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:31:49,014---127.0.0.1:3702 - "GET /post/getpostbyid?id=49 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:31:53,817---127.0.0.1:3702 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:31:53,823---127.0.0.1:3702 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:33:07,026---127.0.0.1:3817 - "GET /avatar/1-1677588456.jpg HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:33:07,044---127.0.0.1:3818 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:33:07,052---127.0.0.1:3819 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:33:07,115---127.0.0.1:3817 - "GET /postimg/1-1677594666.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:33:22,532---127.0.0.1:3824 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:33:36,677---127.0.0.1:3875 - "POST /post/postimg/upload HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:33:36,690---127.0.0.1:3823 - "GET /postimg/1-1677594816.png HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:34:16,068---127.0.0.1:3876 - "OPTIONS /post/postimg/upload HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:34:16,078---127.0.0.1:3876 - "POST /post/postimg/upload HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:34:16,395---127.0.0.1:3952 - "GET /postimg/1-1677594856.png HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:35:09,804---127.0.0.1:4055 - "POST /post/postimg/upload HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:35:09,814---127.0.0.1:3953 - "GET /postimg/1-1677594909.png HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:35:54,981---127.0.0.1:4057 - "POST /post/postimg/upload HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:35:55,310---127.0.0.1:4107 - "GET /postimg/1-1677594954.png HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:37:01,692---127.0.0.1:4191 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:37:05,097---127.0.0.1:4191 - "POST /post/postimg/upload HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:37:05,463---127.0.0.1:4223 - "GET /postimg/1-1677595025.png HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:39:15,947---127.0.0.1:4361 - "POST /post/postimg/upload HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:39:16,259---127.0.0.1:4365 - "GET /postimg/1-1677595155.png HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:39:20,159---127.0.0.1:4361 - "POST /post/publishpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:39:21,192---127.0.0.1:4361 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:39:21,199---127.0.0.1:4361 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:39:22,104---127.0.0.1:4363 - "OPTIONS /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:39:22,114---127.0.0.1:4361 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:39:22,122---127.0.0.1:4363 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:39:22,173---127.0.0.1:4366 - "GET /postimg/1-1677595155.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:39:22,176---127.0.0.1:4366 - "GET /postimg/1-1677594666.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:39:23,658---127.0.0.1:4363 - "OPTIONS /post/getpostbyid?id=50 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:39:23,672---127.0.0.1:4363 - "GET /post/getpostbyid?id=50 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:40:29,691---127.0.0.1:4448 - "GET /post/getpostbyid?id=50 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:40:50,930---127.0.0.1:4449 - "GET /post/getpostbyid?id=50 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:40:59,039---127.0.0.1:4485 - "GET /post/getpostbyid?id=50 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:41:08,614---127.0.0.1:4487 - "GET /post/getpostbyid?id=50 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:41:52,182---127.0.0.1:4605 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:41:52,189---127.0.0.1:4606 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:41:52,558---127.0.0.1:4615 - "GET /postimg/1-1677594666.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:41:53,418---127.0.0.1:4606 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:41:57,933---127.0.0.1:4606 - "POST /post/postimg/upload HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:41:57,949---127.0.0.1:4620 - "GET /postimg/1-1677595317.png HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:42:26,691---127.0.0.1:4612 - "OPTIONS /post/publishpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:42:26,707---127.0.0.1:4612 - "POST /post/publishpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:42:27,732---127.0.0.1:4612 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:42:28,418---127.0.0.1:4612 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:42:28,435---127.0.0.1:4612 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:42:28,839---127.0.0.1:4684 - "GET /postimg/1-1677595155.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:42:28,840---127.0.0.1:4683 - "GET /postimg/1-1677595317.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:42:30,009---127.0.0.1:4612 - "OPTIONS /post/getpostbyid?id=51 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:42:30,023---127.0.0.1:4612 - "GET /post/getpostbyid?id=51 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:42:39,368---127.0.0.1:4680 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:42:39,375---127.0.0.1:4680 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:42:40,396---127.0.0.1:4680 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:42:45,213---127.0.0.1:4680 - "POST /post/postimg/upload HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:42:45,226---127.0.0.1:4688 - "GET /postimg/1-1677595365.png HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:43:03,308---127.0.0.1:4700 - "POST /post/postimg/upload HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:43:03,622---127.0.0.1:4754 - "GET /postimg/1-1677595383.png HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:43:09,854---127.0.0.1:4764 - "POST /post/publishpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:43:11,057---127.0.0.1:4764 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:43:11,260---127.0.0.1:4764 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:43:11,269---127.0.0.1:4767 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:43:11,430---127.0.0.1:4757 - "GET /postimg/1-1677595383.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:43:11,468---127.0.0.1:4757 - "GET /postimg/1-1677595317.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:43:11,471---127.0.0.1:4757 - "GET /postimg/1-1677595155.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:43:11,474---127.0.0.1:4757 - "GET /postimg/1-1677594666.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:43:12,902---127.0.0.1:4767 - "OPTIONS /post/getpostbyid?id=52 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:43:12,909---127.0.0.1:4767 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:44:52,800---127.0.0.1:4865 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:44:57,015---127.0.0.1:4865 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:44:57,318---127.0.0.1:4896 - "GET /avatar/1-1677588456.jpg HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:44:57,322---127.0.0.1:4896 - "GET /postimg/1-1677595383.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:45:13,098---127.0.0.1:4866 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:45:19,053---127.0.0.1:4933 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:45:47,078---127.0.0.1:4935 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:45:53,243---127.0.0.1:4963 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:46:15,486---127.0.0.1:4964 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:46:26,453---127.0.0.1:5008 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:46:30,861---127.0.0.1:5008 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:46:37,274---127.0.0.1:5009 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:46:37,295---127.0.0.1:5009 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:46:37,652---127.0.0.1:5028 - "GET /postimg/1-1677595317.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:46:37,653---127.0.0.1:5029 - "GET /postimg/1-1677595155.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:46:37,654---127.0.0.1:5030 - "GET /postimg/1-1677594666.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:46:39,071---127.0.0.1:5009 - "GET /post/getpostbyid?id=50 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:46:40,588---127.0.0.1:5025 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:46:40,656---127.0.0.1:5009 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:46:40,706---127.0.0.1:5030 - "GET /postimg/1-1677595383.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:46:41,837---127.0.0.1:5009 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:46:45,855---127.0.0.1:5009 - "OPTIONS /post/postimg/upload HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:46:45,865---127.0.0.1:5009 - "POST /post/postimg/upload HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:46:45,881---127.0.0.1:5033 - "GET /postimg/1-1677595605.png HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:46:57,169---127.0.0.1:5082 - "POST /post/publishpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:46:58,153---127.0.0.1:5082 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:46:58,556---127.0.0.1:5083 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:46:58,561---127.0.0.1:5082 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:46:58,891---127.0.0.1:5096 - "GET /postimg/1-1677595605.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:46:59,987---127.0.0.1:5082 - "OPTIONS /post/getpostbyid?id=53 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:46:59,997---127.0.0.1:5082 - "GET /post/getpostbyid?id=53 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:47:12,421---127.0.0.1:5115 - "GET /post/getpostbyid?id=53 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:47:13,332---127.0.0.1:5115 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:47:13,342---127.0.0.1:5116 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:47:13,395---127.0.0.1:5099 - "GET /postimg/1-1677595383.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:47:13,398---127.0.0.1:5099 - "GET /postimg/1-1677595317.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:47:14,700---127.0.0.1:5116 - "GET /post/getpostbyid?id=53 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:47:17,938---127.0.0.1:5115 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:47:17,949---127.0.0.1:5116 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:47:18,729---127.0.0.1:5116 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:50:32,512---127.0.0.1:5452 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:50:32,976---127.0.0.1:5459 - "GET /postimg/1-1677595383.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:50:49,614---127.0.0.1:5474 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:50:56,522---127.0.0.1:5475 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:51:08,980---127.0.0.1:5496 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:51:19,397---127.0.0.1:5498 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:51:24,280---127.0.0.1:5498 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:51:54,004---127.0.0.1:5532 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:51:57,891---127.0.0.1:5532 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:52:34,940---127.0.0.1:5533 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:53:19,031---127.0.0.1:5603 - "OPTIONS /post/getpostbyid?id=52 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:53:19,036---127.0.0.1:5603 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:54:37,291---127.0.0.1:5675 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:55:20,934---127.0.0.1:5676 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:56:02,671---127.0.0.1:5776 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:56:24,176---127.0.0.1:5777 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:56:29,588---127.0.0.1:5813 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:56:29,589---127.0.0.1:5815 - "OPTIONS /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:56:29,596---127.0.0.1:5815 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:56:29,602---127.0.0.1:5813 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:56:29,957---127.0.0.1:5825 - "GET /postimg/1-1677595605.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:56:29,958---127.0.0.1:5826 - "GET /postimg/1-1677595383.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:56:29,958---127.0.0.1:5827 - "GET /postimg/1-1677595317.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:56:29,959---127.0.0.1:5828 - "GET /postimg/1-1677595155.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:56:29,960---127.0.0.1:5829 - "GET /postimg/1-1677594666.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 22:56:31,984---127.0.0.1:5813 - "OPTIONS /post/getpostbyid?id=46 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:56:32,001---127.0.0.1:5813 - "GET /post/getpostbyid?id=46 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:56:52,107---127.0.0.1:5822 - "GET /post/getpostbyid?id=46 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:57:02,877---127.0.0.1:5867 - "GET /post/getpostbyid?id=46 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:57:11,082---127.0.0.1:5869 - "GET /post/getpostbyid?id=46 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:57:20,241---127.0.0.1:5894 - "GET /post/getpostbyid?id=46 HTTP/1.1" 200 OK
-INFO:     2023-02-28 22:57:47,442---127.0.0.1:5896 - "GET /post/getpostbyid?id=46 HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:00:56,680---127.0.0.1:6097 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:00:56,687---127.0.0.1:6096 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:00:57,027---127.0.0.1:6109 - "GET /postimg/1-1677595605.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:00:57,028---127.0.0.1:6111 - "GET /postimg/1-1677595317.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:00:57,029---127.0.0.1:6110 - "GET /postimg/1-1677595383.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:00:57,030---127.0.0.1:6113 - "GET /postimg/1-1677594666.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:00:57,031---127.0.0.1:6112 - "GET /postimg/1-1677595155.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:01:00,562---127.0.0.1:6096 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:01:38,942---127.0.0.1:6106 - "OPTIONS /post/publishpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:01:38,945---127.0.0.1:6106 - "POST /post/publishpost HTTP/1.1" 401 Unauthorized
-INFO:     2023-02-28 23:01:41,577---127.0.0.1:6106 - "OPTIONS /user/login HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:01:41,597---127.0.0.1:6106 - "POST /user/login HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:01:41,610---127.0.0.1:6106 - "OPTIONS /user/userinfo HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:01:41,617---127.0.0.1:6106 - "GET /user/userinfo HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:01:41,625---127.0.0.1:6115 - "GET /avatar/1-1677588456.jpg HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:01:44,005---127.0.0.1:6106 - "GET /user/userinfo HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:01:45,329---127.0.0.1:6106 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:01:45,338---127.0.0.1:6106 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:01:46,623---127.0.0.1:6106 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:02:08,026---127.0.0.1:6158 - "POST /post/publishpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:02:08,750---127.0.0.1:6158 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:02:09,645---127.0.0.1:6158 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:02:09,653---127.0.0.1:6158 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:02:11,115---127.0.0.1:6158 - "OPTIONS /post/getpostbyid?id=54 HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:02:11,125---127.0.0.1:6158 - "GET /post/getpostbyid?id=54 HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:02:22,829---127.0.0.1:6185 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:02:22,834---127.0.0.1:6185 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:02:23,147---127.0.0.1:6204 - "GET /postimg/1-1677595605.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:02:35,337---127.0.0.1:6203 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:02:38,286---127.0.0.1:6203 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:02:38,304---127.0.0.1:6203 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:02:41,110---127.0.0.1:6203 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:02:55,239---127.0.0.1:6217 - "POST /post/publishpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:02:55,897---127.0.0.1:6217 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:02:58,495---127.0.0.1:6217 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:02:58,512---127.0.0.1:6217 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:02:58,551---127.0.0.1:6205 - "GET /postimg/1-1677595383.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:02:58,554---127.0.0.1:6205 - "GET /postimg/1-1677595317.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:03:00,108---127.0.0.1:6217 - "OPTIONS /post/getpostbyid?id=55 HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:03:00,124---127.0.0.1:6217 - "GET /post/getpostbyid?id=55 HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:10:18,084---127.0.0.1:6708 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:10:18,085---127.0.0.1:6709 - "OPTIONS /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:10:18,093---127.0.0.1:6708 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:10:18,101---127.0.0.1:6709 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:10:38,251---127.0.0.1:6742 - "GET /postimg/1-1677595605.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:10:38,252---127.0.0.1:6744 - "GET /postimg/1-1677595317.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:10:38,253---127.0.0.1:6743 - "GET /postimg/1-1677595383.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:10:38,256---127.0.0.1:6744 - "GET /postimg/1-1677594666.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:10:38,257---127.0.0.1:6742 - "GET /postimg/1-1677595155.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:10:45,410---127.0.0.1:6711 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:10:51,327---127.0.0.1:6772 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:10:54,299---127.0.0.1:6772 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:11:08,434---127.0.0.1:6782 - "OPTIONS /post/getpostbyid?id=53 HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:11:08,446---127.0.0.1:6782 - "GET /post/getpostbyid?id=53 HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:11:12,058---127.0.0.1:6782 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:11:12,064---127.0.0.1:6782 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:11:52,645---127.0.0.1:6808 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:11:52,652---127.0.0.1:6808 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:12:30,938---127.0.0.1:6870 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:12:30,945---127.0.0.1:6870 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:17:12,563---127.0.0.1:7321 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:17:14,451---127.0.0.1:7321 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:17:37,069---127.0.0.1:7328 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:17:37,410---127.0.0.1:7390 - "GET /postimg/1-1677595383.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:17:37,410---127.0.0.1:7391 - "GET /postimg/1-1677594666.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:17:40,709---127.0.0.1:7328 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:18:03,665---127.0.0.1:7393 - "GET /avatar/1-1677588456.jpg HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:18:03,992---127.0.0.1:7447 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:18:04,000---127.0.0.1:7446 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:18:04,040---127.0.0.1:7393 - "GET /postimg/1-1677595605.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:18:04,043---127.0.0.1:7393 - "GET /postimg/1-1677595317.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:18:04,045---127.0.0.1:7393 - "GET /postimg/1-1677595155.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:18:10,946---127.0.0.1:7451 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:18:20,842---127.0.0.1:7478 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:18:20,905---127.0.0.1:7477 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:18:21,696---127.0.0.1:7477 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:18:23,285---127.0.0.1:7477 - "OPTIONS /post/postimg/upload HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:18:23,303---127.0.0.1:7477 - "POST /post/postimg/upload HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:18:23,316---127.0.0.1:7452 - "GET /postimg/1-1677597503.png HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:18:53,344---127.0.0.1:7479 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:19:27,934---127.0.0.1:7544 - "POST /post/postimg/upload HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:19:28,246---127.0.0.1:7548 - "GET /postimg/1-1677597567.png HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:19:41,868---127.0.0.1:7546 - "OPTIONS /post/publishpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:19:41,885---127.0.0.1:7546 - "POST /post/publishpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:19:42,453---127.0.0.1:7546 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:19:43,973---127.0.0.1:7546 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:19:43,990---127.0.0.1:7546 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:19:44,071---127.0.0.1:7550 - "GET /postimg/1-1677597567.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:19:46,463---127.0.0.1:7546 - "OPTIONS /post/getpostbyid?id=56 HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:19:46,475---127.0.0.1:7546 - "GET /post/getpostbyid?id=56 HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:19:54,674---127.0.0.1:7574 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:19:54,683---127.0.0.1:7574 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:19:55,861---127.0.0.1:7574 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:20:13,671---127.0.0.1:7589 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:20:19,518---127.0.0.1:7616 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:20:19,524---127.0.0.1:7616 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:21:12,360---127.0.0.1:7617 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:21:31,411---127.0.0.1:7681 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:21:50,069---127.0.0.1:7683 - "POST /post/publishpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:21:50,667---127.0.0.1:7683 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:21:51,747---127.0.0.1:7683 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:21:51,752---127.0.0.1:7683 - "OPTIONS /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:21:51,765---127.0.0.1:7683 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:21:52,162---127.0.0.1:7709 - "GET /postimg/1-1677597567.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:21:52,163---127.0.0.1:7710 - "GET /postimg/1-1677595605.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:21:52,164---127.0.0.1:7711 - "GET /postimg/1-1677595383.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:21:52,164---127.0.0.1:7712 - "GET /postimg/1-1677595317.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:21:53,207---127.0.0.1:7683 - "OPTIONS /post/getpostbyid?id=57 HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:21:53,219---127.0.0.1:7683 - "GET /post/getpostbyid?id=57 HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:21:56,589---127.0.0.1:7707 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:21:56,596---127.0.0.1:7683 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:21:58,194---127.0.0.1:7683 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:22:45,634---127.0.0.1:7767 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:23:00,593---127.0.0.1:7768 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:23:03,930---127.0.0.1:7768 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:23:23,133---127.0.0.1:7803 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:23:23,872---127.0.0.1:7803 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:23:39,811---127.0.0.1:7804 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:24:34,770---127.0.0.1:7866 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:26:40,625---127.0.0.1:8043 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:26:58,300---127.0.0.1:8044 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:31:12,009---127.0.0.1:8270 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:31:12,016---127.0.0.1:8270 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:31:12,020---127.0.0.1:8271 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:31:12,393---127.0.0.1:8282 - "GET /postimg/1-1677597567.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:31:12,394---127.0.0.1:8283 - "GET /postimg/1-1677595605.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:31:12,394---127.0.0.1:8284 - "GET /postimg/1-1677595383.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:31:12,395---127.0.0.1:8285 - "GET /postimg/1-1677595317.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:31:12,396---127.0.0.1:8286 - "GET /postimg/1-1677595155.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:31:16,372---127.0.0.1:8270 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:31:16,381---127.0.0.1:8271 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:35:45,698---127.0.0.1:8554 - "GET /avatar/1-1677588456.jpg HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:35:45,728---127.0.0.1:8557 - "OPTIONS /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:35:45,734---127.0.0.1:8556 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:35:45,747---127.0.0.1:8557 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:35:45,753---127.0.0.1:8556 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:35:47,341---127.0.0.1:8557 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:35:47,351---127.0.0.1:8556 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:35:47,392---127.0.0.1:8554 - "GET /postimg/1-1677597567.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:35:47,392---127.0.0.1:8558 - "GET /postimg/1-1677595605.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:35:52,619---127.0.0.1:8559 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:37:13,920---127.0.0.1:8637 - "OPTIONS /post/postimg/upload HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:37:13,928---127.0.0.1:8637 - "POST /post/postimg/upload HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:37:14,250---127.0.0.1:8641 - "GET /postimg/1-1677598633.png HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:37:18,815---127.0.0.1:8637 - "OPTIONS /post/publishpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:37:18,832---127.0.0.1:8637 - "POST /post/publishpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:37:19,851---127.0.0.1:8637 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:37:22,807---127.0.0.1:8637 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:37:22,815---127.0.0.1:8639 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:37:22,876---127.0.0.1:8642 - "GET /postimg/1-1677598633.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:37:22,879---127.0.0.1:8642 - "GET /postimg/1-1677595383.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:37:22,882---127.0.0.1:8642 - "GET /postimg/1-1677595317.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:37:24,368---127.0.0.1:8639 - "OPTIONS /post/getpostbyid?id=58 HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:37:24,380---127.0.0.1:8639 - "GET /post/getpostbyid?id=58 HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:37:54,818---127.0.0.1:8688 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:37:54,824---127.0.0.1:8686 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:37:54,862---127.0.0.1:8658 - "GET /postimg/1-1677597567.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:38:01,398---127.0.0.1:8689 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:44:26,494---127.0.0.1:8970 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:44:26,507---127.0.0.1:8970 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:44:27,827---127.0.0.1:8975 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:44:27,834---127.0.0.1:8970 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:44:28,490---127.0.0.1:8970 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:44:45,233---127.0.0.1:9030 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:46:37,715---127.0.0.1:9118 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:48:22,131---127.0.0.1:9219 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:48:23,991---127.0.0.1:9219 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:49:48,922---127.0.0.1:9300 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:49:50,301---127.0.0.1:9300 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:53:15,648---127.0.0.1:9481 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:53:17,243---127.0.0.1:9481 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:53:27,613---127.0.0.1:9482 - "OPTIONS /post/publishpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:53:27,632---127.0.0.1:9482 - "POST /post/publishpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:53:28,493---127.0.0.1:9482 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:53:30,534---127.0.0.1:9482 - "OPTIONS /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:53:30,543---127.0.0.1:9482 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:53:30,560---127.0.0.1:9482 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:53:30,848---127.0.0.1:9505 - "GET /avatar/1-1677588456.jpg HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:53:30,850---127.0.0.1:9505 - "GET /postimg/1-1677598633.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:53:30,853---127.0.0.1:9505 - "GET /postimg/1-1677597567.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:53:30,856---127.0.0.1:9505 - "GET /postimg/1-1677595605.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:53:30,859---127.0.0.1:9505 - "GET /postimg/1-1677595383.png HTTP/1.1" 304 Not Modified
-INFO:     2023-02-28 23:53:32,391---127.0.0.1:9482 - "OPTIONS /post/getpostbyid?id=59 HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:53:32,403---127.0.0.1:9482 - "GET /post/getpostbyid?id=59 HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:53:34,296---127.0.0.1:9506 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:53:34,303---127.0.0.1:9482 - "POST /post/getpost HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:53:35,478---127.0.0.1:9482 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:54:11,926---127.0.0.1:9507 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:54:15,147---127.0.0.1:9507 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:54:53,580---127.0.0.1:9597 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:54:53,584---127.0.0.1:9597 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:55:41,854---127.0.0.1:9598 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:57:19,615---127.0.0.1:9775 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:58:56,522---127.0.0.1:9872 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:58:57,883---127.0.0.1:9872 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:59:17,404---127.0.0.1:9873 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-02-28 23:59:31,714---127.0.0.1:9905 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-03-01 00:02:34,386---127.0.0.1:10140 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-03-01 00:02:38,150---127.0.0.1:10140 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-03-01 00:03:36,155---127.0.0.1:10221 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-03-01 00:04:00,590---127.0.0.1:10222 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-03-01 00:04:32,766---127.0.0.1:10286 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-03-01 00:07:45,068---127.0.0.1:10608 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-03-01 00:07:45,077---127.0.0.1:10608 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-03-01 00:18:53,490---127.0.0.1:11204 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-03-01 00:18:53,496---127.0.0.1:11204 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-03-01 00:19:24,928---127.0.0.1:11205 - "OPTIONS /post/publishpost HTTP/1.1" 200 OK
-INFO:     2023-03-01 00:19:24,949---127.0.0.1:11205 - "POST /post/publishpost HTTP/1.1" 200 OK
-INFO:     2023-03-01 00:19:25,612---127.0.0.1:11205 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-03-01 00:19:37,388---127.0.0.1:11258 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-03-01 00:20:08,155---127.0.0.1:11260 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-03-01 00:20:09,545---127.0.0.1:11260 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-03-01 00:20:18,699---127.0.0.1:11298 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-03-01 00:20:32,286---127.0.0.1:11299 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-03-01 00:22:48,590---127.0.0.1:11419 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-03-01 00:23:52,722---127.0.0.1:11481 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-03-01 00:24:13,749---127.0.0.1:11482 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-03-01 00:25:11,204---127.0.0.1:11588 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-03-01 00:25:28,279---127.0.0.1:11589 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-03-01 00:26:03,520---127.0.0.1:11633 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-03-01 00:26:48,557---127.0.0.1:11634 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-03-01 00:26:55,491---127.0.0.1:11667 - "GET /post/postcategory HTTP/1.1" 200 OK
-INFO:     2023-03-01 00:28:06,098---127.0.0.1:11730 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:33:48,094---127.0.0.1:59908 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:33:48,103---127.0.0.1:59909 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:33:50,152---127.0.0.1:59909 - "OPTIONS /post/getpostbyid?id=52 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:33:50,164---127.0.0.1:59909 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:33:52,128---127.0.0.1:59908 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:33:52,134---127.0.0.1:59909 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:33:54,445---127.0.0.1:59909 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:33:57,999---127.0.0.1:59909 - "OPTIONS /post/getpostbyid?id=38 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:33:58,009---127.0.0.1:59909 - "GET /post/getpostbyid?id=38 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:37:49,363---127.0.0.1:61015 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:37:49,365---127.0.0.1:61017 - "OPTIONS /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:37:49,427---127.0.0.1:61017 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:37:49,433---127.0.0.1:61015 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:37:51,121---127.0.0.1:61015 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:41:15,378---127.0.0.1:61912 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:41:21,086---127.0.0.1:61939 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:41:21,102---127.0.0.1:61940 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:41:35,877---127.0.0.1:62005 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:41:35,883---127.0.0.1:62007 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:41:39,534---127.0.0.1:62007 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:41:40,628---127.0.0.1:62007 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:41:41,275---127.0.0.1:62007 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:41:42,561---127.0.0.1:62007 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:42:40,293---127.0.0.1:62290 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:42:48,010---127.0.0.1:62320 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:42:48,017---127.0.0.1:62322 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:42:52,981---127.0.0.1:62322 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:42:53,643---127.0.0.1:62322 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:43:11,007---127.0.0.1:62422 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:43:27,621---127.0.0.1:62505 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:43:35,730---127.0.0.1:62548 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:43:40,721---127.0.0.1:62548 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:43:49,267---127.0.0.1:62614 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:43:58,937---127.0.0.1:62659 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:44:18,125---127.0.0.1:62751 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:44:37,286---127.0.0.1:62834 - "OPTIONS /post/getpostbyid?id=52 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:44:37,331---127.0.0.1:62834 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:44:53,765---127.0.0.1:62902 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:44:56,238---127.0.0.1:62902 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:44:56,245---127.0.0.1:62912 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:45:02,233---127.0.0.1:62950 - "OPTIONS /api/geturllist HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:45:02,237---127.0.0.1:62950 - "GET /api/geturllist HTTP/1.1" 404 Not Found
+INFO:     2023-02-28 13:45:06,541---127.0.0.1:62950 - "OPTIONS /api/getdateinfo HTTP/1.1" 200 OK
+INFO:     2023-02-28 13:45:06,543---127.0.0.1:62950 - "GET /api/getdateinfo HTTP/1.1" 404 Not Found
+INFO:     2023-02-28 17:12:35,046---127.0.0.1:63300 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 17:12:35,052---127.0.0.1:63301 - "OPTIONS /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 17:12:35,123---127.0.0.1:63300 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 17:12:35,128---127.0.0.1:63301 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 17:12:36,582---127.0.0.1:63301 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 17:13:06,707---Shutting down
+INFO:     2023-02-28 17:13:06,810---Waiting for application shutdown.
+INFO:     2023-02-28 17:13:06,811---Application shutdown complete.
+INFO:     2023-02-28 17:13:06,811---Finished server process [18529]
+INFO:     2023-02-28 17:13:06,941---Stopping reloader process [16896]
+INFO:     2023-02-28 17:13:07,709---Will watch for changes in these directories: ['/Users/zly/Desktop/mygit/MyFastApi/app']
+INFO:     2023-02-28 17:13:07,710---Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     2023-02-28 17:13:07,710---Started reloader process [20863] using StatReload
+INFO:     2023-02-28 17:13:08,162---Started server process [20866]
+INFO:     2023-02-28 17:13:08,163---Waiting for application startup.
+INFO:     2023-02-28 17:13:08,163---Application startup complete.
+INFO:     2023-02-28 17:13:45,269---127.0.0.1:63604 - "OPTIONS /post/publishpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 17:13:45,297---127.0.0.1:63604 - "POST /post/publishpost HTTP/1.1" 401 Unauthorized
+INFO:     2023-02-28 17:13:49,086---127.0.0.1:63604 - "OPTIONS /user/login HTTP/1.1" 200 OK
+INFO:     2023-02-28 17:13:49,134---127.0.0.1:63604 - "POST /user/login HTTP/1.1" 201 Created
+INFO:     2023-02-28 17:13:55,507---127.0.0.1:63661 - "POST /user/login HTTP/1.1" 200 OK
+INFO:     2023-02-28 17:13:55,520---127.0.0.1:63661 - "OPTIONS /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-28 17:13:55,531---127.0.0.1:63661 - "GET /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-02-28 17:13:57,470---127.0.0.1:63661 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 17:13:57,485---127.0.0.1:63673 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 17:13:58,332---127.0.0.1:63673 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 17:14:30,004---127.0.0.1:63826 - "POST /post/publishpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 17:14:30,496---127.0.0.1:63833 - "GET /avatar/1-1677467820.jpeg HTTP/1.1" 304 Not Modified
+INFO:     2023-02-28 17:14:30,504---127.0.0.1:63826 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 17:14:32,269---127.0.0.1:63843 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-02-28 17:14:32,274---127.0.0.1:63826 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-02-28 17:14:34,360---127.0.0.1:63826 - "OPTIONS /post/getpostbyid?id=53 HTTP/1.1" 200 OK
+INFO:     2023-02-28 17:14:34,371---127.0.0.1:63826 - "GET /post/getpostbyid?id=53 HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:38:48,544---Started server process [22023]
+INFO:     2023-03-01 08:38:48,545---Waiting for application startup.
+INFO:     2023-03-01 08:38:48,545---Application startup complete.
+INFO:     2023-03-01 08:38:55,928---127.0.0.1:52760 - "OPTIONS /post/getpostbyid?id=53 HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:38:55,990---127.0.0.1:52762 - "GET /avatar/1-1677467820.jpeg HTTP/1.1" 404 Not Found
+INFO:     2023-03-01 08:38:56,176---127.0.0.1:52760 - "GET /post/getpostbyid?id=53 HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:38:59,124---Shutting down
+INFO:     2023-03-01 08:38:59,226---Waiting for application shutdown.
+INFO:     2023-03-01 08:38:59,228---Application shutdown complete.
+INFO:     2023-03-01 08:38:59,228---Finished server process [22023]
+INFO:     2023-03-01 08:39:00,239---Will watch for changes in these directories: ['/Users/zly/Desktop/mygit/MyFastApi/app']
+INFO:     2023-03-01 08:39:00,240---Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     2023-03-01 08:39:00,240---Started reloader process [22112] using StatReload
+INFO:     2023-03-01 08:39:00,880---Started server process [22114]
+INFO:     2023-03-01 08:39:00,881---Waiting for application startup.
+INFO:     2023-03-01 08:39:00,881---Application startup complete.
+INFO:     2023-03-01 08:39:01,732---有人访问api页面
+INFO:     2023-03-01 08:39:01,734---127.0.0.1:52788 - "GET / HTTP/1.1" 307 Temporary Redirect
+INFO:     2023-03-01 08:39:01,741---127.0.0.1:52788 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:39:02,373---127.0.0.1:52789 - "GET /swagger/swagger-ui-bundle.js HTTP/1.1" 304 Not Modified
+INFO:     2023-03-01 08:39:02,376---127.0.0.1:52788 - "GET /swagger/swagger-ui.css HTTP/1.1" 304 Not Modified
+INFO:     2023-03-01 08:39:02,619---127.0.0.1:52788 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:39:13,735---127.0.0.1:52845 - "GET /avatar/1-1677467820.jpeg HTTP/1.1" 404 Not Found
+INFO:     2023-03-01 08:39:21,737---127.0.0.1:52901 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:39:21,746---127.0.0.1:52903 - "OPTIONS /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:39:21,791---127.0.0.1:52905 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:39:21,805---127.0.0.1:52903 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:39:24,230---127.0.0.1:52903 - "OPTIONS /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:39:24,243---127.0.0.1:52903 - "GET /user/userinfo HTTP/1.1" 401 Unauthorized
+INFO:     2023-03-01 08:39:28,976---127.0.0.1:52903 - "OPTIONS /user/login HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:39:28,988---127.0.0.1:52903 - "POST /user/login HTTP/1.1" 201 Created
+INFO:     2023-03-01 08:39:33,758---127.0.0.1:52903 - "POST /user/login HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:39:33,786---127.0.0.1:52903 - "GET /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:39:33,794---127.0.0.1:52911 - "GET /avatar/1-1677467820.jpeg HTTP/1.1" 404 Not Found
+INFO:     2023-03-01 08:39:37,640---127.0.0.1:52903 - "GET /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:39:37,656---127.0.0.1:52916 - "GET /avatar/1-1677467820.jpeg HTTP/1.1" 404 Not Found
+INFO:     2023-03-01 08:39:48,074---127.0.0.1:52922 - "OPTIONS /user/image/upload HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:39:48,090---127.0.0.1:52922 - "POST /user/image/upload HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:39:49,707---127.0.0.1:52922 - "OPTIONS /user/edituserinfo HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:39:49,742---127.0.0.1:52922 - "POST /user/edituserinfo HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:39:49,756---127.0.0.1:52924 - "GET /avatar/1-1677631188.jpeg HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:39:50,954---127.0.0.1:52924 - "GET /avatar/1-1677631188.jpeg HTTP/1.1" 304 Not Modified
+INFO:     2023-03-01 08:39:50,959---127.0.0.1:52922 - "GET /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:41:04,397---127.0.0.1:52989 - "GET /avatar/1-1677631188.jpeg HTTP/1.1" 304 Not Modified
+INFO:     2023-03-01 08:41:04,412---127.0.0.1:52991 - "GET /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:41:21,610---127.0.0.1:53003 - "GET /avatar/1-1677631188.jpeg HTTP/1.1" 304 Not Modified
+INFO:     2023-03-01 08:41:21,625---127.0.0.1:53005 - "GET /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:41:21,663---127.0.0.1:53003 - "GET /avatar/1-16774367820.jpeg HTTP/1.1" 404 Not Found
+INFO:     2023-03-01 08:42:16,639---127.0.0.1:53147 - "POST /user/image/upload HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:42:17,193---127.0.0.1:53147 - "POST /user/edituserinfo HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:42:17,207---127.0.0.1:53149 - "GET /avatar/1-1677631336.jpeg HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:42:18,281---127.0.0.1:53149 - "GET /avatar/1-1677631336.jpeg HTTP/1.1" 304 Not Modified
+INFO:     2023-03-01 08:42:18,294---127.0.0.1:53147 - "GET /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:42:22,393---127.0.0.1:53147 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:42:22,403---127.0.0.1:53159 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:42:23,740---127.0.0.1:53159 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:43:10,105---127.0.0.1:53173 - "OPTIONS /post/postimg/upload HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:43:10,125---127.0.0.1:53173 - "POST /post/postimg/upload HTTP/1.1" 500 Internal Server Error
+ERROR:    2023-03-01 08:43:10,126---Exception in ASGI application
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/middleware/cors.py", line 92, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/middleware/cors.py", line 147, in simple_response
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/fastapi/routing.py", line 235, in app
+    raw_response = await run_endpoint_function(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/fastapi/routing.py", line 161, in run_endpoint_function
+    return await dependant.call(**values)
+  File "/Users/zly/Desktop/mygit/MyFastApi/app/api/PostApi.py", line 36, in postimgupload
+    with open(f"./upload/img/postimg/{file.filename}", "wb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './upload/img/postimg/1-1677631390.jpeg'
+INFO:     2023-03-01 08:43:50,052---127.0.0.1:53301 - "POST /post/postimg/upload HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:43:50,065---127.0.0.1:53303 - "GET /postimg/1-1677631430.jpeg HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:44:05,344---127.0.0.1:53313 - "OPTIONS /post/publishpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:44:05,408---127.0.0.1:53315 - "POST /post/publishpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:44:05,863---127.0.0.1:53315 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:44:10,052---127.0.0.1:53322 - "GET /avatar/1-1677631336.jpeg HTTP/1.1" 304 Not Modified
+INFO:     2023-03-01 08:44:10,064---127.0.0.1:53315 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:44:10,081---127.0.0.1:53328 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:44:10,092---127.0.0.1:53322 - "GET /postimg/1-1677631430.jpeg HTTP/1.1" 304 Not Modified
+INFO:     2023-03-01 08:44:12,875---127.0.0.1:53328 - "OPTIONS /post/getpostbyid?id=54 HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:44:12,891---127.0.0.1:53328 - "GET /post/getpostbyid?id=54 HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:44:49,714---127.0.0.1:53332 - "GET /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:44:51,550---127.0.0.1:53332 - "GET /post/getpostbyid?id=54 HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:45:20,393---127.0.0.1:53353 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:45:20,398---127.0.0.1:53351 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:45:26,762---127.0.0.1:53355 - "GET /post/getpostbyid?id=54 HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:48:43,470---127.0.0.1:53427 - "GET /avatar/1-1677631336.jpeg HTTP/1.1" 304 Not Modified
+INFO:     2023-03-01 08:48:43,488---127.0.0.1:53429 - "GET /post/getpostbyid?id=54 HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:48:43,518---127.0.0.1:53427 - "GET /postimg/1-1677631430.jpeg HTTP/1.1" 304 Not Modified
+INFO:     2023-03-01 08:48:52,729---127.0.0.1:53451 - "GET /post/getpostbyid?id=54 HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:49:01,269---127.0.0.1:53459 - "POST /user/login HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:49:01,291---127.0.0.1:53459 - "GET /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:49:01,298---127.0.0.1:53461 - "GET /avatar/3 HTTP/1.1" 404 Not Found
+INFO:     2023-03-01 08:49:03,470---127.0.0.1:53459 - "GET /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:49:03,483---127.0.0.1:53463 - "GET /avatar/3 HTTP/1.1" 404 Not Found
+INFO:     2023-03-01 08:50:30,520---127.0.0.1:53496 - "GET /avatar/3 HTTP/1.1" 404 Not Found
+INFO:     2023-03-01 08:50:31,505---127.0.0.1:53505 - "OPTIONS /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:50:31,509---127.0.0.1:53503 - "GET /avatar/3 HTTP/1.1" 404 Not Found
+INFO:     2023-03-01 08:50:31,559---127.0.0.1:53505 - "GET /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:50:31,593---127.0.0.1:53507 - "GET /avatar/3 HTTP/1.1" 404 Not Found
+INFO:     2023-03-01 08:51:06,360---127.0.0.1:53531 - "GET /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:51:06,376---127.0.0.1:53533 - "GET /avatar/3 HTTP/1.1" 404 Not Found
+INFO:     2023-03-01 08:51:23,234---127.0.0.1:53546 - "GET /avatar/3 HTTP/1.1" 404 Not Found
+INFO:     2023-03-01 08:52:13,258---127.0.0.1:53561 - "GET /avatar/undefined HTTP/1.1" 404 Not Found
+INFO:     2023-03-01 08:52:17,790---127.0.0.1:53563 - "OPTIONS /user/image/upload HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:52:17,818---127.0.0.1:53563 - "POST /user/image/upload HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:52:18,945---127.0.0.1:53563 - "OPTIONS /user/edituserinfo HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:52:18,971---127.0.0.1:53563 - "POST /user/edituserinfo HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:52:18,987---127.0.0.1:53565 - "GET /avatar/1-1677631937.jpeg HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:52:20,144---127.0.0.1:53565 - "GET /avatar/1-1677631937.jpeg HTTP/1.1" 304 Not Modified
+INFO:     2023-03-01 08:52:20,155---127.0.0.1:53565 - "GET /avatar/undefined HTTP/1.1" 404 Not Found
+INFO:     2023-03-01 08:52:20,159---127.0.0.1:53563 - "GET /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:53:09,338---127.0.0.1:53586 - "GET /avatar/1-1677631937.jpeg HTTP/1.1" 304 Not Modified
+INFO:     2023-03-01 08:53:09,394---127.0.0.1:53588 - "GET /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:53:25,085---127.0.0.1:53591 - "POST /user/image/upload HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:53:29,615---127.0.0.1:53591 - "POST /user/edituserinfo HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:53:29,627---127.0.0.1:53594 - "GET /avatar/1-1677632005.JPG HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:53:30,741---127.0.0.1:53594 - "GET /avatar/1-1677632005.JPG HTTP/1.1" 304 Not Modified
+INFO:     2023-03-01 08:53:30,757---127.0.0.1:53591 - "GET /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:53:34,997---127.0.0.1:53591 - "POST /user/image/upload HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:53:43,373---127.0.0.1:53606 - "POST /user/edituserinfo HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:53:43,385---127.0.0.1:53608 - "GET /avatar/1-1677632014.jpeg HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:53:45,129---127.0.0.1:53608 - "GET /avatar/1-1677632014.jpeg HTTP/1.1" 304 Not Modified
+INFO:     2023-03-01 08:53:45,143---127.0.0.1:53606 - "GET /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-03-01 08:57:11,858---127.0.0.1:54038 - "GET /avatar/1-1677632014.jpeg HTTP/1.1" 304 Not Modified
+INFO:     2023-03-01 08:57:11,951---127.0.0.1:54040 - "GET /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:01:00,424---127.0.0.1:54132 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:01:00,429---127.0.0.1:54133 - "OPTIONS /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:01:00,489---127.0.0.1:54133 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:01:00,495---127.0.0.1:54132 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:01:00,518---127.0.0.1:54143 - "GET /postimg/1-1677631430.jpeg HTTP/1.1" 304 Not Modified
+INFO:     2023-03-01 09:01:30,412---127.0.0.1:54147 - "OPTIONS /post/getpostbyid?id=52 HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:01:30,434---127.0.0.1:54147 - "GET /post/getpostbyid?id=52 HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:01:33,028---127.0.0.1:54147 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:01:33,037---127.0.0.1:54151 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:02:11,604---127.0.0.1:54162 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:07:50,576---127.0.0.1:54262 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:08:57,472---127.0.0.1:54374 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:09:24,431---127.0.0.1:54379 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:09:39,649---127.0.0.1:54383 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:10:02,226---127.0.0.1:54398 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:10:08,461---127.0.0.1:54414 - "OPTIONS /post/publishpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:10:08,538---127.0.0.1:54414 - "POST /post/publishpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:10:14,161---127.0.0.1:54444 - "OPTIONS /post/getpostbyid HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:10:14,167---127.0.0.1:54444 - "GET /post/getpostbyid HTTP/1.1" 422 Unprocessable Entity
+INFO:     2023-03-01 09:10:26,174---127.0.0.1:54498 - "GET /avatar/1-1677632014.jpeg HTTP/1.1" 304 Not Modified
+INFO:     2023-03-01 09:10:27,191---127.0.0.1:54510 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:10:27,217---127.0.0.1:54512 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:10:27,242---127.0.0.1:54498 - "GET /postimg/1-1677631430.jpeg HTTP/1.1" 304 Not Modified
+INFO:     2023-03-01 09:10:29,931---127.0.0.1:54512 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:10:43,836---127.0.0.1:54578 - "POST /post/publishpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:10:44,918---127.0.0.1:54578 - "OPTIONS /post/getpostbyid?id=56 HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:10:44,926---127.0.0.1:54578 - "GET /post/getpostbyid?id=56 HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:11:39,681---127.0.0.1:54826 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:11:39,685---127.0.0.1:54828 - "OPTIONS /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:11:39,698---127.0.0.1:54826 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:11:39,704---127.0.0.1:54828 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:11:41,157---127.0.0.1:54828 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:11:45,733---127.0.0.1:54828 - "POST /post/publishpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:12:29,894---127.0.0.1:55050 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:12:34,594---127.0.0.1:55050 - "POST /post/publishpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:12:36,336---127.0.0.1:55050 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:14:09,562---127.0.0.1:55487 - "POST /post/publishpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:14:11,564---127.0.0.1:55487 - "OPTIONS /post/getpostbyid?id=59 HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:14:11,580---127.0.0.1:55500 - "GET /avatar/1-1677632014.jpeg HTTP/1.1" 304 Not Modified
+INFO:     2023-03-01 09:14:11,591---127.0.0.1:55487 - "GET /post/getpostbyid?id=59 HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:15:21,971---127.0.0.1:55800 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:15:21,977---127.0.0.1:55802 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:15:22,002---127.0.0.1:55804 - "GET /postimg/1-1677631430.jpeg HTTP/1.1" 304 Not Modified
+INFO:     2023-03-01 09:15:23,502---127.0.0.1:55802 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:15:28,232---127.0.0.1:55802 - "POST /post/publishpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:15:35,854---127.0.0.1:55869 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:15:38,624---127.0.0.1:55869 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:15:38,633---127.0.0.1:55887 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:15:57,588---127.0.0.1:55983 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 09:15:57,594---127.0.0.1:55985 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 11:05:49,121---127.0.0.1:53195 - "OPTIONS /post/getpostbyid?id=60 HTTP/1.1" 200 OK
+INFO:     2023-03-01 11:05:49,221---127.0.0.1:53195 - "GET /post/getpostbyid?id=60 HTTP/1.1" 200 OK
+INFO:     2023-03-01 11:05:50,749---127.0.0.1:53195 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 11:05:50,752---127.0.0.1:53199 - "OPTIONS /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 11:05:50,766---127.0.0.1:53195 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 11:05:50,775---127.0.0.1:53199 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 11:06:42,082---127.0.0.1:53273 - "GET /post/getpostbyid?id=60 HTTP/1.1" 200 OK
+INFO:     2023-03-01 11:06:44,402---127.0.0.1:53278 - "GET /avatar/1-1677632014.jpeg HTTP/1.1" 304 Not Modified
+INFO:     2023-03-01 11:06:44,404---127.0.0.1:53273 - "GET /post/getpostbyid?id=60 HTTP/1.1" 200 OK
+INFO:     2023-03-01 11:06:45,234---127.0.0.1:53273 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 11:06:45,242---127.0.0.1:53281 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 11:06:45,266---127.0.0.1:53278 - "GET /postimg/1-1677631430.jpeg HTTP/1.1" 304 Not Modified
+INFO:     2023-03-01 11:06:47,926---127.0.0.1:53281 - "GET /post/getpostbyid?id=60 HTTP/1.1" 200 OK
+INFO:     2023-03-01 11:06:52,419---127.0.0.1:53281 - "GET /post/getpostbyid?id=60 HTTP/1.1" 200 OK
+INFO:     2023-03-01 11:06:54,021---127.0.0.1:53281 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 11:06:54,038---127.0.0.1:53289 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 11:06:57,323---127.0.0.1:53289 - "GET /post/getpostbyid?id=60 HTTP/1.1" 200 OK
+INFO:     2023-03-01 11:06:57,516---127.0.0.1:53289 - "GET /post/getpostbyid?id=60 HTTP/1.1" 200 OK
+INFO:     2023-03-01 11:07:02,027---127.0.0.1:53289 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 11:07:02,035---127.0.0.1:53293 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 11:07:04,421---127.0.0.1:53293 - "OPTIONS /post/getpostbyid?id=54 HTTP/1.1" 200 OK
+INFO:     2023-03-01 11:07:04,431---127.0.0.1:53293 - "GET /post/getpostbyid?id=54 HTTP/1.1" 200 OK
+INFO:     2023-03-01 11:07:07,534---127.0.0.1:53293 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 11:07:07,544---127.0.0.1:53298 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 11:07:14,791---127.0.0.1:53305 - "OPTIONS /post/getpostbyid?id=53 HTTP/1.1" 200 OK
+INFO:     2023-03-01 11:07:14,800---127.0.0.1:53305 - "GET /post/getpostbyid?id=53 HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:34:25,153---127.0.0.1:55406 - "GET /avatar/1-1677632014.jpeg HTTP/1.1" 304 Not Modified
+INFO:     2023-03-01 12:34:27,624---127.0.0.1:55416 - "OPTIONS /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:34:27,663---127.0.0.1:55416 - "GET /user/userinfo HTTP/1.1" 401 Unauthorized
+INFO:     2023-03-01 12:34:40,285---127.0.0.1:55418 - "OPTIONS /user/login HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:34:40,404---127.0.0.1:55418 - "POST /user/login HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:34:40,419---127.0.0.1:55420 - "GET /avatar/undefined HTTP/1.1" 404 Not Found
+INFO:     2023-03-01 12:34:40,425---127.0.0.1:55418 - "GET /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:35:14,396---127.0.0.1:55442 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:35:14,406---127.0.0.1:55448 - "OPTIONS /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:35:14,424---127.0.0.1:55442 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:35:14,433---127.0.0.1:55448 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:35:14,450---127.0.0.1:55450 - "GET /postimg/1-1677631430.jpeg HTTP/1.1" 304 Not Modified
+INFO:     2023-03-01 12:35:18,207---127.0.0.1:55448 - "OPTIONS /post/getpostbyid?id=54 HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:35:18,216---127.0.0.1:55448 - "GET /post/getpostbyid?id=54 HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:46:37,834---127.0.0.1:56093 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:46:37,836---127.0.0.1:56094 - "OPTIONS /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:46:37,907---127.0.0.1:56093 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:46:37,919---127.0.0.1:56094 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:46:41,432---127.0.0.1:56094 - "OPTIONS /post/getpostbyid?id=54 HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:46:41,446---127.0.0.1:56094 - "GET /post/getpostbyid?id=54 HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:46:48,455---127.0.0.1:56113 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:46:48,461---127.0.0.1:56114 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:46:51,435---127.0.0.1:56114 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:46:52,108---127.0.0.1:56114 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:46:53,921---127.0.0.1:56114 - "OPTIONS /post/getpostbyid?id=29 HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:46:53,931---127.0.0.1:56114 - "GET /post/getpostbyid?id=29 HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:47:03,404---127.0.0.1:56143 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:47:03,412---127.0.0.1:56144 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:47:04,323---127.0.0.1:56144 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:47:28,586---127.0.0.1:56151 - "OPTIONS /post/postimg/upload HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:47:28,614---127.0.0.1:56151 - "POST /post/postimg/upload HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:47:28,624---127.0.0.1:56153 - "GET /postimg/1-1677646048.webp HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:47:45,309---127.0.0.1:56157 - "OPTIONS /post/publishpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:47:45,354---127.0.0.1:56157 - "POST /post/publishpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:47:46,650---127.0.0.1:56157 - "OPTIONS /post/getpostbyid?id=61 HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:47:46,657---127.0.0.1:56157 - "GET /post/getpostbyid?id=61 HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:52:57,561---127.0.0.1:56257 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:52:57,565---127.0.0.1:56258 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:52:59,292---127.0.0.1:56258 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:53:26,012---127.0.0.1:56271 - "POST /post/publishpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:53:27,208---127.0.0.1:56271 - "OPTIONS /post/getpostbyid?id=62 HTTP/1.1" 200 OK
+INFO:     2023-03-01 12:53:27,220---127.0.0.1:56271 - "GET /post/getpostbyid?id=62 HTTP/1.1" 200 OK
+INFO:     2023-03-01 13:08:15,264---127.0.0.1:57202 - "OPTIONS /post/getpostbyid?id=62 HTTP/1.1" 200 OK
+INFO:     2023-03-01 13:08:15,373---127.0.0.1:57202 - "GET /post/getpostbyid?id=62 HTTP/1.1" 200 OK
+INFO:     2023-03-01 13:08:20,882---127.0.0.1:57231 - "GET /post/getpostbyid?id=62 HTTP/1.1" 200 OK
+INFO:     2023-03-01 13:08:48,899---127.0.0.1:57256 - "GET /post/getpostbyid?id=62 HTTP/1.1" 200 OK
+INFO:     2023-03-01 13:09:07,782---127.0.0.1:57307 - "GET /avatar/1-1677632014.jpeg HTTP/1.1" 304 Not Modified
+INFO:     2023-03-01 13:09:07,785---127.0.0.1:57309 - "GET /post/getpostbyid?id=62 HTTP/1.1" 200 OK
+INFO:     2023-03-01 13:10:08,946---127.0.0.1:57529 - "GET /post/getpostbyid?id=62 HTTP/1.1" 200 OK
+INFO:     2023-03-01 13:11:30,485---127.0.0.1:57588 - "GET /post/getpostbyid?id=62 HTTP/1.1" 200 OK
+INFO:     2023-03-01 13:12:32,955---127.0.0.1:57608 - "GET /post/getpostbyid?id=62 HTTP/1.1" 200 OK
+INFO:     2023-03-01 13:13:04,646---127.0.0.1:57631 - "GET /post/getpostbyid?id=62 HTTP/1.1" 200 OK
+WARNING:  2023-03-01 14:50:29,770---StatReload detected changes in 'models/CommentModel.py'. Reloading...
+INFO:     2023-03-01 14:50:29,813---Shutting down
+INFO:     2023-03-01 14:50:29,918---Waiting for application shutdown.
+INFO:     2023-03-01 14:50:29,922---Application shutdown complete.
+INFO:     2023-03-01 14:50:29,922---Finished server process [22114]
+INFO:     2023-03-01 14:50:30,882---Started server process [26681]
+INFO:     2023-03-01 14:50:30,883---Waiting for application startup.
+INFO:     2023-03-01 14:50:30,884---Application startup complete.
+WARNING:  2023-03-01 14:51:38,576---StatReload detected changes in 'models/CommentModel.py'. Reloading...
+INFO:     2023-03-01 14:51:38,687---Shutting down
+INFO:     2023-03-01 14:51:38,789---Waiting for application shutdown.
+INFO:     2023-03-01 14:51:38,789---Application shutdown complete.
+INFO:     2023-03-01 14:51:38,789---Finished server process [26681]
+INFO:     2023-03-01 14:51:40,124---Started server process [26729]
+INFO:     2023-03-01 14:51:40,124---Waiting for application startup.
+INFO:     2023-03-01 14:51:40,125---Application startup complete.
+WARNING:  2023-03-01 14:52:08,380---StatReload detected changes in 'models/CommentModel.py'. Reloading...
+INFO:     2023-03-01 14:52:08,448---Shutting down
+INFO:     2023-03-01 14:52:08,557---Waiting for application shutdown.
+INFO:     2023-03-01 14:52:08,558---Application shutdown complete.
+INFO:     2023-03-01 14:52:08,558---Finished server process [26729]
+INFO:     2023-03-01 14:52:09,060---Started server process [26757]
+INFO:     2023-03-01 14:52:09,060---Waiting for application startup.
+INFO:     2023-03-01 14:52:09,060---Application startup complete.
+WARNING:  2023-03-01 14:52:13,022---StatReload detected changes in 'models/CommentModel.py'. Reloading...
+INFO:     2023-03-01 14:52:13,103---Shutting down
+INFO:     2023-03-01 14:52:13,207---Waiting for application shutdown.
+INFO:     2023-03-01 14:52:13,209---Application shutdown complete.
+INFO:     2023-03-01 14:52:13,209---Finished server process [26757]
+INFO:     2023-03-01 14:52:13,715---Started server process [26768]
+INFO:     2023-03-01 14:52:13,715---Waiting for application startup.
+INFO:     2023-03-01 14:52:13,715---Application startup complete.
+WARNING:  2023-03-01 14:52:20,565---StatReload detected changes in 'models/CommentModel.py'. Reloading...
+INFO:     2023-03-01 14:52:20,598---Shutting down
+INFO:     2023-03-01 14:52:20,700---Waiting for application shutdown.
+INFO:     2023-03-01 14:52:20,702---Application shutdown complete.
+INFO:     2023-03-01 14:52:20,703---Finished server process [26768]
+INFO:     2023-03-01 14:52:21,311---Started server process [26778]
+INFO:     2023-03-01 14:52:21,311---Waiting for application startup.
+INFO:     2023-03-01 14:52:21,312---Application startup complete.
+WARNING:  2023-03-01 14:53:14,879---StatReload detected changes in 'models/CommentModel.py'. Reloading...
+INFO:     2023-03-01 14:53:14,962---Shutting down
+INFO:     2023-03-01 14:53:15,065---Waiting for application shutdown.
+INFO:     2023-03-01 14:53:15,066---Application shutdown complete.
+INFO:     2023-03-01 14:53:15,067---Finished server process [26778]
+INFO:     2023-03-01 14:53:15,658---Started server process [26818]
+INFO:     2023-03-01 14:53:15,658---Waiting for application startup.
+INFO:     2023-03-01 14:53:15,658---Application startup complete.
+WARNING:  2023-03-01 14:53:40,919---StatReload detected changes in 'models/CommentModel.py'. Reloading...
+INFO:     2023-03-01 14:53:40,975---Shutting down
+INFO:     2023-03-01 14:53:41,090---Waiting for application shutdown.
+INFO:     2023-03-01 14:53:41,091---Application shutdown complete.
+INFO:     2023-03-01 14:53:41,091---Finished server process [26818]
+INFO:     2023-03-01 14:53:42,436---Started server process [26837]
+INFO:     2023-03-01 14:53:42,442---Waiting for application startup.
+INFO:     2023-03-01 14:53:42,443---Application startup complete.
+WARNING:  2023-03-01 14:56:44,151---StatReload detected changes in 'models/CommentModel.py'. Reloading...
+INFO:     2023-03-01 14:56:44,222---Shutting down
+INFO:     2023-03-01 14:56:44,328---Waiting for application shutdown.
+INFO:     2023-03-01 14:56:44,330---Application shutdown complete.
+INFO:     2023-03-01 14:56:44,331---Finished server process [26837]
+INFO:     2023-03-01 14:56:45,980---Started server process [26937]
+INFO:     2023-03-01 14:56:45,980---Waiting for application startup.
+INFO:     2023-03-01 14:56:45,980---Application startup complete.
+INFO:     2023-03-01 15:01:21,012---127.0.0.1:58634 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 15:01:21,014---127.0.0.1:58636 - "OPTIONS /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 15:01:21,180---127.0.0.1:58634 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 15:01:21,187---127.0.0.1:58636 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 15:01:21,212---127.0.0.1:58648 - "GET /postimg/1-1677646048.webp HTTP/1.1" 304 Not Modified
+INFO:     2023-03-01 15:01:21,917---127.0.0.1:58636 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 15:05:00,225---127.0.0.1:58922 - "OPTIONS /post/publishpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 15:05:00,246---127.0.0.1:58922 - "POST /post/publishpost HTTP/1.1" 401 Unauthorized
+INFO:     2023-03-01 15:05:04,347---127.0.0.1:58922 - "OPTIONS /user/login HTTP/1.1" 200 OK
+INFO:     2023-03-01 15:05:04,370---127.0.0.1:58922 - "POST /user/login HTTP/1.1" 201 Created
+INFO:     2023-03-01 15:05:09,388---127.0.0.1:58922 - "POST /user/login HTTP/1.1" 200 OK
+INFO:     2023-03-01 15:05:09,405---127.0.0.1:58922 - "OPTIONS /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-03-01 15:05:09,410---127.0.0.1:58947 - "GET /avatar/undefined HTTP/1.1" 404 Not Found
+INFO:     2023-03-01 15:05:09,414---127.0.0.1:58922 - "GET /user/userinfo HTTP/1.1" 200 OK
+INFO:     2023-03-01 15:05:10,443---127.0.0.1:58922 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 15:05:10,459---127.0.0.1:58951 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 15:05:13,976---127.0.0.1:58951 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 15:07:50,193---127.0.0.1:59148 - "POST /post/publishpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 15:07:51,313---127.0.0.1:59148 - "OPTIONS /post/getpostbyid?id=63 HTTP/1.1" 200 OK
+INFO:     2023-03-01 15:07:51,324---127.0.0.1:59153 - "GET /avatar/1-1677632014.jpeg HTTP/1.1" 304 Not Modified
+INFO:     2023-03-01 15:07:51,341---127.0.0.1:59148 - "GET /post/getpostbyid?id=63 HTTP/1.1" 200 OK
+WARNING:  2023-03-01 15:22:47,807---StatReload detected changes in 'models/CommentModel.py'. Reloading...
+INFO:     2023-03-01 15:22:47,902---Shutting down
+INFO:     2023-03-01 15:22:48,026---Waiting for application shutdown.
+INFO:     2023-03-01 15:22:48,032---Application shutdown complete.
+INFO:     2023-03-01 15:22:48,032---Finished server process [26937]
+INFO:     2023-03-01 15:22:48,787---Started server process [27334]
+INFO:     2023-03-01 15:22:48,788---Waiting for application startup.
+INFO:     2023-03-01 15:22:48,788---Application startup complete.
+INFO:     2023-03-01 15:27:04,153---Shutting down
+INFO:     2023-03-01 15:27:04,256---Waiting for application shutdown.
+INFO:     2023-03-01 15:27:04,257---Application shutdown complete.
+INFO:     2023-03-01 15:27:04,257---Finished server process [27334]
+INFO:     2023-03-01 15:27:04,326---Stopping reloader process [22112]
+INFO:     2023-03-01 15:27:05,086---Will watch for changes in these directories: ['/Users/zly/Desktop/mygit/MyFastApi/app']
+INFO:     2023-03-01 15:27:05,086---Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     2023-03-01 15:27:05,086---Started reloader process [27439] using StatReload
+INFO:     2023-03-01 15:27:05,400---Started server process [27445]
+INFO:     2023-03-01 15:27:05,400---Waiting for application startup.
+INFO:     2023-03-01 15:27:05,400---Application startup complete.
+WARNING:  2023-03-01 16:17:05,641---StatReload detected changes in 'api/CommentApi.py'. Reloading...
+INFO:     2023-03-01 16:17:05,698---Shutting down
+INFO:     2023-03-01 16:17:05,800---Waiting for application shutdown.
+INFO:     2023-03-01 16:17:05,804---Application shutdown complete.
+INFO:     2023-03-01 16:17:05,804---Finished server process [27445]
+INFO:     2023-03-01 16:17:06,383---Started server process [27689]
+INFO:     2023-03-01 16:17:06,383---Waiting for application startup.
+INFO:     2023-03-01 16:17:06,384---Application startup complete.
+WARNING:  2023-03-01 16:17:41,562---StatReload detected changes in 'api/CommentApi.py'. Reloading...
+INFO:     2023-03-01 16:17:41,607---Shutting down
+INFO:     2023-03-01 16:17:41,710---Waiting for application shutdown.
+INFO:     2023-03-01 16:17:41,712---Application shutdown complete.
+INFO:     2023-03-01 16:17:41,712---Finished server process [27689]
+INFO:     2023-03-01 16:17:42,422---Started server process [27722]
+INFO:     2023-03-01 16:17:42,422---Waiting for application startup.
+INFO:     2023-03-01 16:17:42,422---Application startup complete.
+WARNING:  2023-03-01 16:22:46,826---StatReload detected changes in 'api/CommentApi.py'. Reloading...
+INFO:     2023-03-01 16:22:46,939---Shutting down
+INFO:     2023-03-01 16:22:47,050---Waiting for application shutdown.
+INFO:     2023-03-01 16:22:47,054---Application shutdown complete.
+INFO:     2023-03-01 16:22:47,055---Finished server process [27722]
+INFO:     2023-03-01 16:22:49,116---Started server process [27874]
+INFO:     2023-03-01 16:22:49,117---Waiting for application startup.
+INFO:     2023-03-01 16:22:49,117---Application startup complete.
+WARNING:  2023-03-01 16:23:01,197---StatReload detected changes in 'api/CommentApi.py'. Reloading...
+INFO:     2023-03-01 16:23:01,271---Shutting down
+INFO:     2023-03-01 16:23:01,373---Waiting for application shutdown.
+INFO:     2023-03-01 16:23:01,373---Application shutdown complete.
+INFO:     2023-03-01 16:23:01,373---Finished server process [27874]
+INFO:     2023-03-01 16:23:02,146---Started server process [27897]
+INFO:     2023-03-01 16:23:02,146---Waiting for application startup.
+INFO:     2023-03-01 16:23:02,149---Application startup complete.
+INFO:     2023-03-01 16:23:05,285---Shutting down
+INFO:     2023-03-01 16:23:05,387---Waiting for application shutdown.
+INFO:     2023-03-01 16:23:05,388---Application shutdown complete.
+INFO:     2023-03-01 16:23:05,388---Finished server process [27897]
+INFO:     2023-03-01 16:23:05,456---Stopping reloader process [27439]
+INFO:     2023-03-01 16:23:05,955---Will watch for changes in these directories: ['/Users/zly/Desktop/mygit/MyFastApi/app']
+INFO:     2023-03-01 16:23:05,955---Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     2023-03-01 16:23:05,955---Started reloader process [27903] using StatReload
+INFO:     2023-03-01 16:23:06,249---Started server process [27905]
+INFO:     2023-03-01 16:23:06,249---Waiting for application startup.
+INFO:     2023-03-01 16:23:06,249---Application startup complete.
+INFO:     2023-03-01 16:23:07,312---有人访问api页面
+INFO:     2023-03-01 16:23:07,313---127.0.0.1:61150 - "GET / HTTP/1.1" 307 Temporary Redirect
+INFO:     2023-03-01 16:23:07,318---127.0.0.1:61150 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-03-01 16:23:07,853---127.0.0.1:61150 - "GET /openapi.json HTTP/1.1" 200 OK
+WARNING:  2023-03-01 16:23:22,995---StatReload detected changes in 'api/PostApi.py'. Reloading...
+INFO:     2023-03-01 16:23:23,048---Shutting down
+INFO:     2023-03-01 16:23:23,152---Waiting for application shutdown.
+INFO:     2023-03-01 16:23:23,153---Application shutdown complete.
+INFO:     2023-03-01 16:23:23,153---Finished server process [27905]
+INFO:     2023-03-01 16:23:23,681---Started server process [27924]
+INFO:     2023-03-01 16:23:23,681---Waiting for application startup.
+INFO:     2023-03-01 16:23:23,682---Application startup complete.
+WARNING:  2023-03-01 16:23:36,441---StatReload detected changes in 'api/CommentApi.py'. Reloading...
+INFO:     2023-03-01 16:23:36,443---Shutting down
+INFO:     2023-03-01 16:23:36,546---Waiting for application shutdown.
+INFO:     2023-03-01 16:23:36,547---Application shutdown complete.
+INFO:     2023-03-01 16:23:36,547---Finished server process [27924]
+INFO:     2023-03-01 16:23:37,089---Started server process [27937]
+INFO:     2023-03-01 16:23:37,089---Waiting for application startup.
+INFO:     2023-03-01 16:23:37,089---Application startup complete.
+INFO:     2023-03-01 16:23:37,542---127.0.0.1:61169 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-03-01 16:23:37,654---127.0.0.1:61169 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     2023-03-01 16:23:44,383---Shutting down
+INFO:     2023-03-01 16:23:44,486---Waiting for application shutdown.
+INFO:     2023-03-01 16:23:44,487---Application shutdown complete.
+INFO:     2023-03-01 16:23:44,487---Finished server process [27937]
+INFO:     2023-03-01 16:23:44,560---Stopping reloader process [27903]
+INFO:     2023-03-01 16:23:44,986---Will watch for changes in these directories: ['/Users/zly/Desktop/mygit/MyFastApi/app']
+INFO:     2023-03-01 16:23:44,986---Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     2023-03-01 16:23:44,986---Started reloader process [27949] using StatReload
+INFO:     2023-03-01 16:23:45,273---Started server process [27951]
+INFO:     2023-03-01 16:23:45,273---Waiting for application startup.
+INFO:     2023-03-01 16:23:45,273---Application startup complete.
+INFO:     2023-03-01 16:23:46,557---127.0.0.1:61182 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-03-01 16:23:46,689---127.0.0.1:61182 - "GET /openapi.json HTTP/1.1" 200 OK
+WARNING:  2023-03-01 16:25:10,397---StatReload detected changes in 'api/CommentApi.py'. Reloading...
+INFO:     2023-03-01 16:25:10,428---Shutting down
+INFO:     2023-03-01 16:25:10,530---Waiting for application shutdown.
+INFO:     2023-03-01 16:25:10,532---Application shutdown complete.
+INFO:     2023-03-01 16:25:10,532---Finished server process [27951]
+INFO:     2023-03-01 16:25:11,252---Started server process [28003]
+INFO:     2023-03-01 16:25:11,252---Waiting for application startup.
+INFO:     2023-03-01 16:25:11,252---Application startup complete.
+INFO:     2023-03-01 16:25:50,981---127.0.0.1:61271 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-03-01 16:25:51,084---127.0.0.1:61271 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     2023-03-01 16:25:58,918---Shutting down
+INFO:     2023-03-01 16:25:59,020---Waiting for application shutdown.
+INFO:     2023-03-01 16:25:59,020---Application shutdown complete.
+INFO:     2023-03-01 16:25:59,020---Finished server process [28003]
+INFO:     2023-03-01 16:25:59,108---Stopping reloader process [27949]
+INFO:     2023-03-01 16:25:59,663---Will watch for changes in these directories: ['/Users/zly/Desktop/mygit/MyFastApi/app']
+INFO:     2023-03-01 16:25:59,663---Uvicorn running on http://127.0.0.1:6060 (Press CTRL+C to quit)
+INFO:     2023-03-01 16:25:59,663---Started reloader process [28019] using StatReload
+INFO:     2023-03-01 16:25:59,953---Started server process [28021]
+INFO:     2023-03-01 16:25:59,954---Waiting for application startup.
+INFO:     2023-03-01 16:25:59,954---Application startup complete.
+WARNING:  2023-03-01 16:26:24,928---StatReload detected changes in 'main.py'. Reloading...
+INFO:     2023-03-01 16:26:24,946---Shutting down
+INFO:     2023-03-01 16:26:25,048---Waiting for application shutdown.
+INFO:     2023-03-01 16:26:25,049---Application shutdown complete.
+INFO:     2023-03-01 16:26:25,049---Finished server process [28021]
+INFO:     2023-03-01 16:26:25,629---Started server process [28038]
+INFO:     2023-03-01 16:26:25,629---Waiting for application startup.
+INFO:     2023-03-01 16:26:25,629---Application startup complete.
+INFO:     2023-03-01 16:26:25,630---127.0.0.1:61304 - "GET /docs HTTP/1.1" 200 OK
+INFO:     2023-03-01 16:26:25,719---127.0.0.1:61304 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     2023-03-01 16:26:50,306---127.0.0.1:61305 - "GET /comment/getcommnetsbypostid?post_id=63 HTTP/1.1" 200 OK
+WARNING:  2023-03-01 16:28:08,313---StatReload detected changes in 'api/PostApi.py'. Reloading...
+INFO:     2023-03-01 16:28:08,369---Shutting down
+INFO:     2023-03-01 16:28:08,470---Waiting for application shutdown.
+INFO:     2023-03-01 16:28:08,475---Application shutdown complete.
+INFO:     2023-03-01 16:28:08,475---Finished server process [28038]
+INFO:     2023-03-01 16:28:09,142---Started server process [28072]
+INFO:     2023-03-01 16:28:09,142---Waiting for application startup.
+INFO:     2023-03-01 16:28:09,142---Application startup complete.
+INFO:     2023-03-01 16:29:21,209---127.0.0.1:61418 - "OPTIONS /post/getbypostid?id=63 HTTP/1.1" 200 OK
+INFO:     2023-03-01 16:29:21,232---127.0.0.1:61417 - "GET /avatar/1-1677632014.jpeg HTTP/1.1" 304 Not Modified
+INFO:     2023-03-01 16:29:21,325---127.0.0.1:61418 - "GET /post/getbypostid?id=63 HTTP/1.1" 200 OK
+INFO:     2023-03-01 16:29:22,386---127.0.0.1:61418 - "OPTIONS /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 16:29:22,390---127.0.0.1:61421 - "OPTIONS /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 16:29:22,481---127.0.0.1:61421 - "GET /post/postcategory HTTP/1.1" 200 OK
+INFO:     2023-03-01 16:29:22,514---127.0.0.1:61418 - "POST /post/getpost HTTP/1.1" 200 OK
+INFO:     2023-03-01 16:29:22,575---127.0.0.1:61417 - "GET /postimg/1-1677646048.webp HTTP/1.1" 304 Not Modified
+INFO:     2023-03-01 16:29:23,838---127.0.0.1:61418 - "GET /post/getbypostid?id=63 HTTP/1.1" 200 OK
+INFO:     2023-03-01 17:52:24,667---Shutting down
