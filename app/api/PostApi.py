@@ -3,7 +3,7 @@ import os
 import time
 
 from fastapi import APIRouter, Depends, UploadFile, File
-from sqlalchemy.orm import Session
+from sqlalchemy.orm import Session, subqueryload
 
 from app.Utils.Pagination import Pagination
 from app.Utils.auth import auth_depend
@@ -72,21 +72,18 @@ def getpost(getpostinfo: GetPostBase, db: Session = Depends(get_db)):
     """
 
     # 有title无有category_id参数 也就是title是所有返回的搜索
-    # 如果有title就带title查询
-    # if getpostinfo.title:
-    #     print('有title参数')
-    #     postlist=db.query(Post).filter_by()
-    # else:
-    #     print('无title参数')
 
     # 如果参数有category_id的话就带category_id查询
     print('getpostinfo:', getpostinfo)
     if getpostinfo.category_id:
         print('有category_id参数')
-        post_query = db.query(Post, User.username).select_from(Post).join(User).filter(
-            Post.category_id == getpostinfo.category_id).order_by(Post.create_time.desc())
-        postdata, total = Pagination(post_query, getpostinfo.pageNum, getpostinfo.pageSize).paginate()
-        postinfolist = [p._asdict() for p in postdata]
+        # post_query = db.query(Post, User.username).select_from(Post).join(User).filter(
+        #     Post.category_id == getpostinfo.category_id).order_by(Post.create_time.desc())
+        post_query = db.query(Post).filter_by(category_id=getpostinfo.category_id).options(
+            subqueryload(Post.user).load_only(User.username)).order_by(Post.create_time.desc())
+
+        postlist, total = Pagination(post_query, getpostinfo.pageNum, getpostinfo.pageSize).paginate()
+        # postinfolist = [p._asdict() for p in postdata]
 
         # post_query = db.query(Post).filter_by(category_id=getpostinfo.category_id).join(User,
         #                                                                                 User.user_id == Post.user_id)
@@ -94,22 +91,28 @@ def getpost(getpostinfo: GetPostBase, db: Session = Depends(get_db)):
         # postlist, total = Pagination(post_query, getpostinfo.pageNum, getpostinfo.pageSize).paginate()
         print(f'一共{total}条帖子数据')
         # print(postlist)
-        return {'code': 200, 'msg': 'success', 'data': {"total": total, 'postinfolist': postinfolist}}
+        return {'code': 200, 'msg': 'success', 'data': {"total": total, 'postlist': postlist}}
     else:
+        # 如果没有就查询全部
         print('没有category_id参数')
-        post_query = db.query(Post, User.username).select_from(Post).join(User).order_by(Post.create_time.desc())
-        postdata, total = Pagination(post_query, getpostinfo.pageNum, getpostinfo.pageSize).paginate()
-        postinfolist = [p._asdict() for p in postdata]
+        post_query = db.query(Post).options(subqueryload(Post.user).load_only(User.username)).order_by(
+            Post.create_time.desc())
+        # post_query = db.query(Post, User.username).select_from(Post).join(User).order_by(Post.create_time.desc())
+        postlist, total = Pagination(post_query, getpostinfo.pageNum, getpostinfo.pageSize).paginate()
+        # postinfolist = [p._asdict() for p in postdata]
         print(f'一共{total}条帖子数据')
         # print(postlist)
-        return {'code': 200, 'msg': 'success', 'data': {"total": total, 'postinfolist': postinfolist}}
+        return {'code': 200, 'msg': 'success', 'data': {"total": total, 'postlist': postlist}}
 
 
 @PostRouter.get("/getbypostid", summary="根据postid获取帖子信息")
-def getpostbyid(id: int, db: Session = Depends(get_db)):
-    post_query = db.query(Post, User.username, PostCategory.category_name).select_from(Post).filter_by(post_id=id).join(
-        User).join(
-        PostCategory).first()
-    postinfo = post_query._asdict()
-    print(postinfo)
+def getpostbyid(post_id: int, db: Session = Depends(get_db)):
+    # post_query = db.query(Post, User.username, PostCategory.category_name).select_from(Post).filter_by(post_id=id).join(
+    #     User).join(
+    #     PostCategory).first()
+    # postinfo = post_query._asdict()
+    postinfo = db.query(Post).filter_by(post_id=post_id ).options(subqueryload(Post.user).load_only(User.username)).options(
+        subqueryload(Post.post_category).load_only(PostCategory.category_name)).first()
+    # post_query=db.query(Post).options(subqueryload(Post))
+    # print(post_query)
     return {'code': 200, 'msg': 'success', 'data': {'postinfo': postinfo}}

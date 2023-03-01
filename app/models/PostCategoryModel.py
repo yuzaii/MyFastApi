@@ -10,6 +10,8 @@ class PostCategory(Base):
     category_name = Column(String(50), unique=True, comment='种类名')
     description = Column(String(100), comment='种类描述')
 
+    posts = relationship('Post', back_populates='post_category')
+
     def __repr__(self):
         """
         返回字典

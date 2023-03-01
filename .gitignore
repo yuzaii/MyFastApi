@@ -4,6 +4,7 @@
 log/myapp.log
 upload/
 .idea/
+/log/myapp.log
 # User-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml

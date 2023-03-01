@@ -28,7 +28,8 @@ class User(Base):
     update_time = Column(DateTime, comment='更新时间')
     lastlogin_time = Column(DateTime, comment='上一次登录时间')
     # 关联帖子表 好用filter_by方便的查询
-    posts = relationship('Post')
+    posts = relationship('Post', back_populates='user')
+    comments = relationship('Comment', back_populates='user')
 
     def __repr__(self):
         """

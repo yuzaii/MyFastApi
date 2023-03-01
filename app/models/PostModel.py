@@ -21,7 +21,9 @@ class Post(Base):
     collect_num = Column(Integer, comment='点击数')
     post_status = Column(SmallInteger, comment='帖子状态')
     # overlaps = "user"
-    user = relationship('User', viewonly=True)
+    # user
+    user = relationship('User', back_populates='posts')
+    post_category = relationship('PostCategory', back_populates='')
 
     # postcategory = relationship('PostCategory', viewonly=True)
 

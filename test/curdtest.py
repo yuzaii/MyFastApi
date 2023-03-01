@@ -1,7 +1,8 @@
-from sqlalchemy.orm import load_only
+from sqlalchemy.orm import load_only, subqueryload
 
 from app.Utils.Pagination import Pagination
 from app.database import SessionLocal
+from app.models.CommentModel import Comment
 from app.models.PostModel import Post
 from app.models.UserModel import User
 
@@ -115,11 +116,11 @@ def getpostandusername():
         # print(post_query)
         # postlist = [data[0].__dict__ for data in post_query]
         # 优化二
-        post_query = db.query(Post, User.username).select_from(Post).join(User).filter(Post.category_id == 1)
-        postdata, total = Pagination(post_query, pageNum, pageSize).paginate()
-        # print(postdata)
-        postlist = [p._asdict() for p in postdata]
-        print(postlist[0])
+        # post_query = db.query(Post, User.username).select_from(Post).join(User).filter(Post.category_id == 1)
+        # postdata, total = Pagination(post_query, pageNum, pageSize).paginate()
+        # # print(postdata)
+        # postlist = [p._asdict() for p in postdata]
+        # print(postlist[0])
         # for i in postlist:
         #     print(i)
         # options(
@@ -139,6 +140,14 @@ def getpostandusername():
         # .all()]
 
         # print(postdata)
+        # post_query = db.query(Post, User.username).select_from(Post).join(User).filter(
+        #     Post.category_id == getpostinfo.category_id).order_by(Post.create_time.desc())
+        # 继续优化
+        # data = db.query(Comment).options(subqueryload(Comment.user).load_only(User.username, User.avatar)).all()
+        post_query = db.query(Post).filter_by(category_id=1).options(subqueryload(Post.user).load_only(User.username))
+        postdata, total = Pagination(post_query, pageNum, pageSize).paginate()
+        print(postdata)
+        print(total)
     finally:
         db.close()
 
