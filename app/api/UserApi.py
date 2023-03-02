@@ -14,7 +14,7 @@ from app.config import logger
 
 from app.database import get_db
 from app.models.UserModel import User
-from app.schemas.UserSchemas import UserLoginBase, UserRegisterBase, EditUserBase, UserInfo, Userchangepass
+from app.schemas.UserSchemas import UserLoginBase, UserRegisterBase, EditUserBase, Userchangepass
 
 UserRouter = APIRouter(prefix='/user', tags=['用户相关api'])
 
@@ -126,8 +126,10 @@ def userinfo(user=Depends(auth_depend)):
     # user.password = ''
     # user.createtime = str(user.createtime)
     # print(type(user.create_time))
-    user_res = UserInfo(username=user.username, sex=user.sex, avatar=user.avatar, signature=user.signature,
-                        create_time=user.create_time)
+    print('user', user)
+    user_res = User(user_id=user.user_id, username=user.username, sex=user.sex, avatar=user.avatar,
+                    signature=user.signature,
+                    create_time=user.create_time)
     # print('userr', user_res)
     # print(type(user_res.create_time))
     print({'code': 200, 'data': user_res})

@@ -10,9 +10,11 @@ import datetime
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session, subqueryload
 
+from app.Utils.auth import auth_depend
 from app.database import get_db
 from app.models.CommentModel import Comment
 from app.models.UserModel import User
+from app.schemas.CommntSchemas import CreateCommnet
 
 CommentRouter = APIRouter(prefix='/comment', tags=['论坛评论相关api'])
 
@@ -81,3 +83,15 @@ def getcommnets(post_id: int, db: Session = Depends(get_db)):
     # print(all_comments)
     # # TODO 记得排序
     return {'code': 200, 'msg': 'success', 'data': {'commentlist': commentlist}}
+
+
+@CommentRouter.post("/createcommnet", summary="发表评论")
+def createcommnet(createcommnet: CreateCommnet, db: Session = Depends(get_db), user=Depends(auth_depend)):
+    print(createcommnet)
+    db_comment = Comment(user_id=user.user_id, post_id=createcommnet.post_id, text=createcommnet.text,
+                         parent_comment_id=0, reply_comment_id=0, create_time=datetime.datetime.now())
+    db.add(db_comment)
+    db.commit()
+    db.refresh(db_comment)
+    print(db_comment)
+    return {'code': 200, 'msg': '评论成功'}

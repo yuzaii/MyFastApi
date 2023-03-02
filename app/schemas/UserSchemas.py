@@ -30,12 +30,12 @@ class UserLoginBase(BaseModel):
 #     username: str
 #     password: str
 
-class UserInfo(BaseModel):
-    username: str
-    sex: Optional[str]
-    avatar: Optional[str]
-    signature: Optional[str]
-    create_time: datetime.datetime
+# class UserInfo(BaseModel):
+#     username: str
+#     sex: Optional[str]
+#     avatar: Optional[str]
+#     signature: Optional[str]
+#     create_time: datetime.datetime
     # 留给前端做
     # @validator('create_time')
     # def time_str(cls, v):
