@@ -11,3 +11,10 @@ from pydantic import BaseModel
 class CreateCommnet(BaseModel):
     post_id: int
     text: str
+
+
+class CommitReply(BaseModel):
+    parent_coment_id: int
+    text: str
+class DeleteComment(BaseModel):
+    comment_id:int

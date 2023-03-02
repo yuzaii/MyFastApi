@@ -14,7 +14,7 @@ from app.Utils.auth import auth_depend
 from app.database import get_db
 from app.models.CommentModel import Comment
 from app.models.UserModel import User
-from app.schemas.CommntSchemas import CreateCommnet
+from app.schemas.CommntSchemas import CreateCommnet, CommitReply, DeleteComment
 
 CommentRouter = APIRouter(prefix='/comment', tags=['论坛评论相关api'])
 
@@ -85,8 +85,8 @@ def getcommnets(post_id: int, db: Session = Depends(get_db)):
     return {'code': 200, 'msg': 'success', 'data': {'commentlist': commentlist}}
 
 
-@CommentRouter.post("/createcommnet", summary="发表评论")
-def createcommnet(createcommnet: CreateCommnet, db: Session = Depends(get_db), user=Depends(auth_depend)):
+@CommentRouter.post("/commitcommnet", summary="发表评论")
+def commitcommnet(createcommnet: CreateCommnet, db: Session = Depends(get_db), user=Depends(auth_depend)):
     print(createcommnet)
     db_comment = Comment(user_id=user.user_id, post_id=createcommnet.post_id, text=createcommnet.text,
                          parent_comment_id=0, reply_comment_id=0, create_time=datetime.datetime.now())
@@ -95,3 +95,33 @@ def createcommnet(createcommnet: CreateCommnet, db: Session = Depends(get_db), u
     db.refresh(db_comment)
     print(db_comment)
     return {'code': 200, 'msg': '评论成功'}
+
+
+@CommentRouter.post("/commitreply", summary="发表回复")
+def commitreply(reply: CommitReply, db: Session = Depends(get_db), user=Depends(auth_depend)):
+    parent_comment = db.query(Comment).filter_by(comment_id=reply.parent_coment_id).first()
+    post_id = parent_comment.post_id
+    # 祖父评论的id
+    pp_commmentid = parent_comment.parent_comment_id
+    # 如果祖父评论的id是0 说明父亲评论是主评论 如果是0 就是他的评论id 如果不是0就是他的父亲id
+    parent_comment_id = parent_comment.comment_id if pp_commmentid == 0 else parent_comment.parent_comment_id
+    reply_comment_id = parent_comment.comment_id
+    db_comment = Comment(user_id=user.user_id, text=reply.text, post_id=post_id, parent_comment_id=parent_comment_id,
+                         reply_comment_id=reply_comment_id, create_time=datetime.datetime.now())
+    db.add(db_comment)
+    db.commit()
+    db.refresh(db_comment)
+
+    return {'code': 200, 'msg': '评论成功'}
+
+
+@CommentRouter.post("/deletecomment", summary="删除评论")
+def deletecomment(comment: DeleteComment, db: Session = Depends(get_db), user=Depends(auth_depend)):
+    comment_id = comment.comment_id
+    # 删除和自己有关的评论
+    db.query(Comment).filter_by(parent_comment_id=comment_id).delete()
+    db.query(Comment).filter_by(reply_comment_id=comment_id).delete()
+    # 删除自己
+    db.query(Comment).filter_by(comment_id=comment_id).delete()
+    db.commit()
+    return {'code': 200, 'msg': '删除成功'}
