@@ -16,7 +16,14 @@ class PublisPostBase(BaseModel):
 
 
 class GetPostBase(BaseModel):
+    # 这里要么是category_id为空要么title为空
     category_id: Optional[int]
     # title: Optional[str]
+    pageNum: int
+    pageSize: int
+
+
+class SearchBase(BaseModel):
+    searchTitle: Optional[str]
     pageNum: int
     pageSize: int

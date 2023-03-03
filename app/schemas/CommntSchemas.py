@@ -14,7 +14,9 @@ class CreateCommnet(BaseModel):
 
 
 class CommitReply(BaseModel):
-    parent_coment_id: int
+    reply_comment_id: int
     text: str
+
+
 class DeleteComment(BaseModel):
-    comment_id:int
+    comment_id: int

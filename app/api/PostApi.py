@@ -70,11 +70,9 @@ def getpost(getpostinfo: GetPostBase, db: Session = Depends(get_db)):
     pageNum: 第几页
     pageSize: 每页的大小
     """
-
-    # 有title无有category_id参数 也就是title是所有返回的搜索
-
-    # 如果参数有category_id的话就带category_id查询
     print('getpostinfo:', getpostinfo)
+    # 有title无有category_id参数 也就是title是所有返回的搜索
+    # 如果参数有category_id的话就带category_id查询
     if getpostinfo.category_id:
         print('有category_id参数')
         # post_query = db.query(Post, User.username).select_from(Post).join(User).filter(
@@ -103,6 +101,9 @@ def getpost(getpostinfo: GetPostBase, db: Session = Depends(get_db)):
         print(f'一共{total}条帖子数据')
         # print(postlist)
         return {'code': 200, 'msg': 'success', 'data': {"total": total, 'postlist': postlist}}
+    # 如果啥都没有就是全部
+
+
 
 
 @PostRouter.get("/getbypostid", summary="根据postid获取帖子信息")
@@ -111,8 +112,18 @@ def getpostbyid(post_id: int, db: Session = Depends(get_db)):
     #     User).join(
     #     PostCategory).first()
     # postinfo = post_query._asdict()
-    postinfo = db.query(Post).filter_by(post_id=post_id ).options(subqueryload(Post.user).load_only(User.username)).options(
+    postinfo = db.query(Post).filter_by(post_id=post_id).options(
+        subqueryload(Post.user).load_only(User.username)).options(
         subqueryload(Post.post_category).load_only(PostCategory.category_name)).first()
     # post_query=db.query(Post).options(subqueryload(Post))
     # print(post_query)
     return {'code': 200, 'msg': 'success', 'data': {'postinfo': postinfo}}
+
+
+@PostRouter.get("/searchpost", summary="搜索帖子信息")
+def searchpost(searchtitle: str, db: Session = Depends(get_db)):
+    print('searchpost')
+    postlist = db.query(Post).filter(Post.title.like(f'%{searchtitle}%')).options(
+        subqueryload(Post.user).load_only(User.username)).order_by(
+        Post.create_time.desc()).all()
+    return postlist

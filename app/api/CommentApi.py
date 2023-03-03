@@ -97,13 +97,16 @@ def commitcommnet(createcommnet: CreateCommnet, db: Session = Depends(get_db), u
 
 @CommentRouter.post("/commitreply", summary="发表回复")
 def commitreply(reply: CommitReply, db: Session = Depends(get_db), user=Depends(auth_depend)):
-    parent_comment = db.query(Comment).filter_by(comment_id=reply.parent_coment_id).first()
+    # 这里应该获取到的时候需要回复的id 并找到他
+    parent_comment = db.query(Comment).filter_by(comment_id=reply.reply_comment_id).first()
+    # 获取需要回复的评论的文章id
     post_id = parent_comment.post_id
     # 祖父评论的id
     pp_commmentid = parent_comment.parent_comment_id
     # 如果祖父评论的id是0 说明父亲评论是主评论 如果是0 就是他的评论id 如果不是0就是他的父亲id
     parent_comment_id = parent_comment.comment_id if pp_commmentid == 0 else parent_comment.parent_comment_id
     reply_comment_id = parent_comment.comment_id
+    # print('reply_comment_id',reply_comment_id)
     db_comment = Comment(user_id=user.user_id, text=reply.text, post_id=post_id, parent_comment_id=parent_comment_id,
                          reply_comment_id=reply_comment_id, create_time=datetime.datetime.now())
     db.add(db_comment)
