@@ -11,7 +11,7 @@ from app.database import get_db
 from app.models.PostCategoryModel import PostCategory
 from app.models.PostModel import Post
 from app.models.UserModel import User
-from app.schemas.PostSchemas import PublisPostBase, GetPostBase
+from app.schemas.PostSchemas import PublisPostBase, GetPostBase, SearchBase
 
 PostRouter = APIRouter(prefix='/post', tags=['论坛文章相关api'])
 
@@ -104,8 +104,6 @@ def getpost(getpostinfo: GetPostBase, db: Session = Depends(get_db)):
     # 如果啥都没有就是全部
 
 
-
-
 @PostRouter.get("/getbypostid", summary="根据postid获取帖子信息")
 def getpostbyid(post_id: int, db: Session = Depends(get_db)):
     # post_query = db.query(Post, User.username, PostCategory.category_name).select_from(Post).filter_by(post_id=id).join(
@@ -120,10 +118,12 @@ def getpostbyid(post_id: int, db: Session = Depends(get_db)):
     return {'code': 200, 'msg': 'success', 'data': {'postinfo': postinfo}}
 
 
-@PostRouter.get("/searchpost", summary="搜索帖子信息")
-def searchpost(searchtitle: str, db: Session = Depends(get_db)):
-    print('searchpost')
-    postlist = db.query(Post).filter(Post.title.like(f'%{searchtitle}%')).options(
+@PostRouter.post("/searchpost", summary="搜索帖子信息")
+def searchpost(searchquery: SearchBase, db: Session = Depends(get_db)):
+    print('searchquery')
+    post_query = db.query(Post).filter(Post.title.like(f'%{searchquery.searchTitle}%')).options(
         subqueryload(Post.user).load_only(User.username)).order_by(
-        Post.create_time.desc()).all()
-    return postlist
+        Post.create_time.desc())
+    postlist, total = Pagination(post_query, searchquery.pageNum, searchquery.pageSize).paginate()
+
+    return {'code': 200, 'msg': 'success', 'data': {"total": total, 'postlist': postlist}}
