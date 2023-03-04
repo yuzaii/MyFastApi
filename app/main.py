@@ -7,11 +7,13 @@ from starlette.responses import RedirectResponse
 from starlette.staticfiles import StaticFiles
 
 from app.api.CommentApi import CommentRouter
+from app.api.GoodsApi import GoodsRouter
 from app.api.PostApi import PostRouter
 from app.api.UserApi import UserRouter
 from app.config import LOGGING_CONFIG, logger
 from app.database import engine, Base
 from app.models.CommentModel import Comment
+from app.models.GoodsCategoryModel import GoodsCategory
 from app.models.PostCategoryModel import PostCategory
 from app.models.PostModel import Post
 from app.models.UserModel import User
@@ -48,6 +50,7 @@ origins = [
     # "http://localhost",
     # "http://localhost:8080",
     "http://localhost:5050",
+    "http://127.0.0.1:5500",
 ]
 app.add_middleware(
     CORSMiddleware,
@@ -59,6 +62,7 @@ app.add_middleware(
 app.include_router(UserRouter)
 app.include_router(PostRouter)
 app.include_router(CommentRouter)
+app.include_router(GoodsRouter)
 
 
 # 将首页重定向
@@ -74,7 +78,7 @@ def index():
 
 if __name__ == '__main__':
     # 自动创建数据库
-    models = [User, Post, PostCategory, Comment]
+    models = [User, Post, PostCategory, Comment,GoodsCategory]
     tables = [model.__table__ for model in models]
     Base.metadata.create_all(bind=engine, tables=tables)
 
