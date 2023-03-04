@@ -13,6 +13,7 @@ from sqlalchemy.orm import Session, subqueryload
 from app.Utils.auth import auth_depend
 from app.database import get_db
 from app.models.CommentModel import Comment
+from app.models.PostModel import Post
 from app.models.UserModel import User
 from app.schemas.CommntSchemas import CreateCommnet, CommitReply, DeleteComment
 
@@ -89,9 +90,15 @@ def commitcommnet(createcommnet: CreateCommnet, db: Session = Depends(get_db), u
     db_comment = Comment(user_id=user.user_id, post_id=createcommnet.post_id, text=createcommnet.text,
                          parent_comment_id=0, reply_comment_id=0, create_time=datetime.datetime.now())
     db.add(db_comment)
-    db.commit()
-    db.refresh(db_comment)
+    # db.commit()
+    # db.refresh(db_comment)
     print(db_comment)
+    # 增加文章评论量
+    postinfo = db.query(Post).filter_by(post_id=db_comment.post_id).first()
+    postinfo.comment_num += 1
+    db.commit()
+    # 可以不加
+    # db.refresh(postinfo)
     return {'code': 200, 'msg': '评论成功'}
 
 
@@ -110,9 +117,14 @@ def commitreply(reply: CommitReply, db: Session = Depends(get_db), user=Depends(
     db_comment = Comment(user_id=user.user_id, text=reply.text, post_id=post_id, parent_comment_id=parent_comment_id,
                          reply_comment_id=reply_comment_id, create_time=datetime.datetime.now())
     db.add(db_comment)
+    # db.commit()
+    # db.refresh(db_comment)
+    # 增加文章评论量
+    postinfo = db.query(Post).filter_by(post_id=db_comment.post_id).first()
+    postinfo.comment_num += 1
     db.commit()
-    db.refresh(db_comment)
-
+    # 可以不加
+    # db.refresh(postinfo)
     return {'code': 200, 'msg': '评论成功'}
 
 
@@ -120,9 +132,16 @@ def commitreply(reply: CommitReply, db: Session = Depends(get_db), user=Depends(
 def deletecomment(comment: DeleteComment, db: Session = Depends(get_db), user=Depends(auth_depend)):
     comment_id = comment.comment_id
     # 删除和自己有关的评论
-    db.query(Comment).filter_by(parent_comment_id=comment_id).delete()
-    db.query(Comment).filter_by(reply_comment_id=comment_id).delete()
+    row1 = db.query(Comment).filter_by(parent_comment_id=comment_id).delete()
+    row2 = db.query(Comment).filter_by(reply_comment_id=comment_id).delete()
     # 删除自己
-    db.query(Comment).filter_by(comment_id=comment_id).delete()
+    row3 = db.query(Comment).filter_by(comment_id=comment_id).delete()
+    print(row3, row2, row1)
+    # db.commit()
+    # 增加文章评论量
+    postinfo = db.query(Post).filter_by(post_id=comment.post_id).first()
+    postinfo.comment_num -= row3 + row2 + row1
     db.commit()
+    # 可以不加
+    # db.refresh(postinfo)
     return {'code': 200, 'msg': '删除成功'}

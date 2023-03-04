@@ -3,7 +3,7 @@ import os
 import time
 
 from fastapi import APIRouter, Depends, UploadFile, File
-from sqlalchemy.orm import Session, subqueryload
+from sqlalchemy.orm import Session, subqueryload, load_only
 
 from app.Utils.Pagination import Pagination
 from app.Utils.auth import auth_depend
@@ -104,6 +104,19 @@ def getpost(getpostinfo: GetPostBase, db: Session = Depends(get_db)):
     # 如果啥都没有就是全部
 
 
+@PostRouter.get("/gethotpost", summary="获取热门帖子信息")
+def gethotpost(db: Session = Depends(get_db)):
+    # users = db.query(User).options(load_only(User.username)).all()
+    # print(users)
+    # for user in users:
+    #     print(user)
+    hotposts = db.query(Post).options(load_only(Post.title, Post.create_time)).order_by(Post.view_num.desc()).limit(
+        10).all()
+    # print(hotposts)
+    # print(len(hotposts))
+    return {'code': 200, 'msg': 'success', 'data': {'hotposts': hotposts}}
+
+
 @PostRouter.get("/getbypostid", summary="根据postid获取帖子信息")
 def getpostbyid(post_id: int, db: Session = Depends(get_db)):
     # post_query = db.query(Post, User.username, PostCategory.category_name).select_from(Post).filter_by(post_id=id).join(
@@ -113,6 +126,11 @@ def getpostbyid(post_id: int, db: Session = Depends(get_db)):
     postinfo = db.query(Post).filter_by(post_id=post_id).options(
         subqueryload(Post.user).load_only(User.username)).options(
         subqueryload(Post.post_category).load_only(PostCategory.category_name)).first()
+    # 增加文章浏览量
+    postinfo.view_num += 1
+    db.commit()
+    db.refresh(postinfo)
+    # print(postinfo)
     # post_query=db.query(Post).options(subqueryload(Post))
     # print(post_query)
     return {'code': 200, 'msg': 'success', 'data': {'postinfo': postinfo}}

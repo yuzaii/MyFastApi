@@ -20,3 +20,4 @@ class CommitReply(BaseModel):
 
 class DeleteComment(BaseModel):
     comment_id: int
+    post_id: int
