@@ -110,8 +110,7 @@ def gethotpost(db: Session = Depends(get_db)):
     # print(users)
     # for user in users:
     #     print(user)
-    hotposts = db.query(Post).options(load_only(Post.title, Post.create_time)).order_by(Post.view_num.desc()).limit(
-        10).all()
+    hotposts = db.query(Post).options(load_only(Post.title,Post.create_time)).order_by(Post.view_num.desc()).limit(10).all()
     # print(hotposts)
     # print(len(hotposts))
     return {'code': 200, 'msg': 'success', 'data': {'hotposts': hotposts}}

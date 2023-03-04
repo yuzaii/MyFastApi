@@ -80,7 +80,7 @@ def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depend
                 'data': {'user_id': db_user.user_id, 'username': db_user.username}}
     else:
         raise HTTPException(status_code=400, detail="用户名或密码不正确")
-        # return {'code': 20001, 'msg': '用户名或密码不正确'}
+        # return {'code': 400, 'msg': '用户名或密码不正确'}
 
 
 @UserRouter.post("/login", summary='用户登录')
@@ -112,8 +112,8 @@ def login(form_data: UserLoginBase, db: Session = Depends(get_db)):
         token = create_access_token({'user_id': db_user.user_id, 'username': db_user.username})
         return {'code': 200, "access_token": token, 'msg': 'success'}
     else:
-        raise HTTPException(status_code=201, detail="用户名或密码不正确")
-        # return {'code': 200, 'msg': '用户名或密码不正确'}
+        # raise HTTPException(status_code=201, detail="用户名或密码不正确")
+        return {'code': 401, 'msg': '用户名或密码不正确'}
 
 
 @UserRouter.get("/userinfo", summary='获取用户信息')

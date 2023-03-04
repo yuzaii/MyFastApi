@@ -20,10 +20,25 @@ def auth_depend(token: str = Depends(oauth2_scheme), db: Session = Depends(get_d
     # print('token', token)
     try:
         payload = jwt.decode(token, settings.jwt_secret_key, algorithms=[settings.jwt_algorithm])
-    except (jwt.ExpiredSignatureError, JWTError):
+    # except (jwt.ExpiredSignatureError, JWTError):
+    except jwt.ExpiredSignatureError as e:
+        print(e)
+        # except Exception as e:
+        #     print(e.args)
+        #     print(str(e))
+        #     print(e.__cause__)
         raise HTTPException(
             status_code=401,
             detail="token已失效，请重新登陆！",
+            # headers={"WWW-Authenticate": "Bearer"}
+        )
+    except JWTError as e:
+        # 可以优化
+        print(e)
+        # 没登陆的时候会带一个随机的token 这里可以监测到
+        raise HTTPException(
+            status_code=402,
+            detail="请先登录！",
             # headers={"WWW-Authenticate": "Bearer"}
         )
     # print('payload', payload)
@@ -38,7 +53,6 @@ def auth_depend(token: str = Depends(oauth2_scheme), db: Session = Depends(get_d
             detail="认证不通过，请重新登陆！",
             # headers={"WWW-Authenticate": "Bearer"}
         )
-
 
 # async def auth_depend1(token: str = Depends(oauth2_scheme),db: Session = Depends(get_db)):
 #     print('token:', token)
