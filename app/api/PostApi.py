@@ -110,7 +110,8 @@ def gethotpost(db: Session = Depends(get_db)):
     # print(users)
     # for user in users:
     #     print(user)
-    hotposts = db.query(Post).options(load_only(Post.title,Post.create_time)).order_by(Post.view_num.desc()).limit(10).all()
+    hotposts = db.query(Post).options(load_only(Post.title, Post.create_time)).order_by(Post.view_num.desc()).limit(
+        10).all()
     # print(hotposts)
     # print(len(hotposts))
     return {'code': 200, 'msg': 'success', 'data': {'hotposts': hotposts}}
@@ -122,9 +123,11 @@ def getpostbyid(post_id: int, db: Session = Depends(get_db)):
     #     User).join(
     #     PostCategory).first()
     # postinfo = post_query._asdict()
+    # 获取作者信息
     postinfo = db.query(Post).filter_by(post_id=post_id).options(
-        subqueryload(Post.user).load_only(User.username)).options(
+        subqueryload(Post.user).load_only(User.username, User.avatar, User.signature)).options(
         subqueryload(Post.post_category).load_only(PostCategory.category_name)).first()
+
     # 增加文章浏览量
     postinfo.view_num += 1
     db.commit()
