@@ -14,6 +14,7 @@ from app.config import LOGGING_CONFIG, logger
 from app.database import engine, Base
 from app.models.CommentModel import Comment
 from app.models.GoodsCategoryModel import GoodsCategory
+from app.models.GoodsModel import Goods
 from app.models.PostCategoryModel import PostCategory
 from app.models.PostModel import Post
 from app.models.UserModel import User
@@ -46,11 +47,12 @@ async def redoc_html():
 
 # 允许下列地址跨域
 origins = [
-    # "*",
+    "*",
+    # "http://192.168.10.10:5050"
     # "http://localhost",
     # "http://localhost:8080",
-    "http://localhost:5050",
-    "http://127.0.0.1:5500",
+    # "http://localhost:5050",
+    # "http://127.0.0.1:5500",
 ]
 app.add_middleware(
     CORSMiddleware,
@@ -78,13 +80,14 @@ def index():
 
 if __name__ == '__main__':
     # 自动创建数据库
-    models = [User, Post, PostCategory, Comment,GoodsCategory]
+    models = [User, Post, PostCategory, Comment, GoodsCategory, Goods]
     tables = [model.__table__ for model in models]
     Base.metadata.create_all(bind=engine, tables=tables)
 
     # 运行程序
     uvicorn.run(
         app='main:app',
+        # host='0.0.0.0',
         reload=True,
         port=6060,
         # log_config="logging.yaml",

@@ -15,7 +15,7 @@ class User(Base):
     能确定的话最好把string的长度降低
     """
     __tablename__ = "user"
-
+    # autoincrement = True, index不用了
     user_id = Column(Integer, primary_key=True, index=True, comment='用户ID')
     username = Column(String(50), unique=True, comment='用户名')
     password = Column(String(100), comment='密码')

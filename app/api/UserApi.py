@@ -144,7 +144,7 @@ def get_all_users_count(db: Session = Depends(get_db), user=Depends(auth_depend)
 
 
 @UserRouter.post("/image/upload", summary='上传头像')
-async def userimgupload(file: UploadFile = File(...), user=Depends(auth_depend), db: Session = Depends(get_db)):
+async def userimgupload(file: UploadFile = File(...), user=Depends(auth_depend)):
     print('userimgupload')
     # 利用用户id和用时间戳秒来为头像重新命名
     user_id = user.user_id
