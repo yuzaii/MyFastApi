@@ -9,6 +9,7 @@ from starlette.staticfiles import StaticFiles
 from app.api.CommentApi import CommentRouter
 from app.api.GoodsApi import GoodsRouter
 from app.api.PostApi import PostRouter
+from app.api.UrlApi import UrlRouter
 from app.api.UserApi import UserRouter
 from app.config import LOGGING_CONFIG, logger
 from app.database import engine, Base
@@ -17,6 +18,7 @@ from app.models.GoodsCategoryModel import GoodsCategory
 from app.models.GoodsModel import Goods
 from app.models.PostCategoryModel import PostCategory
 from app.models.PostModel import Post
+from app.models.UrlinfoModel import Urlinfo
 from app.models.UserModel import User
 
 # docs_url=None, redoc_url=None 禁用自带的docs文档接口
@@ -65,6 +67,7 @@ app.include_router(UserRouter)
 app.include_router(PostRouter)
 app.include_router(CommentRouter)
 app.include_router(GoodsRouter)
+app.include_router(UrlRouter)
 
 
 # 将首页重定向
@@ -80,7 +83,7 @@ def index():
 
 if __name__ == '__main__':
     # 自动创建数据库
-    models = [User, Post, PostCategory, Comment, GoodsCategory, Goods]
+    models = [User, Post, PostCategory, Comment, GoodsCategory, Goods, Urlinfo]
     tables = [model.__table__ for model in models]
     Base.metadata.create_all(bind=engine, tables=tables)
 

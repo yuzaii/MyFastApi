@@ -42,7 +42,7 @@ def register(user: UserRegisterBase, db: Session = Depends(get_db)):
         db.commit()
         db.refresh(db_user)
         print(db_user)
-        return {'code': 200, 'msg': '账号创建成功'}
+        return {'code': 200, 'msg': 'success'}
     except Exception as e:
         db.rollback()
         print(e)

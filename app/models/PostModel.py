@@ -17,7 +17,7 @@ class Post(Base):
     user_id = Column(Integer, ForeignKey('user.user_id'))
     category_id = Column(SmallInteger, ForeignKey('post_category.category_id'), comment='种类id')
     update_time = Column(DateTime, comment='更新时间')
-    best_post = Column(SmallInteger, comment='用户id')
+    best_post = Column(SmallInteger, comment='是否精华文章 1是 0不是')
     collect_num = Column(Integer, comment='点击数')
     post_status = Column(SmallInteger, comment='帖子状态')
     # overlaps = "user"
