@@ -30,6 +30,7 @@ class User(Base):
     # 关联帖子表 好用filter_by方便的查询
     posts = relationship('Post', back_populates='user')
     comments = relationship('Comment', back_populates='user')
+    goods = relationship('Goods', back_populates='user')
 
     def __repr__(self):
         """

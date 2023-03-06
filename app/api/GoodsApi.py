@@ -3,12 +3,13 @@ import os
 import time
 
 from fastapi import APIRouter, Depends, UploadFile, File
-from sqlalchemy.orm import Session, load_only
+from sqlalchemy.orm import Session, load_only, subqueryload
 
 from app.Utils.auth import auth_depend
 from app.database import get_db
 from app.models.GoodsCategoryModel import GoodsCategory
 from app.models.GoodsModel import Goods
+from app.models.UserModel import User
 from app.schemas.GoodsSchemas import GetGoodsQuery, SearchGoodsQuery, PublishGoods
 
 GoodsRouter = APIRouter(prefix='/goods', tags=['商品相关api'])
@@ -95,3 +96,15 @@ def publish_goods(goods: PublishGoods, db: Session = Depends(get_db), user=Depen
     db.add(db_goods)
     db.commit()
     return {'code': 200, 'msg': 'success'}
+
+
+@GoodsRouter.get("/getgoodsbyid", summary='根据商品id获取商品信息')
+def getgoods_byid(good_id: int, db: Session = Depends(get_db)):
+    goodinfo = db.query(Goods).filter(Goods.goods_id == good_id).options(
+        subqueryload(Goods.user).load_only(User.username, User.avatar, User.signature)).options(
+        subqueryload(Goods.goods_category).load_only(GoodsCategory.category_name)).first()
+    goodinfo.view_num += 1
+    db.commit()
+    db.refresh(goodinfo)
+
+    return {'code': 200, 'msg': 'success', 'data': goodinfo}

@@ -23,7 +23,7 @@ class Post(Base):
     # overlaps = "user"
     # user
     user = relationship('User', back_populates='posts')
-    post_category = relationship('PostCategory', back_populates='')
+    post_category = relationship('PostCategory', back_populates='posts')
 
     # postcategory = relationship('PostCategory', viewonly=True)
 

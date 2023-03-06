@@ -13,7 +13,7 @@ class GoodsCategory(Base):
     create_time = Column(DateTime, comment='创建时间')
     update_time = Column(DateTime, comment='更新时间')
 
-    # posts = relationship('Post', back_populates='post_category')
+    goods = relationship('Goods', back_populates='goods_category')
 
     def __repr__(self):
         """
