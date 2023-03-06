@@ -38,7 +38,7 @@ async def postimgupload(file: UploadFile = File(...), user=Depends(auth_depend))
     return {
         "errno": 0,
         "data": {
-            "url": f"http://localhost:6060/img/postimg/{new_filename}",
+            "url": f"http://127.0.0.1:6060/img/postimg/{new_filename}",
             # "alt": "yyy",
             # "href": "zzz"
         }
