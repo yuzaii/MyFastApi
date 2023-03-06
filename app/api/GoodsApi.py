@@ -95,7 +95,8 @@ def publish_goods(goods: PublishGoods, db: Session = Depends(get_db), user=Depen
                      goods_count=goods.goodsCount, create_time=datetime.datetime.now(), goods_status=0, view_num=0)
     db.add(db_goods)
     db.commit()
-    return {'code': 200, 'msg': 'success'}
+    db.refresh(db_goods)
+    return {'code': 200, 'msg': 'success', 'data': {'good_id': db_goods.goods_id}}
 
 
 @GoodsRouter.get("/getgoodsbyid", summary='根据商品id获取商品信息')
