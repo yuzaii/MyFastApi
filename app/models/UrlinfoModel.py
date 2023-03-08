@@ -16,7 +16,7 @@ class Urlinfo(Base):
     update_time = Column(DateTime, comment='更新时间')
     type = Column(SmallInteger, comment='链接类型 0是校内 1是校外')
     user_id = Column(Integer, ForeignKey('user.user_id'), comment='用户id')
-
+    state = Column(SmallInteger, comment='链接状态 0是待审核 1是审核通过')
     user = relationship('User', back_populates='urlinfos')
 
     def __repr__(self):

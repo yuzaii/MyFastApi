@@ -1,7 +1,7 @@
 import datetime
 
 from fastapi import APIRouter, Depends
-from flask_sqlalchemy.session import Session
+from sqlalchemy.orm import Session
 
 from app.Utils.auth import auth_depend
 from app.database import get_db
