@@ -79,7 +79,8 @@ def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depend
         return {'code': 20000, "access_token": token, 'msg': 'success',
                 'data': {'user_id': db_user.user_id, 'username': db_user.username}}
     else:
-        raise HTTPException(status_code=400, detail="用户名或密码不正确")
+        # return 2000
+        raise HTTPException(status_code=401, detail="用户名或密码不正确")
         # return {'code': 400, 'msg': '用户名或密码不正确'}
 
 

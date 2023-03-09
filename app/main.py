@@ -6,6 +6,7 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import RedirectResponse
 from starlette.staticfiles import StaticFiles
 
+from app.api.CalendarApi import CalendarApi
 from app.api.CommentApi import CommentRouter
 from app.api.GoodsApi import GoodsRouter
 from app.api.PostApi import PostRouter
@@ -14,6 +15,7 @@ from app.api.UserApi import UserRouter
 from app.config import LOGGING_CONFIG, logger
 from app.database import engine, Base
 from app.models.CommentModel import Comment
+from app.models.CalendarModel import Calendar
 from app.models.GoodsCategoryModel import GoodsCategory
 from app.models.GoodsModel import Goods
 from app.models.PostCategoryModel import PostCategory
@@ -36,7 +38,9 @@ async def custom_swagger_ui_html():
         title=app.title + " - Swagger UI",
         oauth2_redirect_url=app.swagger_ui_oauth2_redirect_url,
         swagger_js_url="/static/swagger/swagger-ui-bundle.js",
-        swagger_css_url="/static/swagger/swagger-ui.css")
+        swagger_css_url="/static/swagger/swagger-ui.css",
+        swagger_ui_parameters={"docExpansion": None},
+    )
 
 
 @app.get("/redoc", include_in_schema=False)
@@ -63,11 +67,13 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+# 挂载路由
 app.include_router(UserRouter)
 app.include_router(PostRouter)
 app.include_router(CommentRouter)
 app.include_router(GoodsRouter)
 app.include_router(UrlRouter)
+app.include_router(CalendarApi)
 
 
 # 将首页重定向
@@ -83,7 +89,7 @@ def index():
 
 if __name__ == '__main__':
     # 自动创建数据库
-    models = [User, Post, PostCategory, Comment, GoodsCategory, Goods, Urlinfo]
+    models = [User, Post, PostCategory, Comment, GoodsCategory, Goods, Urlinfo, Calendar]
     tables = [model.__table__ for model in models]
     Base.metadata.create_all(bind=engine, tables=tables)
 

@@ -9,3 +9,8 @@ class CommitUrlinfo(BaseModel):
     type: str
     description: str
     tags: List
+
+
+class CommitCalendar(BaseModel):
+    name: str
+    date: str

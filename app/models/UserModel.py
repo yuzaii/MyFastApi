@@ -31,7 +31,9 @@ class User(Base):
     posts = relationship('Post', back_populates='user')
     comments = relationship('Comment', back_populates='user')
     goods = relationship('Goods', back_populates='user')
-    urlinfos=relationship('Urlinfo', back_populates='user')
+    urlinfos = relationship('Urlinfo', back_populates='user')
+    calendars = relationship('Calendar', back_populates='user')
+
     def __repr__(self):
         """
         返回字典

@@ -6,7 +6,7 @@ from sqlalchemy.orm import Session
 from app.Utils.auth import auth_depend
 from app.database import get_db
 from app.models.UrlinfoModel import Urlinfo
-from app.schemas.UrlSchemas import CommitUrlinfo
+from app.schemas.InfoCenterSchemas import CommitUrlinfo
 
 UrlRouter = APIRouter(prefix='/urlnav', tags=['链接导航相关api'])
 
