@@ -14,3 +14,10 @@ class CommitUrlinfo(BaseModel):
 class CommitCalendar(BaseModel):
     name: str
     date: str
+
+
+class CommitInform(BaseModel):
+    title: str
+    date: str
+    detail: str
+    type: int

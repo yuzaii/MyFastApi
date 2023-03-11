@@ -9,6 +9,7 @@ from starlette.staticfiles import StaticFiles
 from app.api.CalendarApi import CalendarApi
 from app.api.CommentApi import CommentRouter
 from app.api.GoodsApi import GoodsRouter
+from app.api.InformApi import InformApi
 from app.api.PostApi import PostRouter
 from app.api.UrlApi import UrlRouter
 from app.api.UserApi import UserRouter
@@ -18,6 +19,7 @@ from app.models.CommentModel import Comment
 from app.models.CalendarModel import Calendar
 from app.models.GoodsCategoryModel import GoodsCategory
 from app.models.GoodsModel import Goods
+from app.models.InformModel import Inform
 from app.models.PostCategoryModel import PostCategory
 from app.models.PostModel import Post
 from app.models.UrlinfoModel import Urlinfo
@@ -74,6 +76,7 @@ app.include_router(CommentRouter)
 app.include_router(GoodsRouter)
 app.include_router(UrlRouter)
 app.include_router(CalendarApi)
+app.include_router(InformApi)
 
 
 # 将首页重定向
@@ -89,7 +92,7 @@ def index():
 
 if __name__ == '__main__':
     # 自动创建数据库
-    models = [User, Post, PostCategory, Comment, GoodsCategory, Goods, Urlinfo, Calendar]
+    models = [User, Post, PostCategory, Comment, GoodsCategory, Goods, Urlinfo, Calendar, Inform]
     tables = [model.__table__ for model in models]
     Base.metadata.create_all(bind=engine, tables=tables)
 

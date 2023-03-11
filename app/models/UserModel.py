@@ -33,6 +33,7 @@ class User(Base):
     goods = relationship('Goods', back_populates='user')
     urlinfos = relationship('Urlinfo', back_populates='user')
     calendars = relationship('Calendar', back_populates='user')
+    informs = relationship('Inform', back_populates='user')
 
     def __repr__(self):
         """
