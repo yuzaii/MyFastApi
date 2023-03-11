@@ -1,5 +1,5 @@
 import uvicorn
-from fastapi import FastAPI, Depends, HTTPException
+from fastapi import FastAPI
 from fastapi.openapi.docs import get_swagger_ui_html, get_redoc_html
 
 from starlette.middleware.cors import CORSMiddleware
@@ -95,11 +95,11 @@ if __name__ == '__main__':
     models = [User, Post, PostCategory, Comment, GoodsCategory, Goods, Urlinfo, Calendar, Inform]
     tables = [model.__table__ for model in models]
     Base.metadata.create_all(bind=engine, tables=tables)
-
+    print('Uvicorn running on http://127.0.0.1:6060')
     # 运行程序
     uvicorn.run(
         app='main:app',
-        # host='0.0.0.0',
+        host='0.0.0.0',
         reload=True,
         port=6060,
         # log_config="logging.yaml",
