@@ -5,6 +5,7 @@ import time
 from fastapi import APIRouter, Depends, UploadFile, File
 from sqlalchemy.orm import Session, load_only, subqueryload
 
+from app.Utils.Pagination import Pagination
 from app.Utils.auth import auth_depend
 from app.database import get_db
 from app.models.GoodsCategoryModel import GoodsCategory
@@ -27,17 +28,27 @@ def get_goods(goodsquery: GetGoodsQuery, db: Session = Depends(get_db)):
     print(goodsquery)
     if goodsquery.category_id:
         # 有id
-        goods_list = db.query(Goods).filter(Goods.goods_category_id == goodsquery.category_id).options(
+        # goods_list = db.query(Goods).filter(Goods.goods_category_id == goodsquery.category_id).options(
+        #     load_only(Goods.goods_name, Goods.goods_detail, Goods.goods_price, Goods.goods_images)).order_by(
+        #     Goods.create_time.desc()).all()
+        goods_query = db.query(Goods).filter(Goods.goods_category_id == goodsquery.category_id).options(
             load_only(Goods.goods_name, Goods.goods_detail, Goods.goods_price, Goods.goods_images)).order_by(
-            Goods.create_time.desc()).all()
+            Goods.create_time.desc())
+        goodslist, total = Pagination(goods_query, goodsquery.pageNum, goodsquery.pageSize).paginate()
+
         # print(goods_list)
-        return {'code': 200, 'msg': 'success', 'data': goods_list}
+        return {'code': 200, 'msg': 'success', 'data': {"total": total, 'goodslist': goodslist}}
     else:
-        goods_list = db.query(Goods).options(
+        # goods_list = db.query(Goods).options(
+        #     load_only(Goods.goods_name, Goods.goods_detail, Goods.goods_price, Goods.goods_images)).order_by(
+        #     Goods.create_time.desc()).all()
+        goods_query = db.query(Goods).options(
             load_only(Goods.goods_name, Goods.goods_detail, Goods.goods_price, Goods.goods_images)).order_by(
-            Goods.create_time.desc()).all()
+            Goods.create_time.desc())
+        goodslist, total = Pagination(goods_query, goodsquery.pageNum, goodsquery.pageSize).paginate()
+
         # print(goods_list)
-        return {'code': 200, 'msg': 'success', 'data': goods_list}
+        return {'code': 200, 'msg': 'success', 'data': {"total": total, 'goodslist': goodslist}}
     # if goodsquery.categroy_id:
     #     goods_list = db.query(Goods).all()
     #     print('有id')

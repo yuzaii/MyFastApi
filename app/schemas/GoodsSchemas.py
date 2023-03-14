@@ -5,6 +5,8 @@ from pydantic import BaseModel
 
 class GetGoodsQuery(BaseModel):
     category_id: Optional[int]
+    pageNum: int
+    pageSize: int
 
 
 class SearchGoodsQuery(BaseModel):
